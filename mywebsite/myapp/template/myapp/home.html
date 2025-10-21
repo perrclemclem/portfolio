@@ -1,0 +1,38 @@
+{% extends 'myapp/base.html' %} 
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>This is the content of the block myheader</h1>
+
+    {% if user.profile.usertypr == 'vvip' %}
+        <center> 15% Discount for VIP member </center>
+    {% elif user.profile.usertypr == 'vip' %}
+        <center> 10% Discount for VIP member </center>
+    {% elif user.profile.usertypr == 'member' %}
+        <center> 5% Discount for VIP member </center>
+    {% endif %}
+{% endblock myheader %}
+
+{% block content %}
+    <center>
+        {% for data in pd %}
+            <h1>{{ data.title }}</h1>
+            {% if data.picture %}
+                <img src="{{data.picture.url}}" width="400">
+            {% endif %}
+            <p>
+                {{ data.description }}<br>
+                price : {{ data.price }}<br>
+                stock : {{ data.quantity }}<br>
+                {% if data.specfile %}
+                    specfile : <a href="{{data.specfile.url}}"> Download </a>
+                {% endif %}
+            </p>
+            <hr>
+        {% endfor %}
+    </center>
+{% endblock content %}
+
+
+
