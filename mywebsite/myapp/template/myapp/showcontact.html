@@ -24,14 +24,14 @@
                 <a href="{% url 'action-page' data.id %}">{{data.topic}}</a>
             </td>
             <td>{{data.email}}</td>
-            <td>{{data.detail}}</td>
+            <td>{{data.details}}</td>
             {% if data.complete == True %}
                 <td>Yes</td>
             {% else %}
-                <td>Yes</td>
+                <td>No</td>
             {% endif %}
         </tr>
         {% endfor %}
     </tbody>
 </table>
-{% block content %}
+{% endblock content %}

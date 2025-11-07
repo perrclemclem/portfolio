@@ -5,13 +5,34 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.core.files.storage import FileSystemStorage
+from django.core.paginator import Paginator
 
 # Create your views here.
 
 def home(request):
     """Shows the home page"""
     allproduct = Product.objects.all()
-    context = {'pd': allproduct}
+    product_per_page = 3
+    paginator = Paginator(allproduct, product_per_page)
+    page = request.GET.get('page')
+    allproduct = paginator.get_page(page)
+
+    context = {'allproduct': allproduct}
+
+    # 1 row 3 cols
+    allrow = []
+    row = []
+    for i, p in enumerate(allproduct):
+        if i % 3 == 0:
+            if i != 0:
+                allrow.append(row)
+            row = []
+            row.append(p)
+        else:
+            row.append(p)
+    allrow.append(row)
+    context['allrow'] = allrow
+
     return render(request, 'myapp/home.html', context)
 
 def aboutUs(request):
@@ -26,7 +47,7 @@ def contact(request):
     and the submit button has been clicked.
     """
 
-    context = {} #messge to notify
+    context = {}  # message to notify
 
     if request.method == 'POST':
         data = request.POST.copy()
@@ -38,11 +59,11 @@ def contact(request):
             context['message'] = 'Please, fill in all contact informations'
             return render(request, 'myapp/contact.html', context)
 
-        newRecord = contactList() # create object
+        newRecord = contactList()  # create object
         newRecord.topic = topic
         newRecord.email = email
-        newRecord.detail = detail
-        newRecord.save() # save data
+        newRecord.details = detail 
+        newRecord.save()  # save data
 
         context['message'] = 'The message has been received'
 
@@ -79,7 +100,7 @@ def showContact(request):
     """
     allcontact = contactList.objects.all()
     context = {'contact': allcontact}
-    return render(request, 'myapp/showcontact.html, context')
+    return render(request, 'myapp/showcontact.html', context)
 
 
 def userRegist(request):
@@ -156,7 +177,7 @@ def editProfile(request):
         current_user.save()
 
         try:
-            user = authentificate(username=current_user.username,
+            user = authenticate(username=current_user.username,
                                     password=current_user.password)
             login(request, user)
             return redirect('home-page')
@@ -169,7 +190,7 @@ def actionPage(request, cid):
     """No idea, don't remember ;-;"""
     # cid = contactlist ID
     context = {}
-    contect = contactList.objects.get(id=cid)
+    contact = contactList.objects.get(id=cid)
     context['contact'] = contact
 
     try:
@@ -187,16 +208,22 @@ def actionPage(request, cid):
                 check = Action.objects.get(contactList=contact)
                 check.actionDetail = actiondetail
                 check.save()
-                contaxt['action'] = check
+                context['action'] = check
             except:
-                new = Action.objects.get(contactList=contact)
+                new = Action()
                 new.contactList = contact
                 new.actionDetail = actiondetail
                 new.save()
+        elif 'delete' in data:
+            try:
+                contact.delete()
+                return redirect('showcontact-page')
+            except:
+                pass
         elif 'complete' in data:
             contact.complete = True
             contact.save()
-            return redirect(request, 'myapp/action.html', context)
+            return redirect('showcontact-page')
         
     return render(request, 'myapp/action.html', context)
 
@@ -210,7 +237,7 @@ def addProduct(request):
     if request.method == 'POST':
         data = request.POST.copy()
         title = data.get('title')
-        description = data.gat('description')
+        description = data.get('description')
         price = data.get('price')
         quantity = data.get('quantity')
         instock = data.get('instock')
@@ -232,19 +259,19 @@ def addProduct(request):
             # File system: from django.core.files.storage import FileSystemStorage
             fs = FileSystemStorage(location='media/product')
             filename = fs.save(file_image_name, file_image)
-            upload_file_url = fs.url(fiename)
+            upload_file_url = fs.url(filename)
             print('Picture url:', upload_file_url)
             new.picture = 'product' + upload_file_url[6:]
 
         if 'specfile' in request.FILES:
-            file_specfile = request.FILES['picture']
+            file_specfile = request.FILES['specfile']
             file_specfile_name = file_specfile.name.replace(' ', '')
             # File system: from django.core.files.storage import FileSystemStorage
             fs = FileSystemStorage(location='media/specfile')
             filename = fs.save(file_specfile_name, file_specfile)
-            upload_file_url = fs.url(fiename)
+            upload_file_url = fs.url(filename)
             print('Picture url:', upload_file_url)
-            new.picture = 'product' + upload_file_url[6:]
+            new.specfile = 'product' + upload_file_url[6:]
 
         new.save()
 

@@ -3,7 +3,7 @@
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
-    <h1>This is the content of the block myheader</h1>
+    <h1>My portfolio</h1>
 
     {% if user.profile.usertypr == 'vvip' %}
         <center> 15% Discount for VIP member </center>
@@ -15,23 +15,70 @@
 {% endblock myheader %}
 
 {% block content %}
-    <center>
-        {% for data in pd %}
-            <h1>{{ data.title }}</h1>
-            {% if data.picture %}
-                <img src="{{data.picture.url}}" width="400">
-            {% endif %}
-            <p>
-                {{ data.description }}<br>
-                price : {{ data.price }}<br>
-                stock : {{ data.quantity }}<br>
-                {% if data.specfile %}
-                    specfile : <a href="{{data.specfile.url}}"> Download </a>
-                {% endif %}
-            </p>
-            <hr>
+    <div class="container mb-4 text-center"> 
+        {% for row in allrow %}
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                {% for c in row %}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        {% if c.picture %}
+                            <img src="{{c.picture.url}}" class="card-img-top" width="200" height="300">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ c.title }}</h5>
+                            <p class="card-text"> {{ c.price }} hours</p>
+                            <p>
+                                {% if c.specfile %}
+                                    specfile : <a href="{{c.specfile.url}}">Download</a>
+                                {% endif %}
+                            </p>
+                            <a href="#" class="btn btn-primary">More details</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         {% endfor %}
-    </center>
+    </div>
+    <hr>
+    <ul class="pagination">
+        {% if allproduct.has_previous and allproduct.has_next != True %}
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.previous_page_number}}"> < </a></li>
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.number|add:-1}}">{{allproduct.number|add:-1}}</a></li>
+            <li class="page-item active"><a class="page-link" 
+                href="?page={{allproduct.number}}">{{allproduct.number}}</a></li>
+        {% endif %}
+
+        {% if allproduct.has_previous and allproduct.has_next%}
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.previous_page_number}}"> < </a></li>
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.number|add:-1}}">{{allproduct.number|add:-1}}</a></li>
+            <li class="page-item active"><a class="page-link" 
+                href="?page={{allproduct.number}}">{{allproduct.number}}</a></li>
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.number|add:1}}">{{allproduct.number|add:1}}</a></li>
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.next_page_number}}">{{allproduct.next_page_number}}</a></li> 
+        {% endif %}
+
+        {% if allproduct.has_next and allproduct.has_previous != True %}
+            <li class="page-item active"><a class="page-link" 
+                href="?page={{allproduct.number}}">{{allproduct.number}}</a></li>
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.number|add:1}}">{{allproduct.number|add:1}}</a></li>
+            {% if allproduct.num_pages > 2 %}
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.number|add:2}}">{{allproduct.number|add:2}}</a></li>
+            {% endif %}
+            <li class="page-item"><a class="page-link" 
+                href="?page={{allproduct.next_page_number}}"> > </a></li> 
+        {% endif %}
+
+    </ul>
+    <p> page {{allproduct.number}} from {{allproduct.paginator.num_pages}} </p>
 {% endblock content %}
 
 
