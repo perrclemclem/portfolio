@@ -1,0 +1,134 @@
+{% extends 'myapp/base.html' %} 
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>COMPÉTENCE 1</h1>
+{% endblock myheader %}
+
+{% block aside %}
+    <h2>Compétence 1 — Réaliser un développement d’application</h2>
+    <p>Développer — c'est-à-dire concevoir, coder, tester et intégrer — une solution informatique 
+        pour un client, en respectant les besoins décrits, en appliquant les principes algorithmiques, 
+        en veillant à la qualité du code et à sa documentation, et en choisissant les ressources techniques appropriées.</p>
+{% endblock aside %}
+
+{% block content %}
+    <ol>
+        <ol>
+            <h4>A. Développer des applications informatiques simples</h4>
+
+            <li>
+                <h5>AC1 – Implémenter des conceptions simples</h5>
+                <p>Traduire une conception simple (diagrammes, schémas, algorithmes) en code exécutable.</p>
+                <img src="">
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Élaborer des conceptions simples</h5>
+                <p>Concevoir une solution à partir d’un problème donné, en utilisant des modèles simples (par ex. diagrammes UML).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Faire des essais et évaluer leurs résultats en regard des spécifications</h5>
+                <hr>
+            </li>
+            <li>
+                <h5>AC4 – Développer des interfaces utilisateurs</h5>
+                <hr>
+            </li>
+        </ol>
+
+        <ol>
+            <h4>B. Partir des exigences et aller jusqu’à une application complète</h4>
+
+            <li>
+                <h5>AC1 – Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</h5>
+                <p></p>
+                <pre>
+                    <code>
+                                                /*
+                        Numéro du groupe : 16
+                        Nom du groupe : Les Sentinelles du Code Sacré
+                        Étudiants : Valentin Inesta, Jeanne Pietrera, Thibaut Rosa, Clémence Perraudin
+                        Numéro de Kata : 2
+                        Numéro de l'exercice : 1
+                        But de l'exercice : Saisir et vérifier un pourcentage saisi par l'utilisateur (entre 0 et 100)
+                        Modèle(s) d'algorithme(s) choisi(s) : Saisie-vérif
+                        Brève justification du ou des modèles choisis : on SAISIT un nombre et on VERIFIE s'il est compri entre 0 et 100
+                        Remarques éventuelles : On considère que le pourcentage est un entier
+                        */
+
+                        #include <iostream>
+                        using namespace std;
+
+                        int main(void)
+                        {
+                            //VARIABLES
+                            short int pourcentage; // valeur du pourcentage saisi à valider
+
+                            //TRAITEMENTS
+
+                            // saisirPourcentage >> pourcentage
+                            while(true)
+                            {
+                            cout << "Veuillez saisir un pourcentage entre 0 et 100 : ";
+                            cin >> pourcentage;
+
+                            if (pourcentage >= 0 && pourcentage <= 100)
+                            {
+                                break;
+                            }
+
+                            cout << "Erreur :" << endl;
+                            }
+
+                            // pourcentage >> afficherPourcentageValide
+
+                            cout << "Pourcentage valide : " << pourcentage;
+
+                            return 0;
+                        }
+                    </code>
+                </pre>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Appliquer des principes d’accessibilité et d’ergonomie</h5>
+                <p></p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Adopter de bonnes pratiques de conception et de programmation</h5>
+                <hr>
+            </li>
+            <li>
+                <h5>AC4 – Vérifier et valider la qualité de l’application par les tests</h5>
+                <hr>
+            </li>
+        </ol>
+
+        <!-- Pour la troisième année de BUT !!!
+        <ol>
+            <h4>C. Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT…)</h4>
+
+            <li>
+                <h5>AC1 – Choisir et implémenter les architectures adaptées</h5>
+                <p></p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Faire évoluer une application existante</h5>
+                <p></p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Intégrer des solutions dans un environnement de production</h5>
+                <hr>
+            </li>
+        </ol>
+        -->
+
+    </ol>
+
+{% endblock content %}

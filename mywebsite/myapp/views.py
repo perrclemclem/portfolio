@@ -283,3 +283,18 @@ def addProduct(request):
         print('File:', request.FILES)
 
     return render(request, 'myapp/addproduct.html')
+
+def competences(request):
+    return render(request, 'myapp/competences.html')
+
+def competence1(request):
+    return render(request, 'myapp/competence1.html')
+
+def competence2(request):
+    return render(request, 'myapp/competence2.html')
+
+def competence3(request):
+    return render(request, 'myapp/competence3.html')
+
+def competence4(request):
+    return render(request, 'myapp/competence4.html')

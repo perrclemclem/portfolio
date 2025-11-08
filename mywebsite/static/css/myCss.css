@@ -7,10 +7,15 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-/* --- Layout global --- */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Layout global */
 .page-wrapper {
     display: flex;
-    min-height: calc(100vh - 70px - 60px); /* tout l’espace entre nav et footer */
+    min-height: calc(100vh - 70px - 60px); /* pour prendre tout l’espace entre nav et footer */
     font-family: Lora;
 }
 
@@ -19,10 +24,10 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px; /* hauteur de la nav */
+    height: 70px;
     background-color: rgb(253, 240, 224);
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    z-index: 1000; /* l'ombre couvre bien tout ce qui est dessous */
+    z-index: 1000; /* pour que l'ombre couvre bien tout ce qui est dessous */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,11 +109,11 @@ aside img{
     flex-direction: column;
 }
 
-/* Contenu interne sticky et scrollable */
+/* Contenu interne qui reste en place quand on scrolle et scrollable à l'intérieur */
 .sidebar-inner {
     position: sticky;
-    top: 80px; /* un peu sous la nav pour respirer */
-    max-height: calc(100vh - 80px - 60px); /* espace visible entre nav et footer */
+    top: 80px;
+    max-height: calc(100vh - 80px - 60px);
     overflow-y: auto; /* scroll interne si contenu trop grand */
     display: flex;
     flex-direction: column;
@@ -127,7 +132,34 @@ aside img{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px); /* pour l'effet de “flottement” */
+.card_me:hover {
+    transform: translateY(-5px); /* créé effet de “flottement” */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-competence {
+    width: 750px;
+    height: 95px;
+    background-color: rgb(176, 255, 229);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: rgb(0, 57, 61);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.txt-btn-competences{
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.btn-competence:hover {
+    transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }

@@ -67,10 +67,10 @@
                 <a href="{% url 'showcontact-page' %}">Show contact</a>
                 <a href="{% url 'addproduct-page' %}">Add project</a>
             {% else %}
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
+                <a href="#">Projets</a>
+                <a href="{% url 'competences-page' %}">Compétences</a>
                 <a href="#">CV</a>
-                <a href="#">Contact me</a>
+                <a href="{% url 'contact-page' %}">Me contacter</a>
             {% endif %}
         </nav>
     </header>

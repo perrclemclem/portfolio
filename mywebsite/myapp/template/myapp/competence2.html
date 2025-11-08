@@ -1,0 +1,64 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>COMPÉTENCE 2</h1>
+{% endblock myheader %}
+
+{% block aside %}
+    <h2>Compétence 2 — Optimiser des applications</h2>
+    <p>Proposer des applications informatiques optimisées en fonction de critères spécifiques : 
+        temps d'exécution, précision, consommation de ressources… en formalisant et modélisant des 
+        situations complexes, en recensant les algorithmes et les structures de données usuels, 
+        en s'appuyant sur des schémas de raisonnement, et en justifiant les choix et validant les résultats.</p>
+{% endblock aside %}
+
+{% block content %}
+    <ol>
+        <ol>
+            <h4>A. Appréhender et construire des algorithmes</h4>
+
+            <li>
+                <h5>AC1 – Analyser un problème avec méthode</h5>
+                <p>Découper un problème en éléments algorithmiques simples et identifier les structures de données adaptées.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Comparer des algorithmes pour des problèmes classiques</h5>
+                <p>Évaluer et comparer différents algorithmes (par exemple pour le tri ou la recherche) selon leurs performances et leur complexité.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Formaliser et mettre en œuvre des outils mathématiques pour l’informatique</h5>
+                <p>Utiliser les outils mathématiques (logique, combinatoire, probabilités, graphes, etc.) pour modéliser et résoudre des problèmes informatiques.</p>
+                <hr>
+            </li>
+        </ol>
+
+        <ol>
+            <h4>B. Sélectionner les algorithmes adéquats pour répondre à un problème donné</h4>
+
+            <li>
+                <h5>AC1 – Choisir des structures de données complexes adaptées au problème</h5>
+                <p>Sélectionner et utiliser des structures comme les arbres, graphes, ou tables de hachage selon le contexte et les besoins du projet.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Utiliser des techniques algorithmiques adaptées pour des problèmes complexes</h5>
+                <p>Appliquer des méthodes avancées (recherche opérationnelle, optimisation globale, intelligence artificielle, etc.) pour concevoir des solutions efficaces.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Comprendre les enjeux et moyens de sécurisation des données et du code</h5>
+                <p>Identifier les vulnérabilités potentielles et mettre en œuvre des techniques de sécurisation adaptées (chiffrement, authentification, contrôle d’accès…).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC4 – Évaluer l’impact environnemental et sociétal des solutions proposées</h5>
+                <p>Analyser la consommation de ressources et les effets des choix technologiques sur l’environnement et la société, pour adopter des pratiques responsables.</p>
+                <hr>
+            </li>
+        </ol>
+    </ol>
+{% endblock content %}

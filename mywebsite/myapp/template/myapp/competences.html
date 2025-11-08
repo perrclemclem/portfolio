@@ -1,0 +1,38 @@
+{% extends 'myapp/base.html' %} 
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>COMPÉTENCES</h1>
+{% endblock myheader %}
+
+{% block aside %}
+    <h2>Compétences</h2>
+    <p>A rédiger</p>
+{% endblock aside %}
+
+{% block content %}
+    <h2 class="text-center">Mes compétences</h2>
+    <ul class="d-flex flex-column justify-content-center d-inline list-unstyled">
+        <li class="mx-auto">
+            <a class="btn-competence" href="{% url 'competence1-page' %}">
+                <h3 class="txt-btn-competences" >Compétence 1 — Réaliser un développement d’application</h3>
+            </a>
+        </li>
+        <li class="mx-auto">
+            <a class="btn-competence" href="{% url 'competence2-page' %}">
+                <h3 class="txt-btn-competences" >Compétence 2 — Optimiser des applications</h3>
+            </a>
+        </li>
+        <li class="mx-auto">
+            <a class="btn-competence" href="{% url 'competence3-page' %}">
+                <h3 class="txt-btn-competences" >Compétence 3 — Administrer des systèmes informatiques communicants complexes</h3>
+            </a>
+        </li>
+        <li class="mx-auto">
+            <a class="btn-competence" href="{% url 'competence4-page' %}">
+                <h3 class="txt-btn-competences" >Compétence 4 — Gérer des données de l’information</h3>
+            </a>
+        </li>
+    </ul>
+{% endblock content %}

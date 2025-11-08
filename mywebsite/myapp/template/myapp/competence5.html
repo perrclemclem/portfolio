@@ -1,0 +1,96 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>COMPÉTENCE 5</h1>
+{% endblock myheader %}
+
+{% block aside %}
+    <h2>Compétence 5 — Conduire un projet</h2>
+    <p>Organiser, piloter et suivre un projet informatique afin de satisfaire les besoins des utilisateurs et 
+        de la chaîne de valeur du client. Cette compétence inclut la communication efficace avec les acteurs du projet, 
+        le respect des normes et règles juridiques, ainsi qu’une gestion éthique, responsable, durable et interculturelle 
+        du projet. Elle mobilise des méthodes classiques ou agiles selon le contexte.</p>
+{% endblock aside %}
+
+{% block content %}
+    <ol>
+        <ol>
+            <h4>A. Identifier les besoins métiers des clients et des utilisateurs</h4>
+
+            <li>
+                <h5>AC1 – Appréhender les besoins du client et de l’utilisateur</h5>
+                <p>Recueillir et analyser les attentes fonctionnelles et techniques des clients et utilisateurs 
+                    pour bien comprendre les objectifs du projet et définir les priorités.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Mettre en place les outils de gestion de projet</h5>
+                <p>Configurer et utiliser des outils de planification et de suivi (Jira, Trello, Gantt, 
+                    tableaux de bord) pour organiser les tâches et coordonner les équipes.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Identifier les acteurs et les différentes phases d’un cycle de développement</h5>
+                <p>Reconnaître les rôles clés (chef de projet, développeur, client, testeur, etc.) et 
+                    comprendre les différentes étapes d’un projet informatique : conception, développement, test, 
+                    déploiement et maintenance.</p>
+                <hr>
+            </li>
+        </ol>
+
+        <ol>
+            <h4>B. Appliquer une démarche de suivi de projet en fonction des besoins métiers</h4>
+
+            <li>
+                <h5>AC1 – Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information</h5>
+                <p>Analyser le fonctionnement d’une entreprise pour repérer les opportunités d’amélioration 
+                    grâce à l’intégration ou l’évolution d’outils informatiques.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Formaliser les besoins du client et de l’utilisateur</h5>
+                <p>Produire des documents de spécifications clairs (diagrammes, maquettes, cahier des charges) 
+                    traduisant les besoins exprimés en exigences fonctionnelles et techniques.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Identifier les critères de faisabilité d’un projet informatique</h5>
+                <p>Évaluer la faisabilité technique, financière, temporelle et juridique du projet afin 
+                    d’en garantir la réussite avant son lancement.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC4 – Définir et mettre en œuvre une démarche de suivi de projet</h5>
+                <p>Mettre en place une méthodologie adaptée (agile, cycle en V, Scrum…) pour planifier, 
+                    suivre et ajuster les activités tout au long du projet.</p>
+                <hr>
+            </li>
+        </ol>
+
+        <!-- A venir: Pour la troisième année de BUT !
+        <ol>
+            <h4>C. Participer à la conception et à la mise en œuvre d’un projet système d’information</h4>
+
+            <li>
+                <h5>AC1 – Mesurer les impacts économiques, sociétaux et technologiques d’un projet informatique</h5>
+                <p>Évaluer les coûts, les bénéfices, les risques et les conséquences sociales ou écologiques 
+                    des choix technologiques liés au projet.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Savoir intégrer un projet informatique dans le système d’information d’une organisation</h5>
+                <p>Comprendre comment le projet s’intègre à l’écosystème numérique existant de l’entreprise 
+                    (applications, bases de données, réseaux, etc.).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Savoir adapter un système d’information</h5>
+                <p>Faire évoluer un système d’information existant pour répondre à de nouveaux besoins, 
+                    améliorer ses performances ou renforcer sa sécurité.</p>
+                <hr>
+            </li>
+        </ol>-->
+    </ol>
+{% endblock content %}

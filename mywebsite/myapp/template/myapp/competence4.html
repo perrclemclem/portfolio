@@ -1,0 +1,72 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>COMPÉTENCE 4</h1>
+{% endblock myheader %}
+
+{% block aside %}
+    <h2>Compétence 4 — Gérer des données de l’information</h2>
+    <p>Concevoir, gérer, administrer et exploiter les données de l’entreprise afin de mettre à disposition 
+        toutes les informations nécessaires au bon pilotage de l’organisation. 
+        Cette compétence implique le respect des réglementations sur la vie privée et la protection des données, 
+        la prise en compte des enjeux économiques, sociétaux et écologiques liés au stockage, 
+        ainsi que la garantie de la cohérence et de la qualité des informations manipulées.</p>
+{% endblock aside %}
+
+{% block content %}
+    <ol>
+        <ol>
+            <h4>A. Concevoir et mettre en place une base de données à partir d’un cahier des charges client</h4>
+
+            <li>
+                <h5>AC1 – Mettre à jour et interroger une base de données relationnelle</h5>
+                <p>Utiliser le langage SQL pour interroger et modifier des données (SELECT, INSERT, UPDATE, DELETE), 
+                    soit directement, soit à travers une application connectée à la base de données.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Visualiser des données</h5>
+                <p>Présenter les informations de manière lisible et exploitable grâce à des outils de visualisation 
+                    (tableaux de bord, graphiques, rapports dynamiques, etc.).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Concevoir une base de données relationnelle à partir d’un cahier des charges</h5>
+                <p>Analyser les besoins du client, créer un modèle conceptuel de données (MERISE, UML), 
+                    le traduire en schéma relationnel et implémenter la structure dans un SGBD.</p>
+                <hr>
+            </li>
+        </ol>
+
+        <ol>
+            <h4>B. Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</h4>
+
+            <li>
+                <h5>AC1 – Optimiser les modèles de données de l’entreprise</h5>
+                <p>Analyser la performance des requêtes, créer des index, 
+                    revoir la conception du schéma et ajuster les structures de données pour améliorer la rapidité et la fiabilité du système.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Assurer la confidentialité des données (intégrité et sécurité)</h5>
+                <p>Mettre en place des mécanismes de sécurité : droits d’accès, chiffrement, audit, sauvegardes, 
+                    et conformité aux réglementations (RGPD, CNIL).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Organiser la restitution de données à travers la programmation et la visualisation</h5>
+                <p>Développer des applications ou interfaces qui extraient, transforment et présentent les données de manière claire 
+                    et utile pour la prise de décision (dashboards, rapports dynamiques, APIs de consultation, etc.).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC4 – Manipuler des données hétérogènes</h5>
+                <p>Intégrer et gérer différents types de données (relationnelles, NoSQL, JSON, XML, flux temps réel, etc.) 
+                    pour les rendre cohérentes et exploitables dans un même système d’information.</p>
+                <hr>
+            </li>
+        </ol>
+    </ol>
+{% endblock content %}

@@ -1,0 +1,71 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>COMPÉTENCE 3</h1>
+{% endblock myheader %}
+
+{% block aside %}
+    <h2>Compétence 3 — Administrer des systèmes informatiques communicants complexes</h2>
+    <p>Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, 
+        des services et des réseaux, et optimiser le système informatique d'une organisation.
+        Tout cela en sécurisant le système d'information, en appliquant les normes et bonnes pratiques 
+        architecturales et de sécurité, et en garantissant la continuité d'activité et la qualité de service.</p>
+{% endblock aside %}
+
+{% block content %}
+    <ol>
+        <ol>
+            <h4>A. Installer et configurer un poste de travail</h4>
+
+            <li>
+                <h5>AC1 – Identifier les différents composants (matériels et logiciels) d’un système numérique</h5>
+                <p>Reconnaître les éléments matériels (processeur, mémoire, disque, carte réseau…) et logiciels 
+                    (système d’exploitation, pilotes, applications) d’un poste informatique et comprendre leurs interactions.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Utiliser les fonctionnalités de base d’un système multitâches / multiutilisateurs</h5>
+                <p>Utiliser les principales commandes et fonctionnalités des systèmes d’exploitation modernes 
+                    (gestion des utilisateurs, processus, fichiers, et permissions).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Installer et configurer un système d’exploitation et des outils de développement</h5>
+                <p>Mettre en place un environnement de travail complet : installation d’un OS (Linux, Windows), 
+                    des IDE, compilateurs, et utilitaires nécessaires au développement.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC4 – Configurer un poste de travail dans un réseau d’entreprise</h5>
+                <p>Paramétrer l’accès réseau (adresse IP, DNS, passerelle), rejoindre un domaine, 
+                    et assurer la communication sécurisée avec les autres machines du réseau.</p>
+                <hr>
+            </li>
+        </ol>
+
+        <ol>
+            <h4>B. Déployer des services dans une architecture réseau</h4>
+
+            <li>
+                <h5>AC1 – Concevoir et développer des applications communicantes</h5>
+                <p>Créer des applications capables d’échanger des données à travers un réseau 
+                    (client/serveur, API REST, communication entre objets connectés, etc.).</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC2 – Utiliser des serveurs et des services réseaux virtualisés</h5>
+                <p>Mettre en place et gérer des serveurs (web, base de données, DNS, etc.) 
+                    et utiliser la virtualisation (VM, conteneurs, cloud) pour les déployer efficacement.</p>
+                <hr>
+            </li>
+            <li>
+                <h5>AC3 – Sécuriser les services et données d’un système</h5>
+                <p>Appliquer les principes de cybersécurité : chiffrement, pare-feu, sauvegardes, 
+                    authentification et autorisation, afin de protéger les données et les services d’une organisation.</p>
+                <hr>
+            </li>
+        </ol>
+    </ol>
+{% endblock content %}
