@@ -4,23 +4,22 @@
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
     <h1>My portfolio</h1>
-
-    {% if user.profile.usertypr == 'vvip' %}
-        <center> 15% Discount for VIP member </center>
-    {% elif user.profile.usertypr == 'vip' %}
-        <center> 10% Discount for VIP member </center>
-    {% elif user.profile.usertypr == 'member' %}
-        <center> 5% Discount for VIP member </center>
-    {% endif %}
 {% endblock myheader %}
 
+{% block aside %}
+    <img src="{% static 'image/photo_profil_linkedin.jpg' %}" alt="photo Clem">
+    <h4>My profile</h4>
+    <p>This is me !</p>
+{% endblock aside %}
+
 {% block content %}
+    <h2>Portfolio Clémence Perraudin</h2>
     <div class="container mb-4 text-center"> 
         {% for row in allrow %}
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 {% for c in row %}
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card card_me" style="width: 18rem;">
                         {% if c.picture %}
                             <img src="{{c.picture.url}}" class="card-img-top" width="200" height="300">
                         {% endif %}
@@ -32,7 +31,7 @@
                                     specfile : <a href="{{c.specfile.url}}">Download</a>
                                 {% endif %}
                             </p>
-                            <a href="#" class="btn btn-primary">More details</a>
+                            <a href="#" class="btn btn-bd-primary">More details</a>
                         </div>
                     </div>
                 </div>
@@ -40,8 +39,8 @@
             </div>
         {% endfor %}
     </div>
-    <hr>
-    <ul class="pagination">
+    <hr class="mx-2">
+    <ul class="pagination mx-4">
         {% if allproduct.has_previous and allproduct.has_next != True %}
             <li class="page-item"><a class="page-link" 
                 href="?page={{allproduct.previous_page_number}}"> < </a></li>
@@ -78,7 +77,7 @@
         {% endif %}
 
     </ul>
-    <p> page {{allproduct.number}} from {{allproduct.paginator.num_pages}} </p>
+    <p class="mx-4"> Page {{allproduct.number}} from {{allproduct.paginator.num_pages}} </p>
 {% endblock content %}
 
 
