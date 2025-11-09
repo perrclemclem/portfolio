@@ -16,5 +16,6 @@ urlpatterns = [
     path('competence1/', competence1, name="competence1-page"),
     path('competence2/', competence2, name="competence2-page"),
     path('competence3/', competence3, name="competence3-page"),
-    path('competence4/', competence4, name="competence4-page")
+    path('competence4/', competence4, name="competence4-page"),
+    path('cv/', cv, name="cv-page"),
 ]

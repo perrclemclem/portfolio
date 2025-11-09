@@ -287,6 +287,9 @@ def addProduct(request):
 def competences(request):
     return render(request, 'myapp/competences.html')
 
+def cv(request):
+    return render(request, 'myapp/cv.html')
+
 def competence1(request):
     return render(request, 'myapp/competence1.html')
 
