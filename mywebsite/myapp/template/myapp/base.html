@@ -63,9 +63,9 @@
                 <img src="{% static 'image/photo_profil_linkedin.jpg' %}" alt="photo Clem">
                 <span>Portfolio</span>
             </a>
-            {% if perms.myapp.add_product or user.is_staff or user.is_superuser %}
+            {% if perms.myapp.add_project or user.is_staff or user.is_superuser %}
                 <a href="{% url 'showcontact-page' %}">Show contact</a>
-                <a href="{% url 'addproduct-page' %}">Add project</a>
+                <a href="{% url 'addproject-page' %}">Add project</a>
             {% else %}
                 <a href="#">Projets</a>
                 <a href="{% url 'competences-page' %}">Compétences</a>

@@ -3,13 +3,12 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-class Product(models.Model):
+class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(null=True, blank=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2, \
-        null=True, blank=True)
-    quantity = models.IntegerField(null=True, blank=True)
-    inslock = models.BooleanField(default=True)
+    time = models.DurationField()
+    code = models.TextField(null=True, blank=True)
+    link = models.TextField(null=True, blank=True)
     #file
     picture = models.ImageField(upload_to="product", null=True, blank=True)
     specfile = models.FileField(upload_to="specfile", null=True, blank=True)

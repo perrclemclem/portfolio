@@ -6,23 +6,24 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.core.files.storage import FileSystemStorage
 from django.core.paginator import Paginator
+from datetime import timedelta
 
 # Create your views here.
 
 def home(request):
     """Shows the home page"""
-    allproduct = Product.objects.all()
-    product_per_page = 3
-    paginator = Paginator(allproduct, product_per_page)
+    allproject = Project.objects.all()
+    project_per_page = 3
+    paginator = Paginator(allproject, project_per_page)
     page = request.GET.get('page')
-    allproduct = paginator.get_page(page)
+    allproject = paginator.get_page(page)
 
-    context = {'allproduct': allproduct}
+    context = {'allproject': allproject}
 
     # 1 row 3 cols
     allrow = []
     row = []
-    for i, p in enumerate(allproduct):
+    for i, p in enumerate(allproject):
         if i % 3 == 0:
             if i != 0:
                 allrow.append(row)
@@ -227,41 +228,37 @@ def actionPage(request, cid):
         
     return render(request, 'myapp/action.html', context)
 
-def addProduct(request):
+def addProject(request):
     """
-    Shows add product page 
+    Shows add project page 
     (only if user is an admin and is already logged in)
-    if user fills all the information and clicks on the add product button, 
-    the product is added to the database with an eventual image and other file.
+    if user fills all the information and clicks on the add project button, 
+    the project is added to the database with an eventual image and other file.
     """
     if request.method == 'POST':
         data = request.POST.copy()
         title = data.get('title')
         description = data.get('description')
-        price = data.get('price')
-        quantity = data.get('quantity')
-        instock = data.get('instock')
+        time = data.get('time')
+        code = data.get('code')
+        link = data.get('link')
 
-        new = Product()
+        new = Project()
         new.title = title
-        new.descrition = description
-        new.price = float(price)
-        new.quantity = int(quantity)
-
-        if instock == "instock":
-            new.instock = True
-        else:
-            new.instock = False
+        new.description = description
+        new.time = timedelta(hours=int(time))
+        new.code = code
+        new.link = link
 
         if 'picture' in request.FILES:
             file_image = request.FILES['picture']
             file_image_name = file_image.name.replace(' ', '')
             # File system: from django.core.files.storage import FileSystemStorage
-            fs = FileSystemStorage(location='media/product')
+            fs = FileSystemStorage(location='media/project')
             filename = fs.save(file_image_name, file_image)
             upload_file_url = fs.url(filename)
             print('Picture url:', upload_file_url)
-            new.picture = 'product' + upload_file_url[6:]
+            new.picture = 'project' + upload_file_url[6:]
 
         if 'specfile' in request.FILES:
             file_specfile = request.FILES['specfile']
@@ -271,18 +268,18 @@ def addProduct(request):
             filename = fs.save(file_specfile_name, file_specfile)
             upload_file_url = fs.url(filename)
             print('Picture url:', upload_file_url)
-            new.specfile = 'product' + upload_file_url[6:]
+            new.specfile = 'project' + upload_file_url[6:]
 
         new.save()
 
         print(title)
         print(description)
-        print(price)
-        print(quantity)
-        print(instock)
+        print(time)
+        print(code)
+        print(link)
         print('File:', request.FILES)
 
-    return render(request, 'myapp/addproduct.html')
+    return render(request, 'myapp/addproject.html')
 
 def competences(request):
     return render(request, 'myapp/competences.html')

@@ -25,7 +25,7 @@
                         {% endif %}
                         <div class="card-body">
                             <h5 class="card-title">{{ c.title }}</h5>
-                            <p class="card-text"> {{ c.price }} hours</p>
+                            <p class="card-text"> {{ c.time }} hours</p>
                             <p>
                                 {% if c.specfile %}
                                     specfile : <a href="{{c.specfile.url}}">Download</a>
@@ -41,43 +41,43 @@
     </div>
     <hr class="mx-2">
     <ul class="pagination mx-4">
-        {% if allproduct.has_previous and allproduct.has_next != True %}
+        {% if allproject.has_previous and allproject.has_next != True %}
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.previous_page_number}}"> < </a></li>
+                href="?page={{allproject.previous_page_number}}"> < </a></li>
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.number|add:-1}}">{{allproduct.number|add:-1}}</a></li>
+                href="?page={{allproject.number|add:-1}}">{{allproject.number|add:-1}}</a></li>
             <li class="page-item active"><a class="page-link" 
-                href="?page={{allproduct.number}}">{{allproduct.number}}</a></li>
+                href="?page={{allproject.number}}">{{allproject.number}}</a></li>
         {% endif %}
 
-        {% if allproduct.has_previous and allproduct.has_next%}
+        {% if allproject.has_previous and allproject.has_next%}
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.previous_page_number}}"> < </a></li>
+                href="?page={{allproject.previous_page_number}}"> < </a></li>
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.number|add:-1}}">{{allproduct.number|add:-1}}</a></li>
+                href="?page={{allproject.number|add:-1}}">{{allproject.number|add:-1}}</a></li>
             <li class="page-item active"><a class="page-link" 
-                href="?page={{allproduct.number}}">{{allproduct.number}}</a></li>
+                href="?page={{allproject.number}}">{{allproject.number}}</a></li>
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.number|add:1}}">{{allproduct.number|add:1}}</a></li>
+                href="?page={{allproject.number|add:1}}">{{allproject.number|add:1}}</a></li>
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.next_page_number}}">{{allproduct.next_page_number}}</a></li> 
+                href="?page={{allproject.next_page_number}}">{{allproject.next_page_number}}</a></li> 
         {% endif %}
 
-        {% if allproduct.has_next and allproduct.has_previous != True %}
+        {% if allproject.has_next and allproject.has_previous != True %}
             <li class="page-item active"><a class="page-link" 
-                href="?page={{allproduct.number}}">{{allproduct.number}}</a></li>
+                href="?page={{allproject.number}}">{{allproject.number}}</a></li>
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.number|add:1}}">{{allproduct.number|add:1}}</a></li>
-            {% if allproduct.num_pages > 2 %}
+                href="?page={{allproject.number|add:1}}">{{allproject.number|add:1}}</a></li>
+            {% if allproject.num_pages > 2 %}
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.number|add:2}}">{{allproduct.number|add:2}}</a></li>
+                href="?page={{allproject.number|add:2}}">{{allproject.number|add:2}}</a></li>
             {% endif %}
             <li class="page-item"><a class="page-link" 
-                href="?page={{allproduct.next_page_number}}"> > </a></li> 
+                href="?page={{allproject.next_page_number}}"> > </a></li> 
         {% endif %}
 
     </ul>
-    <p class="mx-4"> Page {{allproduct.number}} from {{allproduct.paginator.num_pages}} </p>
+    <p class="mx-4"> Page {{allproject.number}} from {{allproject.paginator.num_pages}} </p>
 {% endblock content %}
 
 
