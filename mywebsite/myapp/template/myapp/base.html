@@ -67,7 +67,7 @@
                 <a href="{% url 'showcontact-page' %}">Show contact</a>
                 <a href="{% url 'addproject-page' %}">Add project</a>
             {% else %}
-                <a href="#">Projets</a>
+                <a href="{% url 'project-page' 1 %}">Projets</a>
                 <a href="{% url 'competences-page' %}">Compétences</a>
                 <a href="{% url 'cv-page' %}">CV</a>
                 <a href="{% url 'contact-page' %}">Me contacter</a>

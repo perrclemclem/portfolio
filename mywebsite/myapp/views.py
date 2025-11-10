@@ -298,3 +298,11 @@ def competence3(request):
 
 def competence4(request):
     return render(request, 'myapp/competence4.html')
+
+def projectPage(request, cid):
+    """Project something something"""
+    # cid = contactlist ID
+    context = {}
+    contact = Project.objects.get(id=cid)
+    context['contact'] = contact
+    return render(request, 'myapp/projet.html', context)

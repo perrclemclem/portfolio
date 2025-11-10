@@ -18,4 +18,5 @@ urlpatterns = [
     path('competence3/', competence3, name="competence3-page"),
     path('competence4/', competence4, name="competence4-page"),
     path('cv/', cv, name="cv-page"),
+    path('projet/<int:cid>/', projectPage, name="project-page"),
 ]

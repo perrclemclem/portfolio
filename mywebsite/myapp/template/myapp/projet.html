@@ -1,0 +1,31 @@
+{% extends 'myapp/base.html' %} 
+{% load static %}
+
+{% block myheader %}
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+    <h1>PROJETS</h1>
+{% endblock myheader %}
+
+{% block aside %}
+    <h2 class="mb-3">{{contact.title}}</h2>
+    <!--<p>{{ contact.time }} hours</p>-->
+    <p class="mb-3 text-center">{{contact.description}}</p>
+    {% if contact.specfile %}
+        <a href="{{contact.specfile.url}}" class="btn btn-bd-primary">Télécharger le document</a>
+    {% endif %}
+{% endblock aside %}
+
+{% block content %}
+
+    {% if contact.picture %}
+        <img src="{{contact.picture.url}}">
+    {% endif %}
+
+    {% if contact.code != '' %}
+        <a href="#" class="btn btn-bd-primary align-self-center">Consulter le code</a>
+    {% endif %}
+    {% if contact.link != '' %}
+        <a href="{{contact.link}}" class="btn btn-bd-primary align-self-center">Voir le résultat</a>
+    {% endif %}
+
+{% endblock content %}
