@@ -58,21 +58,32 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="pe-2">
+            <!-- Boutons visibles uniquement sur mobile -->
+            <div class="mobile-buttons">
+                <button id="menu-toggle" class="toggle-btn">☰</button>
+                <button id="aside-toggle" class="toggle-btn">🗂️</button>
+            </div>
+        
+            <!-- Logo + titre -->
             <a href="/" class="nav-brand">
                 <img src="{% static 'image/photo_profil_linkedin.jpg' %}" alt="photo Clem">
                 <span>Portfolio</span>
             </a>
-            {% if perms.myapp.add_project or user.is_staff or user.is_superuser %}
-                <a href="{% url 'showcontact-page' %}">Show contact</a>
-                <a href="{% url 'addproject-page' %}">Add project</a>
-            {% else %}
-                <a href="{% url 'project-page' 1 %}">Projets</a>
-                <a href="{% url 'competences-page' %}">Compétences</a>
-                <a href="{% url 'cv-page' %}">CV</a>
-                <a href="{% url 'contact-page' %}">Me contacter</a>
-            {% endif %}
-        </nav>
+        
+            <!-- Liens de navigation -->
+            <div class="nav-links">
+                {% if perms.myapp.add_project or user.is_staff or user.is_superuser %}
+                    <a href="{% url 'showcontact-page' %}">Show contact</a>
+                    <a href="{% url 'addproject-page' %}">Add project</a>
+                {% else %}
+                    <a href="{% url 'project-page' 1 %}">Projets</a>
+                    <a href="{% url 'competences-page' %}">Compétences</a>
+                    <a href="{% url 'cv-page' %}">CV</a>
+                    <a href="{% url 'contact-page' %}" class="pe-0">Me contacter</a>
+                {% endif %}
+            </div>
+        </nav>        
     </header>
 
     <div class="page-wrapper">
@@ -128,6 +139,17 @@
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         class="astro-vvvwv3sm"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+            
+        document.getElementById('aside-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('open');
+        });
+    </script>
+            
+            
 </body>
 
 </html>
