@@ -3,13 +3,15 @@
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
-    <h1>My portfolio</h1>
+    <h1>{% trans "My portfolio" %}</h1>
 {% endblock myheader %}
 
 {% block aside %}
     <img src="{% static 'image/photo_profil_linkedin.jpg' %}" alt="photo Clem">
+    {% blocktrans %}
     <h4>My profile</h4>
     <p>This is me !</p>
+    {% endblocktrans %}
 {% endblock aside %}
 
 {% block content %}
@@ -28,10 +30,10 @@
                             <p class="card-text"> {{ c.time }} hours</p>
                             <p>
                                 {% if c.specfile %}
-                                    specfile : <a href="{{c.specfile.url}}">Download</a>
+                                    specfile : <a href="{{c.specfile.url}}">{% trans "Download" %}</a>
                                 {% endif %}
                             </p>
-                            <a href="#" class="btn btn-bd-primary">More details</a>
+                            <a href="#" class="btn btn-bd-primary">{% trans "More details" %}</a>
                         </div>
                     </div>
                 </div>

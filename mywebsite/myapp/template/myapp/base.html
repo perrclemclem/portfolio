@@ -77,10 +77,10 @@
                     <a href="{% url 'showcontact-page' %}">Show contact</a>
                     <a href="{% url 'addproject-page' %}">Add project</a>
                 {% else %}
-                    <a href="{% url 'project-page' 1 %}">Projets</a>
-                    <a href="{% url 'competences-page' %}">Compétences</a>
+                    <a href="{% url 'project-page' 1 %}">{% trans "Projets" %}</a>
+                    <a href="{% url 'competences-page' %}">{% trans "Compétences" %}</a>
                     <a href="{% url 'cv-page' %}">CV</a>
-                    <a href="{% url 'contact-page' %}" class="pe-0">Me contacter</a>
+                    <a href="{% url 'contact-page' %}" class="pe-0">{% trans "Me contacter" %}</a>
                 {% endif %}
             </div>
         </nav>        
@@ -105,7 +105,7 @@
     <footer class="border-top">
         <div class="row">
             <div class="col-12 col-md"> <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt=""
-                    width="24" height="19"> <small class="d-block mb-3 text-body-secondary">&copy; 2017–2025</small>
+                    width="24" height="19"> <small class="d-block mb-3 text-body-secondary">&copy; 2025-2026</small>
             </div>
             <div class="col-6 col-md">
                 <h5>Features</h5>

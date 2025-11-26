@@ -3,14 +3,16 @@
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
-    <h1>COMPÉTENCE 1</h1>
+    <h1>{% trans "COMPÉTENCE" %} 1</h1>
 {% endblock myheader %}
 
 {% block aside %}
+    {% blocktrans %}
     <h2>Compétence 1 — Réaliser un développement d’application</h2>
     <p>Développer — c'est-à-dire concevoir, coder, tester et intégrer — une solution informatique 
         pour un client, en respectant les besoins décrits, en appliquant les principes algorithmiques, 
         en veillant à la qualité du code et à sa documentation, et en choisissant les ressources techniques appropriées.</p>
+    {% endblocktrans %}
 {% endblock aside %}
 
 {% block content %}
@@ -19,31 +21,43 @@
             <h4>A. Développer des applications informatiques simples</h4>
 
             <li>
+                {% blocktrans %}
                 <h5>AC1 – Implémenter des conceptions simples</h5>
                 <p>Traduire une conception simple (diagrammes, schémas, algorithmes) en code exécutable.</p>
+                {% endblocktrans %}
                 <img src="">
                 <hr>
             </li>
             <li>
+                {% blocktrans %}
                 <h5>AC2 – Élaborer des conceptions simples</h5>
                 <p>Concevoir une solution à partir d’un problème donné, en utilisant des modèles simples (par ex. diagrammes UML).</p>
+                {% endblocktrans %}
                 <hr>
             </li>
             <li>
+                {% blocktrans %}
                 <h5>AC3 – Faire des essais et évaluer leurs résultats en regard des spécifications</h5>
+                {% endblocktrans %}
                 <hr>
             </li>
             <li>
+                {% blocktrans %}
                 <h5>AC4 – Développer des interfaces utilisateurs</h5>
+                {% endblocktrans %}
                 <hr>
             </li>
         </ol>
 
         <ol>
+            {% blocktrans %}
             <h4>B. Partir des exigences et aller jusqu’à une application complète</h4>
+            {% endblocktrans %}
 
             <li>
+                {% blocktrans %}
                 <h5>AC1 – Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</h5>
+                {% endblocktrans %}
                 <p></p>
                 <pre>
                     <code>
@@ -94,16 +108,22 @@
                 <hr>
             </li>
             <li>
+                {% blocktrans %}
                 <h5>AC2 – Appliquer des principes d’accessibilité et d’ergonomie</h5>
+                {% endblocktrans %}
                 <p></p>
                 <hr>
             </li>
             <li>
+                {% blocktrans %}
                 <h5>AC3 – Adopter de bonnes pratiques de conception et de programmation</h5>
+                {% endblocktrans %}
                 <hr>
             </li>
             <li>
+                {% blocktrans %}
                 <h5>AC4 – Vérifier et valider la qualité de l’application par les tests</h5>
+                {% endblocktrans %}
                 <hr>
             </li>
         </ol>

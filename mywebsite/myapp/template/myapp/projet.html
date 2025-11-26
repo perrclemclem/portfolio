@@ -3,15 +3,17 @@
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
-    <h1>PROJETS</h1>
+    <h1>{% trans "PROJETS" %}</h1>
 {% endblock myheader %}
 
 {% block aside %}
+    {% blocktrans %}
     <h2 class="mb-3">{{contact.title}}</h2>
     <!--<p>{{ contact.time }} hours</p>-->
     <p class="mb-3 text-center">{{contact.description}}</p>
+    {% endblocktrans %}
     {% if contact.specfile %}
-        <a href="{{contact.specfile.url}}" class="btn btn-bd-primary">Télécharger le document</a>
+        <a href="{{contact.specfile.url}}" class="btn btn-bd-primary">{% trans "Télécharger le document" %}</a>
     {% endif %}
 {% endblock aside %}
 
@@ -22,10 +24,10 @@
     {% endif %}
 
     {% if contact.code != '' %}
-        <a href="#" class="btn btn-bd-primary align-self-center">Consulter le code</a>
+        <a href="#" class="btn btn-bd-primary align-self-center">{% trans "Consulter le code" %}</a>
     {% endif %}
     {% if contact.link != '' %}
-        <a href="{{contact.link}}" class="btn btn-bd-primary align-self-center">Voir le résultat</a>
+        <a href="{{contact.link}}" class="btn btn-bd-primary align-self-center">{% trans "Voir le résultat" %}</a>
     {% endif %}
 
 {% endblock content %}

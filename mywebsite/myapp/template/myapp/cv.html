@@ -3,11 +3,12 @@
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
-    <h1>Mon CV</h1>
+    <h1>{% trans "Mon CV" %}</h1>
 {% endblock myheader %}
 
 {% block aside %}
     <img src="{% static 'image/photo_profil_linkedin.jpg' %}" alt="photo Clem">
+    {% blocktrans %}
     <h2 class="text-start">PROFILE</h2>
     <p class="text-start">Je suis étudiante en deuxième année de BUT informatique. 
         Curieuse, rigoureuse et créative, j’aime  développer des solutions efficaces et intuitives.</p>
@@ -25,9 +26,11 @@
     <h2 class="text-start">LOISIRS</h2>
     <p class="text-start"><strong>Lecture:</strong> Romans, Webtoons</p>
     <p class="text-start"><strong>Jeux vidéos:</strong> Genshin impact, Zelda: Breath of the wild</p>
+    {% endblocktrans %}
 {% endblock aside %}
 
 {% block content %}
+    {% blocktrans %}
     <h3>FORMATION / DIPLÔME</h3>
     <h5 class="mb-0">BUT INFORMATIQUE - 2EME ANNEE</h5>
     <p class="mb-2">IUT de Bayonne et du Pays Basque à Anglet
@@ -66,4 +69,5 @@
     <h3>LANGUES</h3>
     <p><strong>Français:</strong> langue maternelle</p>
     <p><strong>Anglais:</strong> courant (écrit et oral) C1</p>
+    {% endblocktrans %}
 {% endblock content %}
