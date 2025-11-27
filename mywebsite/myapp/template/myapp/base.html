@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="Clémence Perraudin">
     <meta name="generator" content="Astro v5.9.2">
-    <title>My portfolio</title>
+    <title>{% trans "My portfolio" %}</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
     <script src="/docs/5.3/assets/js/color-modes.js"></script>
     <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -58,7 +59,7 @@
 
 <body>
     <header>
-        <nav class="pe-2">
+        <nav class="main-nav pe-2">
             <!-- Boutons visibles uniquement sur mobile -->
             <div class="mobile-buttons">
                 <button id="menu-toggle" class="toggle-btn">☰</button>
@@ -139,6 +140,7 @@
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         class="astro-vvvwv3sm"></script>
+    <script src="{% static 'js/myJS.js' %}"></script>
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('open');
