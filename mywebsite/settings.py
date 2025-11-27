@@ -81,9 +81,8 @@ WSGI_APPLICATION = 'mywebsite.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get('postgresql://portfolio_riav_user:HvDkzflxYVmHWvwFsqENQZOR6mVOcdQ0@dpg-d4k76j6uk2gs73fm6qag-a/portfolio_riav'),
-        conn_max_age=600
+    "default": dj_database_url.config(
+        default=os.environ.get("DATABASE_URL")
     )
 }
 
