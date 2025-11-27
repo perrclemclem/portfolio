@@ -4,6 +4,7 @@ dj-database-url==3.0.1
 Django==5.2.5
 filelock==3.19.1
 git-filter-repo==2.47.0
+gunicorn==23.0.0
 pillow==11.3.0
 platformdirs==4.3.8
 psycopg>=3.2.13
