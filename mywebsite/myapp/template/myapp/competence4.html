@@ -1,5 +1,6 @@
-{% extends 'myapp/base.html' %}
+{% extends 'myapp/base.html' %} 
 {% load static %}
+{% load i18n %}
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
@@ -7,86 +8,165 @@
 {% endblock myheader %}
 
 {% block aside %}
-    {% blocktrans %}
-    <h2>Compétence 4 — Gérer des données de l’information</h2>
-    <p>Concevoir, gérer, administrer et exploiter les données de l’entreprise afin de mettre à disposition 
-        toutes les informations nécessaires au bon pilotage de l’organisation. 
-        Cette compétence implique le respect des réglementations sur la vie privée et la protection des données, 
-        la prise en compte des enjeux économiques, sociétaux et écologiques liés au stockage, 
-        ainsi que la garantie de la cohérence et de la qualité des informations manipulées.</p>
-    {% endblocktrans %}
+
+<h2>{% trans "Compétence 4 — Gérer des données de l’information" %}</h2>
+
+<p>
+{% blocktrans %}
+Concevoir, gérer, administrer et exploiter les données de l’entreprise afin de mettre à disposition 
+toutes les informations nécessaires au bon pilotage de l’organisation. 
+Cette compétence implique le respect des réglementations sur la vie privée et la protection des données, 
+la prise en compte des enjeux économiques, sociétaux et écologiques liés au stockage, 
+ainsi que la garantie de la cohérence et de la qualité des informations manipulées.
+{% endblocktrans %}
+</p>
+
+<nav class="toc">
+    <h3>{% trans "Sommaire" %}</h3>
+    <ul id="toc-list"></ul>
+</nav>
+
 {% endblock aside %}
 
 {% block content %}
-    <ol>
-        <ol>
-            {% blocktrans %}
-            <h4>A. Concevoir et mettre en place une base de données à partir d’un cahier des charges client</h4>
-            {% endblocktrans %}
 
-            <li>
-                {% blocktrans %}
-                <h5>AC1 – Mettre à jour et interroger une base de données relationnelle</h5>
-                <p>Utiliser le langage SQL pour interroger et modifier des données (SELECT, INSERT, UPDATE, DELETE), 
-                    soit directement, soit à travers une application connectée à la base de données.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC2 – Visualiser des données</h5>
-                <p>Présenter les informations de manière lisible et exploitable grâce à des outils de visualisation 
-                    (tableaux de bord, graphiques, rapports dynamiques, etc.).</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC3 – Concevoir une base de données relationnelle à partir d’un cahier des charges</h5>
-                <p>Analyser les besoins du client, créer un modèle conceptuel de données (MERISE, UML), 
-                    le traduire en schéma relationnel et implémenter la structure dans un SGBD.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-        </ol>
+<ol>
 
-        <ol>
-            {% blocktrans %}
-            <h4>B. Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</h4>
-            {% endblocktrans %}
+    <!-- SECTION A -->
+    <ol class="collapsible-section" id="A">
 
-            <li>
-                {% blocktrans %}
-                <h5>AC1 – Optimiser les modèles de données de l’entreprise</h5>
-                <p>Analyser la performance des requêtes, créer des index, 
-                    revoir la conception du schéma et ajuster les structures de données pour améliorer la rapidité et la fiabilité du système.</p>
-                {% endblocktrans %}
+        <button class="collapsible-btn">
+            {% trans "A. Concevoir et mettre en place une base de données à partir d’un cahier des charges client" %}
+        </button>
+
+        <div class="collapsible-content">
+
+            <li class="collapsible-section" id="ac1">
+                <button class="collapsible-btn">
+                    {% trans "AC1 – Mettre à jour et interroger une base de données relationnelle" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Utiliser le langage SQL pour interroger et modifier des données (SELECT, INSERT, UPDATE, DELETE), 
+                    soit directement, soit à travers une application connectée à la base de données.
+                    {% endblocktrans %}
+                    </p>
+                    <pre><code>
+SELECT cru, couleur, millesime FROM Vins
+JOIN Plats ON Plats.codeVinIdeal = Vins.code
+WHERE Plats.nom = 'Plateau de fruit de mer';
+                    </code></pre>
+                </div>
                 <hr>
             </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC2 – Assurer la confidentialité des données (intégrité et sécurité)</h5>
-                <p>Mettre en place des mécanismes de sécurité : droits d’accès, chiffrement, audit, sauvegardes, 
-                    et conformité aux réglementations (RGPD, CNIL).</p>
-                {% endblocktrans %}
+
+            <li class="collapsible-section" id="ac2">
+                <button class="collapsible-btn">
+                    {% trans "AC2 – Visualiser des données" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Présenter les informations de manière lisible et exploitable grâce à des outils de visualisation 
+                    (tableaux de bord, graphiques, rapports dynamiques, etc.).
+                    {% endblocktrans %}
+                    </p>
+                </div>
                 <hr>
             </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC3 – Organiser la restitution de données à travers la programmation et la visualisation</h5>
-                <p>Développer des applications ou interfaces qui extraient, transforment et présentent les données de manière claire 
-                    et utile pour la prise de décision (dashboards, rapports dynamiques, APIs de consultation, etc.).</p>
-                {% endblocktrans %}
+
+            <li class="collapsible-section" id="ac3">
+                <button class="collapsible-btn">
+                    {% trans "AC3 – Concevoir une base de données relationnelle à partir d’un cahier des charges" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Analyser les besoins du client, créer un modèle conceptuel de données (MERISE, UML), 
+                    le traduire en schéma relationnel et implémenter la structure dans un SGBD.
+                    {% endblocktrans %}
+                    </p>
+                </div>
                 <hr>
             </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC4 – Manipuler des données hétérogènes</h5>
-                <p>Intégrer et gérer différents types de données (relationnelles, NoSQL, JSON, XML, flux temps réel, etc.) 
-                    pour les rendre cohérentes et exploitables dans un même système d’information.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-        </ol>
+
+        </div>
     </ol>
+
+
+    <!-- SECTION B -->
+    <ol class="collapsible-section" id="B">
+
+        <button class="collapsible-btn">
+            {% trans "B. Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité" %}
+        </button>
+
+        <div class="collapsible-content">
+
+            <li class="collapsible-section" id="ac1">
+                <button class="collapsible-btn">
+                    {% trans "AC1 – Optimiser les modèles de données de l’entreprise" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Analyser la performance des requêtes, créer des index, 
+                    revoir la conception du schéma et ajuster les structures de données pour améliorer la rapidité et la fiabilité du système.
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+            <li class="collapsible-section" id="ac2">
+                <button class="collapsible-btn">
+                    {% trans "AC2 – Assurer la confidentialité des données (intégrité et sécurité)" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Mettre en place des mécanismes de sécurité : droits d’accès, chiffrement, audit, sauvegardes, 
+                    et conformité aux réglementations (RGPD, CNIL).
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+            <li class="collapsible-section" id="ac3">
+                <button class="collapsible-btn">
+                    {% trans "AC3 – Organiser la restitution de données à travers la programmation et la visualisation" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Développer des applications ou interfaces qui extraient, transforment et présentent les données de manière claire 
+                    et utile pour la prise de décision (dashboards, rapports dynamiques, APIs de consultation, etc.).
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+            <li class="collapsible-section" id="ac4">
+                <button class="collapsible-btn">
+                    {% trans "AC4 – Manipuler des données hétérogènes" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Intégrer et gérer différents types de données (relationnelles, NoSQL, JSON, XML, flux temps réel, etc.) 
+                    pour les rendre cohérentes et exploitables dans un même système d’information.
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+        </div>
+    </ol>
+
+</ol>
+
 {% endblock content %}

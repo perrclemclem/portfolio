@@ -1,5 +1,6 @@
 {% extends 'myapp/base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
@@ -7,85 +8,164 @@
 {% endblock myheader %}
 
 {% block aside %}
+
+<h2>{% trans "Compétence 3 — Administrer des systèmes informatiques communicants complexes" %}</h2>
+
+<p>
 {% blocktrans %}
-    <h2>Compétence 3 — Administrer des systèmes informatiques communicants complexes</h2>
-    <p>Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, 
-        des services et des réseaux, et optimiser le système informatique d'une organisation.
-        Tout cela en sécurisant le système d'information, en appliquant les normes et bonnes pratiques 
-        architecturales et de sécurité, et en garantissant la continuité d'activité et la qualité de service.</p>
-    {% endblocktrans %}
+Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, 
+des services et des réseaux, et optimiser le système informatique d'une organisation.
+Tout cela en sécurisant le système d'information, en appliquant les normes et bonnes pratiques 
+architecturales et de sécurité, et en garantissant la continuité d'activité et la qualité de service.
+{% endblocktrans %}
+</p>
+
+<nav class="toc">
+    <h3>{% trans "Sommaire" %}</h3>
+    <ul id="toc-list"></ul>
+</nav>
+
 {% endblock aside %}
 
+
 {% block content %}
-    <ol>
-        <ol>
-            {% blocktrans %}
-            <h4>A. Installer et configurer un poste de travail</h4>
-            {% endblocktrans %}
 
-            <li>
-                {% blocktrans %}
-                <h5>AC1 – Identifier les différents composants (matériels et logiciels) d’un système numérique</h5>
-                <p>Reconnaître les éléments matériels (processeur, mémoire, disque, carte réseau…) et logiciels 
-                    (système d’exploitation, pilotes, applications) d’un poste informatique et comprendre leurs interactions.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC2 – Utiliser les fonctionnalités de base d’un système multitâches / multiutilisateurs</h5>
-                <p>Utiliser les principales commandes et fonctionnalités des systèmes d’exploitation modernes 
-                    (gestion des utilisateurs, processus, fichiers, et permissions).</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC3 – Installer et configurer un système d’exploitation et des outils de développement</h5>
-                <p>Mettre en place un environnement de travail complet : installation d’un OS (Linux, Windows), 
-                    des IDE, compilateurs, et utilitaires nécessaires au développement.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC4 – Configurer un poste de travail dans un réseau d’entreprise</h5>
-                <p>Paramétrer l’accès réseau (adresse IP, DNS, passerelle), rejoindre un domaine, 
-                    et assurer la communication sécurisée avec les autres machines du réseau.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-        </ol>
+<ol>
 
-        <ol>
-            {% blocktrans %}
-            <h4>B. Déployer des services dans une architecture réseau</h4>
-            {% endblocktrans %}
+    <!-- SECTION A -->
+    <ol class="collapsible-section" id="A">
 
-            <li>
-                {% blocktrans %}
-                <h5>AC1 – Concevoir et développer des applications communicantes</h5>
-                <p>Créer des applications capables d’échanger des données à travers un réseau 
-                    (client/serveur, API REST, communication entre objets connectés, etc.).</p>
-                {% endblocktrans %}
+        <button class="collapsible-btn">{% trans "A. Installer et configurer un poste de travail" %}</button>
+
+        <div class="collapsible-content">
+
+            <li class="collapsible-section" id="ac1">
+                <button class="collapsible-btn">
+                    {% trans "AC1 – Identifier les différents composants (matériels et logiciels) d’un système numérique" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Reconnaître les éléments matériels (processeur, mémoire, disque, carte réseau…) et logiciels 
+                    (système d’exploitation, pilotes, applications) d’un poste informatique et comprendre leurs interactions.
+                    {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                        Voici un modèle d'ALU que j'ai créé moi-même pour un devoir de Computer architecture.
+                        {% endblocktrans %}
+                    </p>
+                    <img src="{% static 'image/preuve-comp3-A-AC1.png' %}" alt="Modele d'unité arithmétique et logique d'un ordinateur">
+                </div>
                 <hr>
             </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC2 – Utiliser des serveurs et des services réseaux virtualisés</h5>
-                <p>Mettre en place et gérer des serveurs (web, base de données, DNS, etc.) 
-                    et utiliser la virtualisation (VM, conteneurs, cloud) pour les déployer efficacement.</p>
-                {% endblocktrans %}
+
+            <li class="collapsible-section" id="ac2">
+                <button class="collapsible-btn">
+                    {% trans "AC2 – Utiliser les fonctionnalités de base d’un système multitâches / multiutilisateurs" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Utiliser les principales commandes et fonctionnalités des systèmes d’exploitation modernes 
+                    (gestion des utilisateurs, processus, fichiers, et permissions).
+                    {% endblocktrans %}
+                    </p>
+                </div>
                 <hr>
             </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC3 – Sécuriser les services et données d’un système</h5>
-                <p>Appliquer les principes de cybersécurité : chiffrement, pare-feu, sauvegardes, 
-                    authentification et autorisation, afin de protéger les données et les services d’une organisation.</p>
-                {% endblocktrans %}
+
+            <li class="collapsible-section" id="ac3">
+                <button class="collapsible-btn">
+                    {% trans "AC3 – Installer et configurer un système d’exploitation et des outils de développement" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Mettre en place un environnement de travail complet : installation d’un OS (Linux, Windows), 
+                    des IDE, compilateurs, et utilitaires nécessaires au développement.
+                    {% endblocktrans %}
+                    </p>
+                </div>
                 <hr>
             </li>
-        </ol>
+
+            <li class="collapsible-section" id="ac4">
+                <button class="collapsible-btn">
+                    {% trans "AC4 – Configurer un poste de travail dans un réseau d’entreprise" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Paramétrer l’accès réseau (adresse IP, DNS, passerelle), rejoindre un domaine, 
+                    et assurer la communication sécurisée avec les autres machines du réseau.
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+        </div>
     </ol>
+
+
+    <!-- SECTION B -->
+    <ol class="collapsible-section" id="B">
+
+        <button class="collapsible-btn">
+            {% trans "B. Déployer des services dans une architecture réseau" %}
+        </button>
+
+        <div class="collapsible-content">
+
+            <li class="collapsible-section" id="ac1">
+                <button class="collapsible-btn">
+                    {% trans "AC1 – Concevoir et développer des applications communicantes" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Créer des applications capables d’échanger des données à travers un réseau 
+                    (client/serveur, API REST, communication entre objets connectés, etc.).
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+            <li class="collapsible-section" id="ac2">
+                <button class="collapsible-btn">
+                    {% trans "AC2 – Utiliser des serveurs et des services réseaux virtualisés" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Mettre en place et gérer des serveurs (web, base de données, DNS, etc.) 
+                    et utiliser la virtualisation (VM, conteneurs, cloud) pour les déployer efficacement.
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+            <li class="collapsible-section" id="ac3">
+                <button class="collapsible-btn">
+                    {% trans "AC3 – Sécuriser les services et données d’un système" %}
+                </button>
+                <div class="collapsible-content">
+                    <p>
+                    {% blocktrans %}
+                    Appliquer les principes de cybersécurité : chiffrement, pare-feu, sauvegardes, 
+                    authentification et autorisation, afin de protéger les données et les services d’une organisation.
+                    {% endblocktrans %}
+                    </p>
+                </div>
+                <hr>
+            </li>
+
+        </div>
+    </ol>
+
+</ol>
+
 {% endblock content %}

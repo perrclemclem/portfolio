@@ -1,5 +1,7 @@
 {% extends 'myapp/base.html' %} 
 {% load static %}
+{% load i18n %}
+
 
 {% block myheader %}
     <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
@@ -9,7 +11,19 @@
 {% block aside %}
     {% blocktrans %}
     <h2>Compétences</h2>
-    <p>A rédiger</p>
+    <br>
+    <p class="text-center">
+        Voici les différentes compétences que j'ai appris à maîtriser durant ma formation.
+    </p>
+    <br>
+    <p class="text-center">
+        Ces quatre compétences sont des essentielles en tant que développeur.
+    </p>
+    <br>
+    <p class="text-center">
+        A l'intérieur de chacune de ces compétences, 
+        il y a une description brève de la compétence, ainsi que les preuves que je les maîtrise.  
+    </p>
     {% endblocktrans %}
 {% endblock aside %}
 

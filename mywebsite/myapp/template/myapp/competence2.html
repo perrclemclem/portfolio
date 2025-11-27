@@ -1,84 +1,126 @@
 {% extends 'myapp/base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block myheader %}
-    <link rel="stylesheet" href="{% static 'css/myCss.css' %}">
-    <h1>{% trans "COMPÉTENCE" %} 2</h1>
+<link rel="stylesheet" href="{% static 'css/myCss.css' %}">
+<h1>{% trans "COMPÉTENCE" %} 2</h1>
 {% endblock myheader %}
 
 {% block aside %}
-    {% blocktrans %}
-    <h2>Compétence 2 — Optimiser des applications</h2>
-    <p>Proposer des applications informatiques optimisées en fonction de critères spécifiques : 
-        temps d'exécution, précision, consommation de ressources… en formalisant et modélisant des 
-        situations complexes, en recensant les algorithmes et les structures de données usuels, 
-        en s'appuyant sur des schémas de raisonnement, et en justifiant les choix et validant les résultats.</p>
-    {% endblocktrans %}
+<h2>{% trans "Compétence 2 — Optimiser des applications" %}</h2>
+<p>
+    Proposer des applications informatiques optimisées en fonction de critères spécifiques : 
+    temps d'exécution, précision, consommation de ressources… en formalisant et modélisant des 
+    situations complexes, en recensant les algorithmes et les structures de données usuels, 
+    en s'appuyant sur des schémas de raisonnement, et en justifiant les choix et validant les résultats.
+</p>
+
+<nav class="toc">
+    <h3>Sommaire</h3>
+    <ul id="toc-list"></ul>
+</nav>
 {% endblock aside %}
 
 {% block content %}
-    <ol>
-        <ol>
-            {% blocktrans %}
-            <h4>A. Appréhender et construire des algorithmes</h4>
-            {% endblocktrans %}
+<div class="collapsible-wrapper">
 
-            <li>
-                {% blocktrans %}
-                <h5>AC1 – Analyser un problème avec méthode</h5>
-                <p>Découper un problème en éléments algorithmiques simples et identifier les structures de données adaptées.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC2 – Comparer des algorithmes pour des problèmes classiques</h5>
-                <p>Évaluer et comparer différents algorithmes (par exemple pour le tri ou la recherche) selon leurs performances et leur complexité.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC3 – Formaliser et mettre en œuvre des outils mathématiques pour l’informatique</h5>
-                <p>Utiliser les outils mathématiques (logique, combinatoire, probabilités, graphes, etc.) pour modéliser et résoudre des problèmes informatiques.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-        </ol>
+    <!-- SECTION A -->
+    <div class="collapsible-section" id="A">
+        <button class="collapsible-btn">{% trans "A. Appréhender et construire des algorithmes" %}</button>
+        <div class="collapsible-content">
 
-        <ol>
-            {% blocktrans %}
-            <h4>B. Sélectionner les algorithmes adéquats pour répondre à un problème donné</h4>
-            {% endblocktrans %}
+            <!-- AC1 -->
+            <div class="collapsible-section" id="Aac1">
+                <button class="collapsible-btn">{% trans "AC1 – Analyser un problème avec méthode" %}</button>
+                <div class="collapsible-content">
+                    <p>
+                        {% blocktrans %}
+                        Découper un problème en éléments algorithmiques simples et identifier les structures de données adaptées.
+                        {% endblocktrans %}</p>
+                </div>
+            </div>
 
-            <li>
-                {% blocktrans %}
-                <h5>AC1 – Choisir des structures de données complexes adaptées au problème</h5>
-                <p>Sélectionner et utiliser des structures comme les arbres, graphes, ou tables de hachage selon le contexte et les besoins du projet.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC2 – Utiliser des techniques algorithmiques adaptées pour des problèmes complexes</h5>
-                <p>Appliquer des méthodes avancées (recherche opérationnelle, optimisation globale, intelligence artificielle, etc.) pour concevoir des solutions efficaces.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC3 – Comprendre les enjeux et moyens de sécurisation des données et du code</h5>
-                <p>Identifier les vulnérabilités potentielles et mettre en œuvre des techniques de sécurisation adaptées (chiffrement, authentification, contrôle d’accès…).</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-            <li>
-                {% blocktrans %}
-                <h5>AC4 – Évaluer l’impact environnemental et sociétal des solutions proposées</h5>
-                <p>Analyser la consommation de ressources et les effets des choix technologiques sur l’environnement et la société, pour adopter des pratiques responsables.</p>
-                {% endblocktrans %}
-                <hr>
-            </li>
-        </ol>
-    </ol>
+            <!-- AC2 -->
+            <div class="collapsible-section" id="Aac2">
+                <button class="collapsible-btn">{% trans "AC2 – Comparer des algorithmes pour des problèmes classiques" %}</button>
+                <div class="collapsible-content">
+                    <p>
+                        {% blocktrans %}
+                        Évaluer et comparer différents algorithmes (par exemple pour le tri ou la recherche) selon leurs performances et leur complexité.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+
+            <!-- AC3 -->
+            <div class="collapsible-section" id="Aac3">
+                <button class="collapsible-btn">{% trans "AC3 – Formaliser et mettre en œuvre des outils mathématiques pour l’informatique" %}</button>
+                <div class="collapsible-content">
+                    <p>
+                        {% blocktrans %}
+                        Utiliser les outils mathématiques (logique, combinatoire, probabilités, graphes, etc.) pour modéliser et résoudre des problèmes informatiques.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION B -->
+    <div class="collapsible-section" id="B">
+        <button class="collapsible-btn">{% trans "B. Sélectionner les algorithmes adéquats pour répondre à un problème donné" %}</button>
+        <div class="collapsible-content">
+
+            <!-- AC1 -->
+            <div class="collapsible-section" id="Bac1">
+                <button class="collapsible-btn">{% trans "AC1 – Choisir des structures de données complexes adaptées au problème" %}</button>
+                <div class="collapsible-content">
+                    <p>
+                        {% blocktrans %}
+                        Sélectionner et utiliser des structures comme les arbres, graphes, ou tables de hachage selon le contexte et les besoins du projet.
+                        {% endblocktrans %}</p>
+                </div>
+            </div>
+
+            <!-- AC2 -->
+            <div class="collapsible-section" id="Bac2">
+                <button class="collapsible-btn">{% trans "AC2 – Utiliser des techniques algorithmiques adaptées pour des problèmes complexes" %}</button>
+                <div class="collapsible-content">
+                    <p>
+                        {% blocktrans %}
+                        Appliquer des méthodes avancées (recherche opérationnelle, optimisation globale, intelligence artificielle, etc.) pour concevoir des solutions efficaces.
+                        {% endblocktrans %}</p>
+                </div>
+            </div>
+
+            <!-- AC3 -->
+            <div class="collapsible-section" id="Bac3">
+                <button class="collapsible-btn">{% trans "AC3 – Comprendre les enjeux et moyens de sécurisation des données et du code" %}</button>
+                <div class="collapsible-content">
+                    <p>
+                        {% blocktrans %}
+                        Identifier les vulnérabilités potentielles et mettre en œuvre des techniques de sécurisation adaptées (chiffrement, authentification, contrôle d’accès…).
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+
+            <!-- AC4 -->
+            <div class="collapsible-section" id="Bac4">
+                <button class="collapsible-btn">{% trans "AC4 – Évaluer l’impact environnemental et sociétal des solutions proposées" %}</button>
+                <div class="collapsible-content">
+                    <p>
+                        {% blocktrans %}
+                        Analyser la consommation de ressources et les effets des choix technologiques sur l’environnement et la société, pour adopter des pratiques responsables.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
 {% endblock content %}
