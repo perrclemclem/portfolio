@@ -5,9 +5,12 @@ Django==5.2.5
 filelock==3.19.1
 git-filter-repo==2.47.0
 gunicorn==23.0.0
+packaging==25.0
 pillow==11.3.0
 platformdirs==4.3.8
-psycopg>=3.2.13
+psycopg==3.2.13
+psycopg-binary==3.2.13
 sqlparse==0.5.3
 tzdata==2025.2
 virtualenv==20.34.0
+whitenoise==6.11.0
