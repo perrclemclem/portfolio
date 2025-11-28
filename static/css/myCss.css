@@ -354,6 +354,11 @@ des pages de compétence rétractables
     transition: height 0.35s ease, padding 0.35s ease;
 }
 
+.collapsible-section > img{
+    width: 50%;
+    height: auto;
+}
+
 /* Expanded section padding */
 .collapsible-section.open > .collapsible-content {
     padding: 10px 15px;

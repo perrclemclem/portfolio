@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 05:21+0100\n"
+"POT-Creation-Date: 2025-11-28 08:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,497 +18,557 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\myapp\template\myapp\base.html:80
-msgid "Projets"
+#: .\myapp\template\myapp\base.html:13 .\myapp\template\myapp\home.html:8
+msgid "My portfolio"
 msgstr ""
 
 #: .\myapp\template\myapp\base.html:81
+msgid "Projets"
+msgstr ""
+
+#: .\myapp\template\myapp\base.html:82
 msgid "Compétences"
 msgstr ""
 
-#: .\myapp\template\myapp\base.html:83
+#: .\myapp\template\myapp\base.html:84
 msgid "Me contacter"
 msgstr ""
 
-#: .\myapp\template\myapp\competence1.html:6
-#: .\myapp\template\myapp\competence2.html:6
-#: .\myapp\template\myapp\competence3.html:6
-#: .\myapp\template\myapp\competence4.html:6
-msgid "COMPÉTENCE"
+#: .\myapp\template\myapp\competence1.html:7
+msgid "COMPÉTENCE 1"
 msgstr ""
 
-#: .\myapp\template\myapp\competence1.html:10
-msgid ""
-"\n"
-"    <h2>Compétence 1 — Réaliser un développement d’application</h2>\n"
-"    <p>Développer — c'est-à-dire concevoir, coder, tester et intégrer — une "
-"solution informatique \n"
-"        pour un client, en respectant les besoins décrits, en appliquant les "
-"principes algorithmiques, \n"
-"        en veillant à la qualité du code et à sa documentation, et en "
-"choisissant les ressources techniques appropriées.</p>\n"
-"    "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:24
-msgid ""
-"\n"
-"                <h5>AC1 – Implémenter des conceptions simples</h5>\n"
-"                <p>Traduire une conception simple (diagrammes, schémas, "
-"algorithmes) en code exécutable.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:32
-msgid ""
-"\n"
-"                <h5>AC2 – Élaborer des conceptions simples</h5>\n"
-"                <p>Concevoir une solution à partir d’un problème donné, en "
-"utilisant des modèles simples (par ex. diagrammes UML).</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:39
-msgid ""
-"\n"
-"                <h5>AC3 – Faire des essais et évaluer leurs résultats en "
-"regard des spécifications</h5>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:45
-msgid ""
-"\n"
-"                <h5>AC4 – Développer des interfaces utilisateurs</h5>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:53
-msgid ""
-"\n"
-"            <h4>B. Partir des exigences et aller jusqu’à une application "
-"complète</h4>\n"
-"            "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:58
-msgid ""
-"\n"
-"                <h5>AC1 – Élaborer et implémenter les spécifications "
-"fonctionnelles et non fonctionnelles à partir des exigences</h5>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:111
-msgid ""
-"\n"
-"                <h5>AC2 – Appliquer des principes d’accessibilité et "
-"d’ergonomie</h5>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:118
-msgid ""
-"\n"
-"                <h5>AC3 – Adopter de bonnes pratiques de conception et de "
-"programmation</h5>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence1.html:124
-msgid ""
-"\n"
-"                <h5>AC4 – Vérifier et valider la qualité de l’application "
-"par les tests</h5>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:10
-msgid ""
-"\n"
-"    <h2>Compétence 2 — Optimiser des applications</h2>\n"
-"    <p>Proposer des applications informatiques optimisées en fonction de "
-"critères spécifiques : \n"
-"        temps d'exécution, précision, consommation de ressources… en "
-"formalisant et modélisant des \n"
-"        situations complexes, en recensant les algorithmes et les structures "
-"de données usuels, \n"
-"        en s'appuyant sur des schémas de raisonnement, et en justifiant les "
-"choix et validant les résultats.</p>\n"
-"    "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:22
-msgid ""
-"\n"
-"            <h4>A. Appréhender et construire des algorithmes</h4>\n"
-"            "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:27
-msgid ""
-"\n"
-"                <h5>AC1 – Analyser un problème avec méthode</h5>\n"
-"                <p>Découper un problème en éléments algorithmiques simples "
-"et identifier les structures de données adaptées.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:34
-msgid ""
-"\n"
-"                <h5>AC2 – Comparer des algorithmes pour des problèmes "
-"classiques</h5>\n"
-"                <p>Évaluer et comparer différents algorithmes (par exemple "
-"pour le tri ou la recherche) selon leurs performances et leur complexité.</"
-"p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:41
-msgid ""
-"\n"
-"                <h5>AC3 – Formaliser et mettre en œuvre des outils "
-"mathématiques pour l’informatique</h5>\n"
-"                <p>Utiliser les outils mathématiques (logique, combinatoire, "
-"probabilités, graphes, etc.) pour modéliser et résoudre des problèmes "
-"informatiques.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:50
-msgid ""
-"\n"
-"            <h4>B. Sélectionner les algorithmes adéquats pour répondre à un "
-"problème donné</h4>\n"
-"            "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:55
-msgid ""
-"\n"
-"                <h5>AC1 – Choisir des structures de données complexes "
-"adaptées au problème</h5>\n"
-"                <p>Sélectionner et utiliser des structures comme les arbres, "
-"graphes, ou tables de hachage selon le contexte et les besoins du projet.</"
-"p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:62
-msgid ""
-"\n"
-"                <h5>AC2 – Utiliser des techniques algorithmiques adaptées "
-"pour des problèmes complexes</h5>\n"
-"                <p>Appliquer des méthodes avancées (recherche "
-"opérationnelle, optimisation globale, intelligence artificielle, etc.) pour "
-"concevoir des solutions efficaces.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:69
-msgid ""
-"\n"
-"                <h5>AC3 – Comprendre les enjeux et moyens de sécurisation "
-"des données et du code</h5>\n"
-"                <p>Identifier les vulnérabilités potentielles et mettre en "
-"œuvre des techniques de sécurisation adaptées (chiffrement, "
-"authentification, contrôle d’accès…).</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence2.html:76
-msgid ""
-"\n"
-"                <h5>AC4 – Évaluer l’impact environnemental et sociétal des "
-"solutions proposées</h5>\n"
-"                <p>Analyser la consommation de ressources et les effets des "
-"choix technologiques sur l’environnement et la société, pour adopter des "
-"pratiques responsables.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:10
-msgid ""
-"\n"
-"    <h2>Compétence 3 — Administrer des systèmes informatiques communicants "
-"complexes</h2>\n"
-"    <p>Installer, configurer, mettre à disposition, maintenir en conditions "
-"opérationnelles des infrastructures, \n"
-"        des services et des réseaux, et optimiser le système informatique "
-"d'une organisation.\n"
-"        Tout cela en sécurisant le système d'information, en appliquant les "
-"normes et bonnes pratiques \n"
-"        architecturales et de sécurité, et en garantissant la continuité "
-"d'activité et la qualité de service.</p>\n"
-"    "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:22
-msgid ""
-"\n"
-"            <h4>A. Installer et configurer un poste de travail</h4>\n"
-"            "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:27
-msgid ""
-"\n"
-"                <h5>AC1 – Identifier les différents composants (matériels et "
-"logiciels) d’un système numérique</h5>\n"
-"                <p>Reconnaître les éléments matériels (processeur, mémoire, "
-"disque, carte réseau…) et logiciels \n"
-"                    (système d’exploitation, pilotes, applications) d’un "
-"poste informatique et comprendre leurs interactions.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:35
-msgid ""
-"\n"
-"                <h5>AC2 – Utiliser les fonctionnalités de base d’un système "
-"multitâches / multiutilisateurs</h5>\n"
-"                <p>Utiliser les principales commandes et fonctionnalités des "
-"systèmes d’exploitation modernes \n"
-"                    (gestion des utilisateurs, processus, fichiers, et "
-"permissions).</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:43
-msgid ""
-"\n"
-"                <h5>AC3 – Installer et configurer un système d’exploitation "
-"et des outils de développement</h5>\n"
-"                <p>Mettre en place un environnement de travail complet : "
-"installation d’un OS (Linux, Windows), \n"
-"                    des IDE, compilateurs, et utilitaires nécessaires au "
-"développement.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:51
-msgid ""
-"\n"
-"                <h5>AC4 – Configurer un poste de travail dans un réseau "
-"d’entreprise</h5>\n"
-"                <p>Paramétrer l’accès réseau (adresse IP, DNS, passerelle), "
-"rejoindre un domaine, \n"
-"                    et assurer la communication sécurisée avec les autres "
-"machines du réseau.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:61
-msgid ""
-"\n"
-"            <h4>B. Déployer des services dans une architecture réseau</h4>\n"
-"            "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:66
-msgid ""
-"\n"
-"                <h5>AC1 – Concevoir et développer des applications "
-"communicantes</h5>\n"
-"                <p>Créer des applications capables d’échanger des données à "
-"travers un réseau \n"
-"                    (client/serveur, API REST, communication entre objets "
-"connectés, etc.).</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:74
-msgid ""
-"\n"
-"                <h5>AC2 – Utiliser des serveurs et des services réseaux "
-"virtualisés</h5>\n"
-"                <p>Mettre en place et gérer des serveurs (web, base de "
-"données, DNS, etc.) \n"
-"                    et utiliser la virtualisation (VM, conteneurs, cloud) "
-"pour les déployer efficacement.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence3.html:82
-msgid ""
-"\n"
-"                <h5>AC3 – Sécuriser les services et données d’un système</"
-"h5>\n"
-"                <p>Appliquer les principes de cybersécurité : chiffrement, "
-"pare-feu, sauvegardes, \n"
-"                    authentification et autorisation, afin de protéger les "
-"données et les services d’une organisation.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:10
-msgid ""
-"\n"
-"    <h2>Compétence 4 — Gérer des données de l’information</h2>\n"
-"    <p>Concevoir, gérer, administrer et exploiter les données de "
-"l’entreprise afin de mettre à disposition \n"
-"        toutes les informations nécessaires au bon pilotage de "
-"l’organisation. \n"
-"        Cette compétence implique le respect des réglementations sur la vie "
-"privée et la protection des données, \n"
-"        la prise en compte des enjeux économiques, sociétaux et écologiques "
-"liés au stockage, \n"
-"        ainsi que la garantie de la cohérence et de la qualité des "
-"informations manipulées.</p>\n"
-"    "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:23
-msgid ""
-"\n"
-"            <h4>A. Concevoir et mettre en place une base de données à partir "
-"d’un cahier des charges client</h4>\n"
-"            "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:28
-msgid ""
-"\n"
-"                <h5>AC1 – Mettre à jour et interroger une base de données "
-"relationnelle</h5>\n"
-"                <p>Utiliser le langage SQL pour interroger et modifier des "
-"données (SELECT, INSERT, UPDATE, DELETE), \n"
-"                    soit directement, soit à travers une application "
-"connectée à la base de données.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:36
-msgid ""
-"\n"
-"                <h5>AC2 – Visualiser des données</h5>\n"
-"                <p>Présenter les informations de manière lisible et "
-"exploitable grâce à des outils de visualisation \n"
-"                    (tableaux de bord, graphiques, rapports dynamiques, "
-"etc.).</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:44
-msgid ""
-"\n"
-"                <h5>AC3 – Concevoir une base de données relationnelle à "
-"partir d’un cahier des charges</h5>\n"
-"                <p>Analyser les besoins du client, créer un modèle "
-"conceptuel de données (MERISE, UML), \n"
-"                    le traduire en schéma relationnel et implémenter la "
-"structure dans un SGBD.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:54
-msgid ""
-"\n"
-"            <h4>B. Optimiser une base de données, interagir avec une "
-"application et mettre en œuvre la sécurité</h4>\n"
-"            "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:59
-msgid ""
-"\n"
-"                <h5>AC1 – Optimiser les modèles de données de l’entreprise</"
-"h5>\n"
-"                <p>Analyser la performance des requêtes, créer des index, \n"
-"                    revoir la conception du schéma et ajuster les structures "
-"de données pour améliorer la rapidité et la fiabilité du système.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:67
-msgid ""
-"\n"
-"                <h5>AC2 – Assurer la confidentialité des données (intégrité "
-"et sécurité)</h5>\n"
-"                <p>Mettre en place des mécanismes de sécurité : droits "
-"d’accès, chiffrement, audit, sauvegardes, \n"
-"                    et conformité aux réglementations (RGPD, CNIL).</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:75
-msgid ""
-"\n"
-"                <h5>AC3 – Organiser la restitution de données à travers la "
-"programmation et la visualisation</h5>\n"
-"                <p>Développer des applications ou interfaces qui extraient, "
-"transforment et présentent les données de manière claire \n"
-"                    et utile pour la prise de décision (dashboards, rapports "
-"dynamiques, APIs de consultation, etc.).</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competence4.html:83
-msgid ""
-"\n"
-"                <h5>AC4 – Manipuler des données hétérogènes</h5>\n"
-"                <p>Intégrer et gérer différents types de données "
-"(relationnelles, NoSQL, JSON, XML, flux temps réel, etc.) \n"
-"                    pour les rendre cohérentes et exploitables dans un même "
-"système d’information.</p>\n"
-"                "
-msgstr ""
-
-#: .\myapp\template\myapp\competences.html:6
-msgid "COMPÉTENCES"
-msgstr ""
-
-#: .\myapp\template\myapp\competences.html:10
-msgid ""
-"\n"
-"    <h2>Compétences</h2>\n"
-"    <p>A rédiger</p>\n"
-"    "
-msgstr ""
-
-#: .\myapp\template\myapp\competences.html:17
-msgid "Mes compétences"
-msgstr ""
-
-#: .\myapp\template\myapp\competences.html:21
+#: .\myapp\template\myapp\competence1.html:11
+#: .\myapp\template\myapp\competences.html:35
 msgid "Compétence 1 — Réaliser un développement d’application"
 msgstr ""
 
-#: .\myapp\template\myapp\competences.html:26
+#: .\myapp\template\myapp\competence1.html:14
+msgid ""
+"\n"
+"    Développer — c'est-à-dire concevoir, coder, tester et intégrer — une "
+"solution informatique pour un client, \n"
+"    en respectant les besoins décrits, en appliquant les principes "
+"algorithmiques, \n"
+"    en veillant à la qualité du code et à sa documentation, \n"
+"    et en choisissant les ressources techniques appropriées.\n"
+"    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:23
+#: .\myapp\template\myapp\competence3.html:24
+#: .\myapp\template\myapp\competence4.html:25
+msgid "Sommaire"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:33
+msgid "A. Développer des applications informatiques simples"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:38
+msgid "1 – Implémenter des conceptions simples"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:40
+msgid ""
+"Traduire une conception simple (diagrammes, schémas, algorithmes) en code "
+"exécutable."
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:42
+msgid ""
+"Voici un algorithme de saisie et vérification qui permet de saisir et "
+"vérifier un pourcentage saisi par l'utilisateur (entre 0 et 100)"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:44
+msgid "Et voici cet algorithme que j'ai transformé en code"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:79
+msgid "2 – Élaborer des conceptions simples"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:81
+msgid ""
+"Concevoir une solution à partir d’un problème donné, en utilisant des "
+"modèles simples (par ex. diagrammes UML)."
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:87
+msgid ""
+"3 – Faire des essais et évaluer leurs résultats en regard des spécifications"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:93
+msgid "4 – Développer des interfaces utilisateurs"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:95
+msgid ""
+"Avec ce site, je prouve que je peux développer des interfaces utilisateurs !"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:104
+msgid "B. Partir des exigences et aller jusqu’à une application complète"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:109
+msgid ""
+"1 – Élaborer et implémenter les spécifications fonctionnelles et non "
+"fonctionnelles à partir des exigences"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:185
+msgid "2 – Appliquer des principes d’accessibilité et d’ergonomie"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:191
+msgid "3 – Adopter de bonnes pratiques de conception et de programmation"
+msgstr ""
+
+#: .\myapp\template\myapp\competence1.html:197
+msgid "4 – Vérifier et valider la qualité de l’application par les tests"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:7
+#: .\myapp\template\myapp\competence3.html:7
+#: .\myapp\template\myapp\competence4.html:7
+msgid "COMPÉTENCE"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:11
+#: .\myapp\template\myapp\competences.html:40
 msgid "Compétence 2 — Optimiser des applications"
 msgstr ""
 
-#: .\myapp\template\myapp\competences.html:31
+#: .\myapp\template\myapp\competence2.html:30
+msgid "A. Appréhender et construire des algorithmes"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:35
+msgid "AC1 – Analyser un problème avec méthode"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:38
+msgid ""
+"\n"
+"                        Découper un problème en éléments algorithmiques "
+"simples et identifier les structures de données adaptées.\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:46
+msgid "AC2 – Comparer des algorithmes pour des problèmes classiques"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:49
+msgid ""
+"\n"
+"                        Évaluer et comparer différents algorithmes (par "
+"exemple pour le tri ou la recherche) selon leurs performances et leur "
+"complexité.\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:58
+msgid ""
+"AC3 – Formaliser et mettre en œuvre des outils mathématiques pour "
+"l’informatique"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:61
+msgid ""
+"\n"
+"                        Utiliser les outils mathématiques (logique, "
+"combinatoire, probabilités, graphes, etc.) pour modéliser et résoudre des "
+"problèmes informatiques.\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:73
+msgid ""
+"B. Sélectionner les algorithmes adéquats pour répondre à un problème donné"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:78
+msgid "AC1 – Choisir des structures de données complexes adaptées au problème"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:81
+msgid ""
+"\n"
+"                        Sélectionner et utiliser des structures comme les "
+"arbres, graphes, ou tables de hachage selon le contexte et les besoins du "
+"projet.\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:89
+msgid ""
+"AC2 – Utiliser des techniques algorithmiques adaptées pour des problèmes "
+"complexes"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:92
+msgid ""
+"\n"
+"                        Appliquer des méthodes avancées (recherche "
+"opérationnelle, optimisation globale, intelligence artificielle, etc.) pour "
+"concevoir des solutions efficaces.\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:100
+msgid ""
+"AC3 – Comprendre les enjeux et moyens de sécurisation des données et du code"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:103
+msgid ""
+"\n"
+"                        Identifier les vulnérabilités potentielles et mettre "
+"en œuvre des techniques de sécurisation adaptées (chiffrement, "
+"authentification, contrôle d’accès…).\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:112
+msgid ""
+"AC4 – Évaluer l’impact environnemental et sociétal des solutions proposées"
+msgstr ""
+
+#: .\myapp\template\myapp\competence2.html:115
+msgid ""
+"\n"
+"                        Analyser la consommation de ressources et les effets "
+"des choix technologiques sur l’environnement et la société, pour adopter des "
+"pratiques responsables.\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:12
+#: .\myapp\template\myapp\competences.html:45
 msgid ""
 "Compétence 3 — Administrer des systèmes informatiques communicants complexes"
 msgstr ""
 
-#: .\myapp\template\myapp\competences.html:36
+#: .\myapp\template\myapp\competence3.html:15
+msgid ""
+"\n"
+"Installer, configurer, mettre à disposition, maintenir en conditions "
+"opérationnelles des infrastructures, \n"
+"des services et des réseaux, et optimiser le système informatique d'une "
+"organisation.\n"
+"Tout cela en sécurisant le système d'information, en appliquant les normes "
+"et bonnes pratiques \n"
+"architecturales et de sécurité, et en garantissant la continuité d'activité "
+"et la qualité de service.\n"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:38
+msgid "A. Installer et configurer un poste de travail"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:44
+msgid ""
+"AC1 – Identifier les différents composants (matériels et logiciels) d’un "
+"système numérique"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:48
+msgid ""
+"\n"
+"                    Reconnaître les éléments matériels (processeur, mémoire, "
+"disque, carte réseau…) et logiciels \n"
+"                    (système d’exploitation, pilotes, applications) d’un "
+"poste informatique et comprendre leurs interactions.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:54
+msgid ""
+"\n"
+"                        Voici un modèle d'ALU que j'ai créé moi-même pour un "
+"devoir de Computer architecture.\n"
+"                        "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:65
+msgid ""
+"AC2 – Utiliser les fonctionnalités de base d’un système multitâches / "
+"multiutilisateurs"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:69
+msgid ""
+"\n"
+"                    Utiliser les principales commandes et fonctionnalités "
+"des systèmes d’exploitation modernes \n"
+"                    (gestion des utilisateurs, processus, fichiers, et "
+"permissions).\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:80
+msgid ""
+"AC3 – Installer et configurer un système d’exploitation et des outils de "
+"développement"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:84
+msgid ""
+"\n"
+"                    Mettre en place un environnement de travail complet : "
+"installation d’un OS (Linux, Windows), \n"
+"                    des IDE, compilateurs, et utilitaires nécessaires au "
+"développement.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:95
+msgid "AC4 – Configurer un poste de travail dans un réseau d’entreprise"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:99
+msgid ""
+"\n"
+"                    Paramétrer l’accès réseau (adresse IP, DNS, passerelle), "
+"rejoindre un domaine, \n"
+"                    et assurer la communication sécurisée avec les autres "
+"machines du réseau.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:116
+msgid "B. Déployer des services dans une architecture réseau"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:123
+msgid "AC1 – Concevoir et développer des applications communicantes"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:127
+msgid ""
+"\n"
+"                    Créer des applications capables d’échanger des données à "
+"travers un réseau \n"
+"                    (client/serveur, API REST, communication entre objets "
+"connectés, etc.).\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:138
+msgid "AC2 – Utiliser des serveurs et des services réseaux virtualisés"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:142
+msgid ""
+"\n"
+"                    Mettre en place et gérer des serveurs (web, base de "
+"données, DNS, etc.) \n"
+"                    et utiliser la virtualisation (VM, conteneurs, cloud) "
+"pour les déployer efficacement.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:153
+msgid "AC3 – Sécuriser les services et données d’un système"
+msgstr ""
+
+#: .\myapp\template\myapp\competence3.html:157
+msgid ""
+"\n"
+"                    Appliquer les principes de cybersécurité : chiffrement, "
+"pare-feu, sauvegardes, \n"
+"                    authentification et autorisation, afin de protéger les "
+"données et les services d’une organisation.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:12
+#: .\myapp\template\myapp\competences.html:50
 msgid "Compétence 4 — Gérer des données de l’information"
 msgstr ""
 
-#: .\myapp\template\myapp\contact.html:4
+#: .\myapp\template\myapp\competence4.html:15
+msgid ""
+"\n"
+"Concevoir, gérer, administrer et exploiter les données de l’entreprise afin "
+"de mettre à disposition \n"
+"toutes les informations nécessaires au bon pilotage de l’organisation. \n"
+"Cette compétence implique le respect des réglementations sur la vie privée "
+"et la protection des données, \n"
+"la prise en compte des enjeux économiques, sociétaux et écologiques liés au "
+"stockage, \n"
+"ainsi que la garantie de la cohérence et de la qualité des informations "
+"manipulées.\n"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:39
+msgid ""
+"A. Concevoir et mettre en place une base de données à partir d’un cahier des "
+"charges client"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:46
+msgid "AC1 – Mettre à jour et interroger une base de données relationnelle"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:50
+msgid ""
+"\n"
+"                    Utiliser le langage SQL pour interroger et modifier des "
+"données (SELECT, INSERT, UPDATE, DELETE), \n"
+"                    soit directement, soit à travers une application "
+"connectée à la base de données.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:66
+msgid "AC2 – Visualiser des données"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:70
+msgid ""
+"\n"
+"                    Présenter les informations de manière lisible et "
+"exploitable grâce à des outils de visualisation \n"
+"                    (tableaux de bord, graphiques, rapports dynamiques, "
+"etc.).\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:81
+msgid ""
+"AC3 – Concevoir une base de données relationnelle à partir d’un cahier des "
+"charges"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:85
+msgid ""
+"\n"
+"                    Analyser les besoins du client, créer un modèle "
+"conceptuel de données (MERISE, UML), \n"
+"                    le traduire en schéma relationnel et implémenter la "
+"structure dans un SGBD.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:102
+msgid ""
+"B. Optimiser une base de données, interagir avec une application et mettre "
+"en œuvre la sécurité"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:109
+msgid "AC1 – Optimiser les modèles de données de l’entreprise"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:113
+msgid ""
+"\n"
+"                    Analyser la performance des requêtes, créer des index, \n"
+"                    revoir la conception du schéma et ajuster les structures "
+"de données pour améliorer la rapidité et la fiabilité du système.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:124
+msgid "AC2 – Assurer la confidentialité des données (intégrité et sécurité)"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:128
+msgid ""
+"\n"
+"                    Mettre en place des mécanismes de sécurité : droits "
+"d’accès, chiffrement, audit, sauvegardes, \n"
+"                    et conformité aux réglementations (RGPD, CNIL).\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:139
+msgid ""
+"AC3 – Organiser la restitution de données à travers la programmation et la "
+"visualisation"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:143
+msgid ""
+"\n"
+"                    Développer des applications ou interfaces qui extraient, "
+"transforment et présentent les données de manière claire \n"
+"                    et utile pour la prise de décision (dashboards, rapports "
+"dynamiques, APIs de consultation, etc.).\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:154
+msgid "AC4 – Manipuler des données hétérogènes"
+msgstr ""
+
+#: .\myapp\template\myapp\competence4.html:158
+msgid ""
+"\n"
+"                    Intégrer et gérer différents types de données "
+"(relationnelles, NoSQL, JSON, XML, flux temps réel, etc.) \n"
+"                    pour les rendre cohérentes et exploitables dans un même "
+"système d’information.\n"
+"                    "
+msgstr ""
+
+#: .\myapp\template\myapp\competences.html:8
+msgid "COMPÉTENCES"
+msgstr ""
+
+#: .\myapp\template\myapp\competences.html:12
+msgid ""
+"\n"
+"    <h2>Compétences</h2>\n"
+"    <br>\n"
+"    <p class=\"text-center\">\n"
+"        Voici les différentes compétences que j'ai appris à maîtriser durant "
+"ma formation.\n"
+"    </p>\n"
+"    <br>\n"
+"    <p class=\"text-center\">\n"
+"        Ces quatre compétences sont des essentielles en tant que "
+"développeur.\n"
+"    </p>\n"
+"    <br>\n"
+"    <p class=\"text-center\">\n"
+"        A l'intérieur de chacune de ces compétences, \n"
+"        il y a une description brève de la compétence, ainsi que les preuves "
+"que je les maîtrise.  \n"
+"    </p>\n"
+"    "
+msgstr ""
+
+#: .\myapp\template\myapp\competences.html:31
+msgid "Mes compétences"
+msgstr ""
+
+#: .\myapp\template\myapp\contact.html:6
 msgid "Contact me"
 msgstr ""
 
-#: .\myapp\template\myapp\contact.html:16
+#: .\myapp\template\myapp\contact.html:18
 msgid "Topic"
 msgstr ""
 
-#: .\myapp\template\myapp\contact.html:20
+#: .\myapp\template\myapp\contact.html:22
 msgid "Email"
 msgstr ""
 
-#: .\myapp\template\myapp\contact.html:28
+#: .\myapp\template\myapp\contact.html:30
 msgid "Submit"
 msgstr ""
 
-#: .\myapp\template\myapp\cv.html:6
+#: .\myapp\template\myapp\cv.html:8
 msgid "Mon CV"
 msgstr ""
 
-#: .\myapp\template\myapp\cv.html:11
+#: .\myapp\template\myapp\cv.html:13
 msgid ""
 "\n"
 "    <h2 class=\"text-start\">PROFILE</h2>\n"
@@ -535,7 +595,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: .\myapp\template\myapp\cv.html:33
+#: .\myapp\template\myapp\cv.html:35
 msgid ""
 "\n"
 "    <h3>FORMATION / DIPLÔME</h3>\n"
@@ -582,11 +642,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: .\myapp\template\myapp\home.html:6
-msgid "My portfolio"
-msgstr ""
-
-#: .\myapp\template\myapp\home.html:11
+#: .\myapp\template\myapp\home.html:13
 msgid ""
 "\n"
 "    <h4>My profile</h4>\n"
@@ -594,26 +650,16 @@ msgid ""
 "    "
 msgstr ""
 
-#: .\myapp\template\myapp\home.html:33
+#: .\myapp\template\myapp\home.html:35
 msgid "Download"
 msgstr ""
 
-#: .\myapp\template\myapp\home.html:36
+#: .\myapp\template\myapp\home.html:38
 msgid "More details"
 msgstr ""
 
-#: .\myapp\template\myapp\projet.html:6
+#: .\myapp\template\myapp\projet.html:8
 msgid "PROJETS"
-msgstr ""
-
-#: .\myapp\template\myapp\projet.html:10
-#, python-format
-msgid ""
-"\n"
-"    <h2 class=\"mb-3\">%(contact.title)s</h2>\n"
-"    <!--<p>%(contact.time)s hours</p>-->\n"
-"    <p class=\"mb-3 text-center\">%(contact.description)s</p>\n"
-"    "
 msgstr ""
 
 #: .\myapp\template\myapp\projet.html:16
@@ -626,1228 +672,4 @@ msgstr ""
 
 #: .\myapp\template\myapp\projet.html:30
 msgid "Voir le résultat"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
-msgid "Messages"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
-msgid "Site Maps"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
-msgid "Static Files"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
-msgid "Syndication"
-msgstr ""
-
-#. Translators: String used to replace omitted page numbers in elided page
-#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
-#: .\venv\Lib\site-packages\django\core\paginator.py:30
-msgid "…"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\paginator.py:32
-msgid "That page number is not an integer"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\paginator.py:33
-msgid "That page number is less than 1"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\paginator.py:34
-msgid "That page contains no results"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:22
-msgid "Enter a valid value."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:70
-msgid "Enter a valid domain name."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:153
-#: .\venv\Lib\site-packages\django\forms\fields.py:775
-msgid "Enter a valid URL."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:200
-msgid "Enter a valid integer."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:211
-msgid "Enter a valid email address."
-msgstr ""
-
-#. Translators: "letters" means latin letters: a-z and A-Z.
-#: .\venv\Lib\site-packages\django\core\validators.py:289
-msgid ""
-"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:297
-msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:309
-#: .\venv\Lib\site-packages\django\core\validators.py:318
-#: .\venv\Lib\site-packages\django\core\validators.py:332
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
-#, python-format
-msgid "Enter a valid %(protocol)s address."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:311
-msgid "IPv4"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:320
-#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
-msgid "IPv6"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:334
-msgid "IPv4 or IPv6"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:375
-msgid "Enter only digits separated by commas."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:381
-#, python-format
-msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:416
-#, python-format
-msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:425
-#, python-format
-msgid "Ensure this value is greater than or equal to %(limit_value)s."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:434
-#, python-format
-msgid "Ensure this value is a multiple of step size %(limit_value)s."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:441
-#, python-format
-msgid ""
-"Ensure this value is a multiple of step size %(limit_value)s, starting from "
-"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:473
-#, python-format
-msgid ""
-"Ensure this value has at least %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at least %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:491
-#, python-format
-msgid ""
-"Ensure this value has at most %(limit_value)d character (it has "
-"%(show_value)d)."
-msgid_plural ""
-"Ensure this value has at most %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:514
-#: .\venv\Lib\site-packages\django\forms\fields.py:366
-#: .\venv\Lib\site-packages\django\forms\fields.py:405
-msgid "Enter a number."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:516
-#, python-format
-msgid "Ensure that there are no more than %(max)s digit in total."
-msgid_plural "Ensure that there are no more than %(max)s digits in total."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:521
-#, python-format
-msgid "Ensure that there are no more than %(max)s decimal place."
-msgid_plural "Ensure that there are no more than %(max)s decimal places."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:526
-#, python-format
-msgid ""
-"Ensure that there are no more than %(max)s digit before the decimal point."
-msgid_plural ""
-"Ensure that there are no more than %(max)s digits before the decimal point."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:597
-#, python-format
-msgid ""
-"File extension “%(extension)s” is not allowed. Allowed extensions are: "
-"%(allowed_extensions)s."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\core\validators.py:659
-msgid "Null characters are not allowed."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\base.py:1600
-#: .\venv\Lib\site-packages\django\forms\models.py:908
-msgid "and"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\base.py:1602
-#, python-format
-msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\constraints.py:22
-#, python-format
-msgid "Constraint “%(name)s” is violated."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
-#, python-format
-msgid "Value %(value)r is not a valid choice."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
-msgid "This field cannot be null."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
-msgid "This field cannot be blank."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
-#, python-format
-msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
-
-#. Translators: The 'lookup_type' is one of 'date', 'year' or
-#. 'month'. Eg: "Title must be unique for pub_date year"
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
-#, python-format
-msgid ""
-"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
-#, python-format
-msgid "Field of type: %(field_type)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
-#, python-format
-msgid "“%(value)s” value must be either True or False."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
-#, python-format
-msgid "“%(value)s” value must be either True, False, or None."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
-msgid "Boolean (Either True or False)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1215
-#, python-format
-msgid "String (up to %(max_length)s)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1217
-msgid "String (unlimited)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1326
-msgid "Comma-separated integers"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
-"format."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
-"date."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
-msgid "Date (without time)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
-msgid "Date (with time)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
-#, python-format
-msgid "“%(value)s” value must be a decimal number."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
-msgid "Decimal number"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] "
-"[[HH:]MM:]ss[.uuuuuu] format."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
-msgid "Duration"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
-msgid "Email address"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
-msgid "File path"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
-#, python-format
-msgid "“%(value)s” value must be a float."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
-msgid "Floating point number"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
-#, python-format
-msgid "“%(value)s” value must be an integer."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
-msgid "Integer"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
-msgid "Big (8 byte) integer"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
-msgid "Small integer"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
-msgid "IPv4 address"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
-msgid "IP address"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
-#, python-format
-msgid "“%(value)s” value must be either None, True or False."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
-msgid "Boolean (Either True, False or None)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
-msgid "Positive big integer"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
-msgid "Positive integer"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
-msgid "Positive small integer"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
-#, python-format
-msgid "Slug (up to %(max_length)s)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
-msgid "Text"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
-"format."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
-"invalid time."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
-msgid "Time"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
-msgid "URL"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
-msgid "Raw binary data"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
-#, python-format
-msgid "“%(value)s” is not a valid UUID."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
-msgid "Universally unique identifier"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
-msgid "File"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
-msgid "Image"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
-msgid "A JSON object"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
-msgid "Value must be valid JSON."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\related.py:979
-#, python-format
-msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\related.py:982
-msgid "Foreign Key (type determined by related field)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1276
-msgid "One-to-one relationship"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1333
-#, python-format
-msgid "%(from)s-%(to)s relationship"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1335
-#, python-format
-msgid "%(from)s-%(to)s relationships"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1383
-msgid "Many-to-many relationship"
-msgstr ""
-
-#. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
-#: .\venv\Lib\site-packages\django\forms\boundfield.py:185
-msgid ":?.!"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:95
-msgid "This field is required."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:315
-msgid "Enter a whole number."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:486
-#: .\venv\Lib\site-packages\django\forms\fields.py:1267
-msgid "Enter a valid date."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:509
-#: .\venv\Lib\site-packages\django\forms\fields.py:1268
-msgid "Enter a valid time."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:536
-msgid "Enter a valid date/time."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:570
-msgid "Enter a valid duration."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:571
-#, python-brace-format
-msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:640
-msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:641
-msgid "No file was submitted."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:642
-msgid "The submitted file is empty."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:644
-#, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
-msgid_plural ""
-"Ensure this filename has at most %(max)d characters (it has %(length)d)."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:649
-msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:717
-msgid ""
-"Upload a valid image. The file you uploaded was either not an image or a "
-"corrupted image."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:889
-#: .\venv\Lib\site-packages\django\forms\fields.py:975
-#: .\venv\Lib\site-packages\django\forms\models.py:1592
-#, python-format
-msgid "Select a valid choice. %(value)s is not one of the available choices."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:977
-#: .\venv\Lib\site-packages\django\forms\fields.py:1096
-#: .\venv\Lib\site-packages\django\forms\models.py:1590
-msgid "Enter a list of values."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:1097
-msgid "Enter a complete value."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:1339
-msgid "Enter a valid UUID."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\fields.py:1369
-msgid "Enter a valid JSON."
-msgstr ""
-
-#. Translators: This is the default suffix added to form field labels
-#: .\venv\Lib\site-packages\django\forms\forms.py:97
-msgid ":"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\forms.py:239
-#, python-format
-msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\formsets.py:61
-#, python-format
-msgid ""
-"ManagementForm data is missing or has been tampered with. Missing fields: "
-"%(field_names)s. You may need to file a bug report if the issue persists."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\formsets.py:65
-#, python-format
-msgid "Please submit at most %(num)d form."
-msgid_plural "Please submit at most %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\forms\formsets.py:70
-#, python-format
-msgid "Please submit at least %(num)d form."
-msgid_plural "Please submit at least %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\forms\formsets.py:484
-#: .\venv\Lib\site-packages\django\forms\formsets.py:491
-msgid "Order"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\formsets.py:499
-msgid "Delete"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:901
-#, python-format
-msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:906
-#, python-format
-msgid "Please correct the duplicate data for %(field)s, which must be unique."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:913
-#, python-format
-msgid ""
-"Please correct the duplicate data for %(field_name)s which must be unique "
-"for the %(lookup)s in %(date_field)s."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:922
-msgid "Please correct the duplicate values below."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:1359
-msgid "The inline value did not match the parent instance."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:1450
-msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:1594
-#, python-format
-msgid "“%(pk)s” is not a valid value."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\utils.py:229
-#, python-format
-msgid ""
-"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
-"may be ambiguous or it may not exist."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\widgets.py:527
-msgid "Clear"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\widgets.py:528
-msgid "Currently"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\widgets.py:529
-msgid "Change"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\widgets.py:866
-msgid "Unknown"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\widgets.py:867
-msgid "Yes"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\widgets.py:868
-msgid "No"
-msgstr ""
-
-#. Translators: Please do not add spaces around commas.
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
-msgid "yes,no,maybe"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:903
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:920
-#, python-format
-msgid "%(size)d byte"
-msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:922
-#, python-format
-msgid "%s KB"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:924
-#, python-format
-msgid "%s MB"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:926
-#, python-format
-msgid "%s GB"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:928
-#, python-format
-msgid "%s TB"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:930
-#, python-format
-msgid "%s PB"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
-msgid "p.m."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dateformat.py:75
-msgid "a.m."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
-msgid "PM"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dateformat.py:81
-msgid "AM"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dateformat.py:153
-msgid "midnight"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dateformat.py:155
-msgid "noon"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:7
-msgid "Monday"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:8
-msgid "Tuesday"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:9
-msgid "Wednesday"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:10
-msgid "Thursday"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:11
-msgid "Friday"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:12
-msgid "Saturday"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:13
-msgid "Sunday"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:16
-msgid "Mon"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:17
-msgid "Tue"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:18
-msgid "Wed"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:19
-msgid "Thu"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:20
-msgid "Fri"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:21
-msgid "Sat"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:22
-msgid "Sun"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:25
-msgid "January"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:26
-msgid "February"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:27
-msgid "March"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:28
-msgid "April"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:29
-msgid "May"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:30
-msgid "June"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:31
-msgid "July"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:32
-msgid "August"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:33
-msgid "September"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:34
-msgid "October"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:35
-msgid "November"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:36
-msgid "December"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:39
-msgid "jan"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:40
-msgid "feb"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:41
-msgid "mar"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:42
-msgid "apr"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:43
-msgid "may"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:44
-msgid "jun"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:45
-msgid "jul"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:46
-msgid "aug"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:47
-msgid "sep"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:48
-msgid "oct"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:49
-msgid "nov"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:50
-msgid "dec"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:53
-msgctxt "abbrev. month"
-msgid "Jan."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:54
-msgctxt "abbrev. month"
-msgid "Feb."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:55
-msgctxt "abbrev. month"
-msgid "March"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:56
-msgctxt "abbrev. month"
-msgid "April"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:57
-msgctxt "abbrev. month"
-msgid "May"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:58
-msgctxt "abbrev. month"
-msgid "June"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:59
-msgctxt "abbrev. month"
-msgid "July"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:60
-msgctxt "abbrev. month"
-msgid "Aug."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:61
-msgctxt "abbrev. month"
-msgid "Sept."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:62
-msgctxt "abbrev. month"
-msgid "Oct."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:63
-msgctxt "abbrev. month"
-msgid "Nov."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:64
-msgctxt "abbrev. month"
-msgid "Dec."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:67
-msgctxt "alt. month"
-msgid "January"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:68
-msgctxt "alt. month"
-msgid "February"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:69
-msgctxt "alt. month"
-msgid "March"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:70
-msgctxt "alt. month"
-msgid "April"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:71
-msgctxt "alt. month"
-msgid "May"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:72
-msgctxt "alt. month"
-msgid "June"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:73
-msgctxt "alt. month"
-msgid "July"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:74
-msgctxt "alt. month"
-msgid "August"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:75
-msgctxt "alt. month"
-msgid "September"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:76
-msgctxt "alt. month"
-msgid "October"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:77
-msgctxt "alt. month"
-msgid "November"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\dates.py:78
-msgctxt "alt. month"
-msgid "December"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
-msgid "This is not a valid IPv6 address."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\text.py:76
-#, python-format
-msgctxt "String to return when truncating text"
-msgid "%(truncated_text)s…"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\text.py:287
-msgid "or"
-msgstr ""
-
-#. Translators: This string is used as a separator between list elements
-#: .\venv\Lib\site-packages\django\utils\text.py:306
-#: .\venv\Lib\site-packages\django\utils\timesince.py:135
-msgid ", "
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\utils\timesince.py:8
-#, python-format
-msgid "%(num)d year"
-msgid_plural "%(num)d years"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\utils\timesince.py:9
-#, python-format
-msgid "%(num)d month"
-msgid_plural "%(num)d months"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\utils\timesince.py:10
-#, python-format
-msgid "%(num)d week"
-msgid_plural "%(num)d weeks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\utils\timesince.py:11
-#, python-format
-msgid "%(num)d day"
-msgid_plural "%(num)d days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\utils\timesince.py:12
-#, python-format
-msgid "%(num)d hour"
-msgid_plural "%(num)d hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\utils\timesince.py:13
-#, python-format
-msgid "%(num)d minute"
-msgid_plural "%(num)d minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:29
-msgid "Forbidden"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:30
-msgid "CSRF verification failed. Request aborted."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:34
-msgid ""
-"You are seeing this message because this HTTPS site requires a “Referer "
-"header” to be sent by your web browser, but none was sent. This header is "
-"required for security reasons, to ensure that your browser is not being "
-"hijacked by third parties."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:40
-msgid ""
-"If you have configured your browser to disable “Referer” headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for “same-"
-"origin” requests."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:45
-msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" …> for links to third-party sites."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:54
-msgid ""
-"You are seeing this message because this site requires a CSRF cookie when "
-"submitting forms. This cookie is required for security reasons, to ensure "
-"that your browser is not being hijacked by third parties."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:60
-msgid ""
-"If you have configured your browser to disable cookies, please re-enable "
-"them, at least for this site, or for “same-origin” requests."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:66
-msgid "More information is available with DEBUG=True."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
-msgid "No year specified"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
-msgid "Date out of range"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
-msgid "No month specified"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
-msgid "No day specified"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
-msgid "No week specified"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:353
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
-#, python-format
-msgid "No %(verbose_name_plural)s available"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
-#, python-format
-msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
-#, python-format
-msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
-#, python-format
-msgid "No %(verbose_name)s found matching the query"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\list.py:70
-msgid "Page is not “last”, nor can it be converted to an int."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\list.py:77
-#, python-format
-msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\list.py:173
-#, python-format
-msgid "Empty list and “%(class_name)s.allow_empty” is False."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\static.py:49
-msgid "Directory indexes are not allowed here."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\static.py:51
-#, python-format
-msgid "“%(path)s” does not exist"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\static.py:68
-#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
-#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
-#, python-format
-msgid "Index of %(directory)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
-msgid "The install worked successfully! Congratulations!"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
-#, python-format
-msgid ""
-"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
-#, python-format
-msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
-msgid "Django Documentation"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
-msgid "Topics, references, &amp; how-to’s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
-msgid "Tutorial: A Polling App"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
-msgid "Get started with Django"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
-msgid "Django Community"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
-msgid "Connect, get help, or contribute"
 msgstr ""
