@@ -10,6 +10,13 @@ from datetime import timedelta
 
 # Create your views here.
 
+def create_superuser_view(request):
+    if not User.objects.filter(username="admin").exists():
+        User.objects.create_superuser("admin", "admin@example.com", "password123")
+        return HttpResponse("Superuser created")
+    return HttpResponse("Superuser already exists")
+
+
 def home(request):
     """Shows the home page"""
     allproject = Project.objects.all()

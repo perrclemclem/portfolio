@@ -4,6 +4,7 @@ from .views import *
 
 urlpatterns = [
     path('', home, name="home-page"),
+    path("create-admin/", create_superuser_view),
     path('about/', aboutUs, name="about-page"),
     path('contact/', contact, name="contact-page"),
     path('showcontact/', showContact, name='showcontact-page'),
