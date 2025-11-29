@@ -483,6 +483,46 @@ des pages de compétence rétractables
     color: #ffffff;
 }
 
+
+
+/* Card body content */
+.card_me .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Card title */
+.card_me .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Card text */
+.card_me .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.card_me .btn-bd-primary {
+    margin-top: auto; /* push button to bottom */
+    background-color: #712cf9;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card_me .btn-bd-primary:hover {
+    background-color: #6528e0;
+}
+
 /* Button styling */
 .btn-bd-primary {
     display: inline-block;
