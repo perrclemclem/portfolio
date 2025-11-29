@@ -143,16 +143,20 @@ h2{
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
 h4{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    color: #ffd700;
 }
 
 h5{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    color: #ffd700;
 }
 
 footer {
@@ -548,6 +552,14 @@ des pages de compétence rétractables
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+/* Rend les textes en pragraphes plus visibles même devant l'image de fond */
+p, .card-body {
+    background-color: rgba(0,0,0,0.4); /* dark transparent layer */
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
