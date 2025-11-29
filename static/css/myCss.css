@@ -5,11 +5,6 @@ body {
     margin: 0;
     padding-top: 70px; /* même que la hauteur du nav */
     font-family: Poppins, sans-serif;
-    background-image: url("{% static 'image/Purple_Willow_Gradient_Leaves.png' %}"); /* adjust path */
-    background-size: cover;     /* pour que l'image prenne tout l'écran */
-    background-attachment: fixed; /* reste même quand on scrolle */
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 body::before {
@@ -256,9 +251,6 @@ en étant un nav*/
     padding: 30px 40px;
 }
 
-.card_me { /*A RENOMMER*/
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 .card_me:hover {
     transform: translateY(-5px); /* créé effet de “flottement” */
@@ -446,23 +438,6 @@ des pages de compétence rétractables
     justify-content: center; /* Center cards horizontally */
 }
 
-/* Individual card */
-.card_me {
-    position: relative;
-    width: 300px; /* Adjust width as needed */
-    background-color: #ffffff;
-    border-radius: 20px; /* More rounded corners */
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Modern soft shadow */
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-}
-
-/* Hover effect */
-.card_me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-}
 
 /* Card internal background image */
 .card_me::before {

@@ -21,6 +21,25 @@
     <link href="pricing.css" rel="stylesheet">
     <link href="{% static 'css/myCss.css' %}?v={{ now|date:'U' }}" rel="stylesheet">
     <style>
+        body {
+            background-image: url("{% static 'image/Purple_Willow_Gradient_Leaves.png' %}");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 70px;
+            font-family: Poppins, sans-serif;
+        }
+
+        .card_me {
+            background-image: url("{% static 'image/Blue_Foliage_Gradient_Dream.png' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
         .nav-scroller {
             position: relative;
             z-index: 2;
