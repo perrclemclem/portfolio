@@ -5,7 +5,26 @@ body {
     margin: 0;
     padding-top: 70px; /* même que la hauteur du nav */
     font-family: Poppins, sans-serif;
+    background-image: url("{% static 'image/Purple_Willow_Gradient_Leaves.png' %}"); /* adjust path */
+    background-size: cover;     /* pour que l'image prenne tout l'écran */
+    background-attachment: fixed; /* reste même quand on scrolle */
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.25); /* ajoute une ombre derrière les contenus de la page 
+                                        pour qu'ils restent visibles avec l'image en background */
+    pointer-events: none;
+    z-index: -1;
+}
+
+
 
 main{
     display: flex;
@@ -407,6 +426,128 @@ des pages de compétence rétractables
 .toc a:hover {
     text-decoration: underline;
 }
+
+
+
+/*CCS pour les cartes des projets page d'acceuil*/
+/* Container for all cards */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between rows */
+    padding: 20px;
+}
+
+/* Row styling: wrap cards for responsiveness */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+}
+
+/* Individual card */
+.card_me {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    background-color: #ffffff;
+    border-radius: 20px; /* More rounded corners */
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Modern soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.card_me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Card internal background image */
+.card_me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("{% static 'image/Blue_Foliage_Gradient_Dream.png' %}"); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Low intensity */
+    z-index: 0; /* Behind content */
+}
+
+/* Card content */
+.card-body {
+    position: relative; /* To appear above the background image */
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card title */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+/* Card text */
+.card-text {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+/* Links inside card */
+.card-body a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Button styling */
+.btn-bd-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #712cf9; /* Violet */
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-bd-primary:hover {
+    background-color: #5a23c8;
+    transform: translateY(-2px);
+}
+
+/* Card image at top */
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .card_me {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
 
 
 /* Partie Responsive */
