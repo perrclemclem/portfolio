@@ -3,8 +3,10 @@
 /* Espace sous la nav pour le reste de la page */
 body {
     margin: 0;
-    padding-top: 70px; /* même que la hauteur du nav */
+    padding-top: 70px;
     font-family: Poppins, sans-serif;
+    background: none;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -573,6 +575,30 @@ p, .card-body {
         max-width: 400px;
         margin: 0 auto;
     }
+}
+
+
+/* Création des effets pour l'image de fond en layers */
+#parallax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10; /* reste derrière */
+}
+
+#parallax .layer {
+    position: absolute;
+    width: 200%;       /* plus large pour ne pas voir les bords */
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    opacity: 0.95;
 }
 
 

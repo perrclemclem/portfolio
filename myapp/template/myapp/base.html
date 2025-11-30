@@ -21,18 +21,6 @@
     <link href="pricing.css" rel="stylesheet">
     <link href="{% static 'css/myCss.css' %}?v={{ now|date:'U' }}" rel="stylesheet">
     <style>
-        body {
-            background-image: url("{% static 'image/Purple_Willow_Gradient_Leaves.png' %}");
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: center;
-            padding-top: 70px;
-            font-family: Poppins, sans-serif;
-            color: #f0f0f0;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-        }
-
         .card_me {
             background-image: url("{% static 'image/Blue_Foliage_Gradient_Dream.png' %}");
             background-size: cover;
@@ -86,6 +74,15 @@
 </head>
 
 <body>
+    <div id="parallax">
+        <img src="{% static 'image/background_layer1.png' %}" class="layer layer1">
+        <img src="{% static 'image/background_layer2.png' %}" class="layer layer2">
+        <img src="{% static 'image/background_layer3.png' %}" class="layer layer3">
+        <img src="{% static 'image/background_layer4.png' %}" class="layer layer4">
+        <img src="{% static 'image/background_layer5.png' %}" class="layer layer5">
+        <img src="{% static 'image/background_layer6.png' %}" class="layer layer6">
+    </div>
+    
     <header>
         <nav class="main-nav pe-2">
             <!-- Boutons visibles uniquement sur mobile -->
