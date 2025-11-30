@@ -75,13 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Créer effet de mouvement sur les layers de l'image de fond */
 
 document.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-
-    document.querySelector(".layer1").style.transform = `translateY(${scrollY * 0.05}px)`;
-    document.querySelector(".layer2").style.transform = `translateY(${scrollY * 0.10}px)`;
-    document.querySelector(".layer3").style.transform = `translateY(${scrollY * 0.15}px)`;
-    document.querySelector(".layer4").style.transform = `translateY(${scrollY * 0.20}px)`;
-    document.querySelector(".layer5").style.transform = `translateY(${scrollY * 0.25}px)`;
-    document.querySelector(".layer6").style.transform = `translateY(${scrollY * 0.30}px)`;
+    document.documentElement.style.setProperty("--scrollY", window.scrollY);
 });
 
