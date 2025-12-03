@@ -35,6 +35,8 @@
             overflow: hidden; 
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             margin: 1rem auto;
+            padding: 7px;
+            color: white;
         }
 
         .nav-scroller {
@@ -55,27 +57,11 @@
             -webkit-overflow-scrolling: touch
         }
 
-        .layer1 { background-image: url("static/image/backgroud_layer2-1.png"); }
-        .layer2 { background-image: url("static/image/background_layer3.png"); }
-        .layer3 { background-image: url("static/image/background_layer4.png"); }
-        .layer4 { background-image: url("static/image/background_layer5.png"); }
-        .layer5 { background-image: url("static/image/background_layer6.png"); }
-
-        .btn-bd-primary {
-            --bd-violet-bg: #a77bff;
-            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-            --bs-btn-font-weight: 200;
-            --bs-btn-color: var(--bs-white);
-            --bs-btn-bg: var(--bd-violet-bg);
-            --bs-btn-border-color: var(--bd-violet-bg);
-            --bs-btn-hover-color: var(--bs-white);
-            --bs-btn-hover-bg: #6528e0;
-            --bs-btn-hover-border-color: #6528e0;
-            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-            --bs-btn-active-color: var(--bs-btn-hover-color);
-            --bs-btn-active-bg: #5a23c8;
-            --bs-btn-active-border-color: #5a23c8
-        }
+        .layer1 { background-image: url("{% static 'image/backgroud_layer2-1.png' %}"); }
+        .layer2 { background-image: url("{% static 'image/background_layer3.png' %}"); }
+        .layer3 { background-image: url("{% static 'image/background_layer4.png' %}"); }
+        .layer4 { background-image: url("{% static 'image/background_layer5.png' %}"); }
+        .layer5 { background-image: url("{% static 'image/background_layer6.png' %}"); }
     </style>
 </head>
 
