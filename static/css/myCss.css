@@ -617,11 +617,11 @@ body {
    INDIVIDUAL LAYERS
 —————————————————————————————— */
 /* Use Django static properly */
-.layer1 { background-image: url("{% static 'image/background_layer2-1.png' %}"); }
-.layer2 { background-image: url("{% static 'image/background_layer3.png' %}"); }
-.layer3 { background-image: url("{% static 'image/background_layer4.png' %}"); }
-.layer4 { background-image: url("{% static 'image/background_layer5.png' %}"); }
-.layer5 { background-image: url("{% static 'image/background_layer6.png' %}"); }
+.layer1 { background-image: url("static/image/background_layer2-1.png"); }
+.layer2 { background-image: url("static/image/background_layer3.png"); }
+.layer3 { background-image: url("static/image/background_layer4.png"); }
+.layer4 { background-image: url("static/image/background_layer5.png"); }
+.layer5 { background-image: url("static/image/background_layer6.png"); }
 
 /* ——————————————————————————————
    PARALLAX SPEED
