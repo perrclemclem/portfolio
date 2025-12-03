@@ -514,24 +514,8 @@ des pages de compétence rétractables
 }
 
 /* Buttons */
-.card_me .btn-bd-primary {
-    margin-top: auto; /* push button to bottom */
-    background-color: #712cf9;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
 
-.card_me .btn-bd-primary:hover {
-    background-color: #6528e0;
-}
-
-/* Button styling */
 .btn-bd-primary {
-    display: inline-block;
     --bd-violet-bg: #a77bff;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
     --bs-btn-font-weight: 200;
@@ -545,10 +529,6 @@ des pages de compétence rétractables
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #5a23c8;
     --bs-btn-active-border-color: #5a23c8;
-    font-weight: 600;
-    border-radius: 12px;
-    border: none;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-bd-primary:hover {
@@ -586,51 +566,6 @@ p, .card-body {
         margin: 0 auto;
     }
 }
-
-
-/* Création des effets pour l'image de fond en layers */
-/* ——————————————————————————————
-   PARALLAX CONTAINER
-—————————————————————————————— */
-.parallax-bg {
-    position: fixed;
-    inset: 0;                  /* shorthand for top/left/right/bottom = 0 */
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -10;              /* behind everything */
-}
-
-/* ——————————————————————————————
-   GLOBAL STYLE FOR ALL LAYERS
-—————————————————————————————— */
-.parallax-bg .layer {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-
-    background-repeat: repeat-x;     /* FIX: repeats horizontally (your image is wide!) */
-    background-size: auto 100%;      /* FIX: stretch vertically, keep width automatic */
-    background-position: center bottom;
-    pointer-events: none;
-    opacity: 1;                      /* ensure visible */
-    mix-blend-mode: normal;
-}
-
-/* Provide a fallback background color for missing PNG transparency */
-body {
-    background: #1a0f1f; /* dark purple behind transparent zones */
-}
-
-/* vitesse du parallax */
-.layer1 { transform: translateY(calc(var(--scrollY) * 0.05)); }
-.layer2 { transform: translateY(calc(var(--scrollY) * 0.10)); }
-.layer3 { transform: translateY(calc(var(--scrollY) * 0.15)); }
-.layer4 { transform: translateY(calc(var(--scrollY) * 0.20)); }
-.layer5 { transform: translateY(calc(var(--scrollY) * 0.25)); }
-
-
 
 /* Partie Responsive */
 @media (max-width: 768px) {
