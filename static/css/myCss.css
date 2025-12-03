@@ -613,19 +613,7 @@ body {
     background: #1a0f1f; /* dark purple behind transparent zones */
 }
 
-/* ——————————————————————————————
-   INDIVIDUAL LAYERS
-—————————————————————————————— */
-/* Use Django static properly */
-.layer1 { background-image: url("/opt/render/project/src/staticfiles/image/backgroud_layer2-1.png"); }
-.layer2 { background-image: url("/opt/render/project/src/staticfiles/image/background_layer3.png"); }
-.layer3 { background-image: url("/opt/render/project/src/staticfiles/image/background_layer4.png"); }
-.layer4 { background-image: url("/opt/render/project/src/staticfiles/image/background_layer5.png"); }
-.layer5 { background-image: url("/opt/render/project/src/staticfiles/image/background_layer6.png"); }
-
-/* ——————————————————————————————
-   PARALLAX SPEED
-—————————————————————————————— */
+/* vitesse du parallax */
 .layer1 { transform: translateY(calc(var(--scrollY) * 0.05)); }
 .layer2 { transform: translateY(calc(var(--scrollY) * 0.10)); }
 .layer3 { transform: translateY(calc(var(--scrollY) * 0.15)); }
