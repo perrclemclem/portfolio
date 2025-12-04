@@ -11,7 +11,7 @@
 {% block aside %}
     <h2 class="mb-3">{{contact.title}}</h2>
     <!--<p>{{ contact.time }} hours</p>-->
-    <p class="mb-3 text-center">{{contact.description}}</p>
+    <p class="mb-3 text-center">{{ project.description|linebreaksbr }}</p>
     {% if contact.specfile %}
         <a href="{{contact.specfile.url}}" class="btn btn-bd-primary">{% trans "Télécharger le document" %}</a>
     {% endif %}
@@ -27,7 +27,7 @@
         <a href="#" class="mt-3 mb-1 btn btn-bd-primary align-self-center">{% trans "Consulter le code" %}</a>
     {% endif %}-->
     {% if contact.link != '' %}
-        <a href="{{contact.link}}" class="mt-1 btn btn-bd-primary align-self-center">{% trans "Voir le résultat" %}</a>
+        <a href="{{contact.link}}" class="mt-1 btn-magical align-self-center">{% trans "Voir le résultat" %}</a>
     {% endif %}
 
 {% endblock content %}

@@ -22,8 +22,10 @@
     <link href="{% static 'css/myCss.css' %}?v={{ now|date:'U' }}" rel="stylesheet">
     <style>
         body{
+            position: fixed;
             background-image: url("{% static 'image/bg-image.png' %}");
             background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .nav-scroller {
