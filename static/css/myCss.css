@@ -36,8 +36,8 @@ main{
 
 /* Layout de la nav */
 header nav.main-nav {  
-    /* So that it targets only the main navigation, 
-    and not the summary of the competences*/
+    /* Pour que ça ne change le style que de la nav principale
+    et pas des autres nav du site (sommaire des compétences) */
     position: fixed;
     top: 0;
     left: 0;
@@ -214,7 +214,7 @@ aside h2{
 /* Pour que le sommaire dans les compétences reste dans l'aside 
 en étant un nav*/
 .sidebar-inner .toc {
-    margin-top: 20px; /* space below mini presentation */
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -239,11 +239,11 @@ en étant un nav*/
     background-color: #dcd6ff;
 }
 
-/* Scroll offset for fixed nav */
+/*  */
 :target::before {
     content: "";
     display: block;
-    height: 80px; /* same height as fixed nav */
+    height: 80px;
     margin-top: -80px;
     visibility: hidden;
 }
@@ -331,35 +331,34 @@ des pages de compétence rétractables
     text-align: left;
     background: #ece9ff;
     border: 1px solid #c7bfff;
-    padding: 8px 12px 8px 30px; /* add left padding for arrow */
+    padding: 8px 12px 8px 30px; /* ajout de padding pour placer la flèche */
     cursor: pointer;
     border-radius: 5px;
     font-weight: 600;
-    position: relative; /* for arrow positioning */
+    position: relative;
     transition: background 0.2s;
 }
 
-/* Arrow on the left */
+/* Flèche à gauche des parties des compétences */
 .collapsible-btn::after {
     content: "▶";
     position: absolute;
-    left: 12px; /* position arrow inside padding area */
+    left: 12px; /* met la flèshe dans le padding */
     top: 50%;
-    transform: translateY(-50%); /* vertically center */
+    transform: translateY(-50%);
     transition: transform 0.3s ease;
 }
 
-/* Rotate arrow when open */
+/* La flèche change de direction quand on ouvre la partie */
 .collapsible-section.open > .collapsible-btn::after {
     transform: translateY(-50%) rotate(90deg);
 }
 
-/* Hover effect remains the same */
 .collapsible-btn:hover {
     background: #d9d2ff;
 }
 
-/* Collapsible content */
+/* Contenu retractable */
 .collapsible-content {
     height: 0;
     overflow: hidden;
@@ -376,12 +375,11 @@ des pages de compétence rétractables
     height: auto;
 }
 
-/* Expanded section padding */
 .collapsible-section.open > .collapsible-content {
     padding: 10px 15px;
 }
 
-/* Nested sections */
+/* Sections à l'interieur d'autres sections */
 .collapsible-section .collapsible-section {
     margin-left: 20px;
     border-left: 2px dashed #c7bfff;
@@ -428,7 +426,6 @@ des pages de compétence rétractables
 
 
 /*CCS pour les cartes des projets page d'acceuil*/
-/* Container for all cards */
 .container {
     display: flex;
     flex-direction: column;
@@ -436,7 +433,6 @@ des pages de compétence rétractables
     padding: 20px;
 }
 
-/* Row styling: wrap cards for responsiveness */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -445,7 +441,7 @@ des pages de compétence rétractables
 }
 
 
-/* Card internal background image */
+/* Image de fond pour les cartes */
 .card_me::before {
     content: "";
     position: absolute;
@@ -468,30 +464,13 @@ des pages de compétence rétractables
     text-align: center;
 }
 
-/* Card title */
-.card-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #333333;
-}
-
-/* Card text */
-.card-text {
-    font-size: 1rem;
-    color: #555555;
-    margin-bottom: 10px;
-}
-
-/* Links inside card */
+/* Liens à l'intérieur */
 .card-body a {
     text-decoration: none;
     color: #ffffff;
 }
 
-
-
-/* Card body content */
+/* Contenu de la carte */
 .card_me .card-body {
     display: flex;
     flex-direction: column;
@@ -499,21 +478,21 @@ des pages de compétence rétractables
     text-align: center;
 }
 
-/* Card title */
+/* Titre carte */
 .card_me .card-title {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-/* Card text */
+/* Texte carte */
 .card_me .card-text {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 0.5rem;
 }
 
-/* Buttons */
+/* Boutons */
 
 .btn-bd-primary {
     --bd-violet-bg: #a77bff;
@@ -536,7 +515,7 @@ des pages de compétence rétractables
     transform: translateY(-2px);
 }
 
-/* Card image at top */
+/* Style image a l'intérieur des cartes des projets */
 .card-img-top {
     width: 100%;
     height: 180px;
@@ -547,27 +526,12 @@ des pages de compétence rétractables
 
 /* Rend les textes en pragraphes plus visibles même devant l'image de fond */
 p, .card-body {
-    background-color: rgba(0,0,0,0.4); /* dark transparent layer */
+    background-color: rgba(0,0,0,0.4);
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .card_me {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-}
-
-/* Partie Responsive */
+/* Partie Responsive (plus ou moins pour l'instant)*/
 @media (max-width: 768px) {
     .mobile-buttons {
         display: flex;
@@ -616,6 +580,17 @@ p, .card-body {
 
     .page-wrapper {
         flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .card_me {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
 }
