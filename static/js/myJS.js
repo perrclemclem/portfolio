@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* Créer effet de mouvement sur les layers de l'image de fond */
-
+/*
 document.addEventListener("scroll", () => {
     document.documentElement.style.setProperty("--scrollY", window.scrollY);
-});
+});*/
 
