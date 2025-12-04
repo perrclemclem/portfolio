@@ -262,6 +262,22 @@ en étant un nav*/
     padding: 30px 40px;
 }
 
+.card_me {
+    background-color: rgb(87, 244, 255);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    border-radius: 20px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem auto;
+    padding: 7px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
 
 .card_me:hover {
     transform: translateY(-5px); /* créé effet de “flottement” */
