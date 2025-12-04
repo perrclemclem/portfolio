@@ -119,12 +119,11 @@
                 {% if perms.myapp.add_project or user.is_staff or user.is_superuser %}
                     <a href="{% url 'showcontact-page' %}">Show contact</a>
                     <a href="{% url 'addproject-page' %}">Add project</a>
-                {% else %}
-                    <a href="{% url 'project-page' 1 %}">{% trans "Projets" %}</a>
-                    <a href="{% url 'competences-page' %}">{% trans "Compétences" %}</a>
-                    <a href="{% url 'cv-page' %}">CV</a>
-                    <a href="{% url 'contact-page' %}" class="pe-0">{% trans "Me contacter" %}</a>
                 {% endif %}
+                <a href="{% url 'project-page' 1 %}">{% trans "Projets" %}</a>
+                <a href="{% url 'competences-page' %}">{% trans "Compétences" %}</a>
+                <a href="{% url 'cv-page' %}">CV</a>
+                <a href="{% url 'contact-page' %}" class="pe-0">{% trans "Me contacter" %}</a>
             </div>
         </nav>        
     </header>
@@ -151,28 +150,9 @@
                     width="24" height="19"> <small class="d-block mb-3 text-body-secondary">&copy; 2025-2026</small>
             </div>
             <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for
-                            developers</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
                 <h5>About</h5>
                 <ul class="list-unstyled text-small">
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{% url 'about-page' %}">About us</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{% url 'about-page' %}">About me</a></li>
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{% url 'contact-page' %}">Contact</a></li>
                 </ul>
             </div>
