@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <clemenceperraudi@gmail.com>, YEAR.2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-28 08:11+0100\n"
+"POT-Creation-Date: 2025-12-06 10:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,28 +20,29 @@ msgstr ""
 
 #: .\myapp\template\myapp\base.html:13 .\myapp\template\myapp\home.html:8
 msgid "My portfolio"
-msgstr ""
+msgstr "My portfolio"
 
-#: .\myapp\template\myapp\base.html:81
+#: .\myapp\template\myapp\base.html:124
 msgid "Projets"
-msgstr ""
+msgstr "Projects"
 
-#: .\myapp\template\myapp\base.html:82
+#: .\myapp\template\myapp\base.html:125
+#: .\myapp\template\myapp\competences.html:12
 msgid "Compétences"
-msgstr ""
+msgstr "Skills"
 
-#: .\myapp\template\myapp\base.html:84
+#: .\myapp\template\myapp\base.html:127
 msgid "Me contacter"
-msgstr ""
+msgstr "Contact me"
 
 #: .\myapp\template\myapp\competence1.html:7
 msgid "COMPÉTENCE 1"
-msgstr ""
+msgstr "SKILL 1"
 
 #: .\myapp\template\myapp\competence1.html:11
-#: .\myapp\template\myapp\competences.html:35
+#: .\myapp\template\myapp\competences.html:33
 msgid "Compétence 1 — Réaliser un développement d’application"
-msgstr ""
+msgstr "Skill 1 - Develop an application"
 
 #: .\myapp\template\myapp\competence1.html:14
 msgid ""
@@ -54,64 +55,81 @@ msgid ""
 "    et en choisissant les ressources techniques appropriées.\n"
 "    "
 msgstr ""
+"\n"
+"    Develop — meaning conceive, code, test et integrate — an "
+"informatic solution for a client, \n"
+"    while respecting the needs described, and applying the algorithmic "
+"principles, \n"
+"    while ensuring the code quality and its documentation, \n"
+"    and choosing the appropriate technical resources.\n"
+"    "
 
 #: .\myapp\template\myapp\competence1.html:23
 #: .\myapp\template\myapp\competence3.html:24
 #: .\myapp\template\myapp\competence4.html:25
 msgid "Sommaire"
-msgstr ""
+msgstr "Summary"
 
 #: .\myapp\template\myapp\competence1.html:33
 msgid "A. Développer des applications informatiques simples"
-msgstr ""
+msgstr "A. Developping simple applications"
 
 #: .\myapp\template\myapp\competence1.html:38
 msgid "1 – Implémenter des conceptions simples"
-msgstr ""
+msgstr "1 - Implementing simple algorithms"
 
 #: .\myapp\template\myapp\competence1.html:40
 msgid ""
 "Traduire une conception simple (diagrammes, schémas, algorithmes) en code "
 "exécutable."
 msgstr ""
+"Transform a simple algorithm (diagram, schemas, algorithms) in executable "
+"code."
 
 #: .\myapp\template\myapp\competence1.html:42
 msgid ""
 "Voici un algorithme de saisie et vérification qui permet de saisir et "
 "vérifier un pourcentage saisi par l'utilisateur (entre 0 et 100)"
 msgstr ""
+"Here is an algorithm of input and verification that allows for the "
+"input andverification of a percentage entered by the user" 
+"(between 0 and 100)"
 
 #: .\myapp\template\myapp\competence1.html:44
 msgid "Et voici cet algorithme que j'ai transformé en code"
-msgstr ""
+msgstr "And here is this algorithm after I coded it."
 
 #: .\myapp\template\myapp\competence1.html:79
 msgid "2 – Élaborer des conceptions simples"
-msgstr ""
+msgstr "2 - Elaborate a simple conception"
 
 #: .\myapp\template\myapp\competence1.html:81
 msgid ""
 "Concevoir une solution à partir d’un problème donné, en utilisant des "
 "modèles simples (par ex. diagrammes UML)."
 msgstr ""
+"Conceive a solution from a given problem, by using simple models "
+"(for ex. UML diagrams)."
 
 #: .\myapp\template\myapp\competence1.html:87
 msgid ""
 "3 – Faire des essais et évaluer leurs résultats en regard des spécifications"
 msgstr ""
+"3 – Test and evaluate results in regard of their specifications"
 
 #: .\myapp\template\myapp\competence1.html:93
 msgid "4 – Développer des interfaces utilisateurs"
-msgstr ""
+msgstr "4 - Developping user interfaces"
 
 #: .\myapp\template\myapp\competence1.html:95
 msgid ""
 "Avec ce site, je prouve que je peux développer des interfaces utilisateurs !"
 msgstr ""
+"With this website, I can prove that I am capable of developping user interfaces !"
 
 #: .\myapp\template\myapp\competence1.html:104
 msgid "B. Partir des exigences et aller jusqu’à une application complète"
-msgstr ""
+msgstr "B. Starting with the requirements and going all the way to a complete application"
 
 #: .\myapp\template\myapp\competence1.html:109
 msgid ""
@@ -135,16 +153,16 @@ msgstr ""
 #: .\myapp\template\myapp\competence3.html:7
 #: .\myapp\template\myapp\competence4.html:7
 msgid "COMPÉTENCE"
-msgstr ""
+msgstr "SKILL"
 
 #: .\myapp\template\myapp\competence2.html:11
-#: .\myapp\template\myapp\competences.html:40
+#: .\myapp\template\myapp\competences.html:38
 msgid "Compétence 2 — Optimiser des applications"
-msgstr ""
+msgstr "Skill 2 - Optimizing applications"
 
 #: .\myapp\template\myapp\competence2.html:30
 msgid "A. Appréhender et construire des algorithmes"
-msgstr ""
+msgstr "A. Understanding and building algorithms"
 
 #: .\myapp\template\myapp\competence2.html:35
 msgid "AC1 – Analyser un problème avec méthode"
@@ -157,6 +175,10 @@ msgid ""
 "simples et identifier les structures de données adaptées.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Découper un problème en éléments algorithmiques "
+"simples et identifier les structures de données adaptées.\n"
+"   
 
 #: .\myapp\template\myapp\competence2.html:46
 msgid "AC2 – Comparer des algorithmes pour des problèmes classiques"
@@ -170,6 +192,11 @@ msgid ""
 "complexité.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Évaluer et comparer différents algorithmes (par "
+"exemple pour le tri ou la recherche) selon leurs performances et leur "
+"complexité.\n"
+" "
 
 #: .\myapp\template\myapp\competence2.html:58
 msgid ""
@@ -185,11 +212,17 @@ msgid ""
 "problèmes informatiques.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Utiliser les outils mathématiques (logique, "
+"combinatoire, probabilités, graphes, etc.) pour modéliser et résoudre des "
+"problèmes informatiques.\n"
+"                        "
 
 #: .\myapp\template\myapp\competence2.html:73
 msgid ""
 "B. Sélectionner les algorithmes adéquats pour répondre à un problème donné"
 msgstr ""
+"B. Select the appropriate algorithm to answer to a given problem"
 
 #: .\myapp\template\myapp\competence2.html:78
 msgid "AC1 – Choisir des structures de données complexes adaptées au problème"
@@ -203,6 +236,11 @@ msgid ""
 "projet.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Sélectionner et utiliser des structures comme les "
+"arbres, graphes, ou tables de hachage selon le contexte et les besoins du "
+"projet.\n"
+"                        "
 
 #: .\myapp\template\myapp\competence2.html:89
 msgid ""
@@ -218,6 +256,11 @@ msgid ""
 "concevoir des solutions efficaces.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Appliquer des méthodes avancées (recherche "
+"opérationnelle, optimisation globale, intelligence artificielle, etc.) pour "
+"concevoir des solutions efficaces.\n"
+"                        "
 
 #: .\myapp\template\myapp\competence2.html:100
 msgid ""
@@ -232,6 +275,11 @@ msgid ""
 "authentification, contrôle d’accès…).\n"
 "                        "
 msgstr ""
+"\n"
+"                        Identifier les vulnérabilités potentielles et mettre "
+"en œuvre des techniques de sécurisation adaptées (chiffrement, "
+"authentification, contrôle d’accès…).\n"
+"                        "
 
 #: .\myapp\template\myapp\competence2.html:112
 msgid ""
@@ -246,12 +294,18 @@ msgid ""
 "pratiques responsables.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Analyser la consommation de ressources et les effets "
+"des choix technologiques sur l’environnement et la société, pour adopter des "
+"pratiques responsables.\n"
+"                        "
 
 #: .\myapp\template\myapp\competence3.html:12
-#: .\myapp\template\myapp\competences.html:45
+#: .\myapp\template\myapp\competences.html:43
 msgid ""
 "Compétence 3 — Administrer des systèmes informatiques communicants complexes"
 msgstr ""
+"Skill 3 — Administrate complex communicating computer systems"
 
 #: .\myapp\template\myapp\competence3.html:15
 msgid ""
@@ -265,10 +319,19 @@ msgid ""
 "architecturales et de sécurité, et en garantissant la continuité d'activité "
 "et la qualité de service.\n"
 msgstr ""
+"\n"
+"Install, configurate, mettre available, maintain infrastructure in  "
+"operational conditions, \n"
+"services and networks, and optimize the informatic systems of an "
+"organisation.\n"
+"All of this while securing the information system, by applying the norms "
+"and good practices \n"
+"for architecture and security, and garenteeing continuous activity "
+"and service quality.\n"
 
 #: .\myapp\template\myapp\competence3.html:38
 msgid "A. Installer et configurer un poste de travail"
-msgstr ""
+msgstr "A. Install and configure a workstation"
 
 #: .\myapp\template\myapp\competence3.html:44
 msgid ""
@@ -285,6 +348,12 @@ msgid ""
 "poste informatique et comprendre leurs interactions.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Reconnaître les éléments matériels (processeur, mémoire, "
+"disque, carte réseau…) et logiciels \n"
+"                    (système d’exploitation, pilotes, applications) d’un "
+"poste informatique et comprendre leurs interactions.\n"
+"                    "
 
 #: .\myapp\template\myapp\competence3.html:54
 msgid ""
@@ -293,6 +362,10 @@ msgid ""
 "devoir de Computer architecture.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Voici un modèle d'ALU que j'ai créé moi-même pour un "
+"devoir de Computer architecture.\n"
+"                        "
 
 #: .\myapp\template\myapp\competence3.html:65
 msgid ""
@@ -309,6 +382,12 @@ msgid ""
 "permissions).\n"
 "                    "
 msgstr ""
+"\n"
+"                    Utiliser les principales commandes et fonctionnalités "
+"des systèmes d’exploitation modernes \n"
+"                    (gestion des utilisateurs, processus, fichiers, et "
+"permissions).\n"
+"                    "
 
 #: .\myapp\template\myapp\competence3.html:80
 msgid ""
@@ -325,6 +404,12 @@ msgid ""
 "développement.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Mettre en place un environnement de travail complet : "
+"installation d’un OS (Linux, Windows), \n"
+"                    des IDE, compilateurs, et utilitaires nécessaires au "
+"développement.\n"
+"                    "
 
 #: .\myapp\template\myapp\competence3.html:95
 msgid "AC4 – Configurer un poste de travail dans un réseau d’entreprise"
@@ -339,10 +424,16 @@ msgid ""
 "machines du réseau.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Paramétrer l’accès réseau (adresse IP, DNS, passerelle), "
+"rejoindre un domaine, \n"
+"                    et assurer la communication sécurisée avec les autres "
+"machines du réseau.\n"
+"                    "
 
 #: .\myapp\template\myapp\competence3.html:116
 msgid "B. Déployer des services dans une architecture réseau"
-msgstr ""
+msgstr "B. Deploy services in a network architecture"
 
 #: .\myapp\template\myapp\competence3.html:123
 msgid "AC1 – Concevoir et développer des applications communicantes"
@@ -357,6 +448,12 @@ msgid ""
 "connectés, etc.).\n"
 "                    "
 msgstr ""
+"\n"
+"                    Créer des applications capables d’échanger des données à "
+"travers un réseau \n"
+"                    (client/serveur, API REST, communication entre objets "
+"connectés, etc.).\n"
+"                    "
 
 #: .\myapp\template\myapp\competence3.html:138
 msgid "AC2 – Utiliser des serveurs et des services réseaux virtualisés"
@@ -371,6 +468,12 @@ msgid ""
 "pour les déployer efficacement.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Mettre en place et gérer des serveurs (web, base de "
+"données, DNS, etc.) \n"
+"                    et utiliser la virtualisation (VM, conteneurs, cloud) "
+"pour les déployer efficacement.\n"
+"                    "
 
 #: .\myapp\template\myapp\competence3.html:153
 msgid "AC3 – Sécuriser les services et données d’un système"
@@ -385,11 +488,17 @@ msgid ""
 "données et les services d’une organisation.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Appliquer les principes de cybersécurité : chiffrement, "
+"pare-feu, sauvegardes, \n"
+"                    authentification et autorisation, afin de protéger les "
+"données et les services d’une organisation.\n"
+"                    "
 
 #: .\myapp\template\myapp\competence4.html:12
-#: .\myapp\template\myapp\competences.html:50
+#: .\myapp\template\myapp\competences.html:48
 msgid "Compétence 4 — Gérer des données de l’information"
-msgstr ""
+msgstr "Skill 4 - Managing information data"
 
 #: .\myapp\template\myapp\competence4.html:15
 msgid ""
@@ -404,12 +513,22 @@ msgid ""
 "ainsi que la garantie de la cohérence et de la qualité des informations "
 "manipulées.\n"
 msgstr ""
+"\n"
+"Conceive, manage, administrate et exploit the data of a company to "
+"make available \n"
+"all the necessary informations for the proper management of the company. \n"
+"This skill involves the respect of the reglementations on private life "
+"and data protection, \n"
+"taking into account the economic, societal and environmental issues related "
+"to storage, \n"
+"as well as ensuring the consistency and quality of the information handeled. \n"
 
 #: .\myapp\template\myapp\competence4.html:39
 msgid ""
 "A. Concevoir et mettre en place une base de données à partir d’un cahier des "
 "charges client"
 msgstr ""
+"A. Design and implement a database based on client specifications "
 
 #: .\myapp\template\myapp\competence4.html:46
 msgid "AC1 – Mettre à jour et interroger une base de données relationnelle"
@@ -424,6 +543,13 @@ msgid ""
 "connectée à la base de données.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Utiliser le langage SQL pour interroger et modifier des "
+"données (SELECT, INSERT, UPDATE, DELETE), \n"
+"                    soit directement, soit à travers une application "
+"connectée à la base de données.\n"
+"                    "
+
 
 #: .\myapp\template\myapp\competence4.html:66
 msgid "AC2 – Visualiser des données"
@@ -438,6 +564,12 @@ msgid ""
 "etc.).\n"
 "                    "
 msgstr ""
+"\n"
+"                    Présenter les informations de manière lisible et "
+"exploitable grâce à des outils de visualisation \n"
+"                    (tableaux de bord, graphiques, rapports dynamiques, "
+"etc.).\n"
+"                    "
 
 #: .\myapp\template\myapp\competence4.html:81
 msgid ""
@@ -454,12 +586,19 @@ msgid ""
 "structure dans un SGBD.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Analyser les besoins du client, créer un modèle "
+"conceptuel de données (MERISE, UML), \n"
+"                    le traduire en schéma relationnel et implémenter la "
+"structure dans un SGBD.\n"
+"                    "
 
 #: .\myapp\template\myapp\competence4.html:102
 msgid ""
 "B. Optimiser une base de données, interagir avec une application et mettre "
 "en œuvre la sécurité"
 msgstr ""
+"B. Optimize a database, interact with an application et implement security "
 
 #: .\myapp\template\myapp\competence4.html:109
 msgid "AC1 – Optimiser les modèles de données de l’entreprise"
@@ -473,6 +612,11 @@ msgid ""
 "de données pour améliorer la rapidité et la fiabilité du système.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Analyser la performance des requêtes, créer des index, \n"
+"                    revoir la conception du schéma et ajuster les structures "
+"de données pour améliorer la rapidité et la fiabilité du système.\n"
+"                    "
 
 #: .\myapp\template\myapp\competence4.html:124
 msgid "AC2 – Assurer la confidentialité des données (intégrité et sécurité)"
@@ -486,6 +630,11 @@ msgid ""
 "                    et conformité aux réglementations (RGPD, CNIL).\n"
 "                    "
 msgstr ""
+"\n"
+"                    Mettre en place des mécanismes de sécurité : droits "
+"d’accès, chiffrement, audit, sauvegardes, \n"
+"                    et conformité aux réglementations (RGPD, CNIL).\n"
+"                    "
 
 #: .\myapp\template\myapp\competence4.html:139
 msgid ""
@@ -502,6 +651,12 @@ msgid ""
 "dynamiques, APIs de consultation, etc.).\n"
 "                    "
 msgstr ""
+"\n"
+"                    Développer des applications ou interfaces qui extraient, "
+"transforment et présentent les données de manière claire \n"
+"                    et utile pour la prise de décision (dashboards, rapports "
+"dynamiques, APIs de consultation, etc.).\n"
+"                    "
 
 #: .\myapp\template\myapp\competence4.html:154
 msgid "AC4 – Manipuler des données hétérogènes"
@@ -516,160 +671,199 @@ msgid ""
 "système d’information.\n"
 "                    "
 msgstr ""
+"\n"
+"                    Intégrer et gérer différents types de données "
+"(relationnelles, NoSQL, JSON, XML, flux temps réel, etc.) \n"
+"                    pour les rendre cohérentes et exploitables dans un même "
+"système d’information.\n"
+"                    "
 
 #: .\myapp\template\myapp\competences.html:8
 msgid "COMPÉTENCES"
-msgstr ""
+msgstr "SKILLS"
 
-#: .\myapp\template\myapp\competences.html:12
+#: .\myapp\template\myapp\competences.html:15
 msgid ""
-"\n"
-"    <h2>Compétences</h2>\n"
-"    <br>\n"
-"    <p class=\"text-center\">\n"
-"        Voici les différentes compétences que j'ai appris à maîtriser durant "
-"ma formation.\n"
-"    </p>\n"
-"    <br>\n"
-"    <p class=\"text-center\">\n"
-"        Ces quatre compétences sont des essentielles en tant que "
-"développeur.\n"
-"    </p>\n"
-"    <br>\n"
-"    <p class=\"text-center\">\n"
-"        A l'intérieur de chacune de ces compétences, \n"
-"        il y a une description brève de la compétence, ainsi que les preuves "
-"que je les maîtrise.  \n"
-"    </p>\n"
-"    "
+"Voici les différentes compétences que j'ai appris à maîtriser durant ma "
+"formation."
 msgstr ""
+"Here are the different skills that I learned to master during my "
+"formation."
 
-#: .\myapp\template\myapp\competences.html:31
+#: .\myapp\template\myapp\competences.html:19
+msgid "Ces quatre compétences sont des essentielles en tant que développeur."
+msgstr "These four skillls are all essential for a developper"
+
+#: .\myapp\template\myapp\competences.html:29
 msgid "Mes compétences"
-msgstr ""
+msgstr "My skills"
 
 #: .\myapp\template\myapp\contact.html:6
 msgid "Contact me"
-msgstr ""
+msgstr "Contact me"
 
 #: .\myapp\template\myapp\contact.html:18
 msgid "Topic"
-msgstr ""
+msgstr "Topic"
 
 #: .\myapp\template\myapp\contact.html:22
 msgid "Email"
-msgstr ""
+msgstr "Email"
+
+#: .\myapp\template\myapp\contact.html:26
+msgid "Detail"
+msgstr "Details"
 
 #: .\myapp\template\myapp\contact.html:30
 msgid "Submit"
-msgstr ""
+msgstr "Submit"
 
 #: .\myapp\template\myapp\cv.html:8
 msgid "Mon CV"
-msgstr ""
+msgstr "My CV"
 
 #: .\myapp\template\myapp\cv.html:13
-msgid ""
-"\n"
-"    <h2 class=\"text-start\">PROFILE</h2>\n"
-"    <p class=\"text-start\">Je suis étudiante en deuxième année de BUT "
-"informatique. \n"
-"        Curieuse, rigoureuse et créative, j’aime  développer des solutions "
-"efficaces et intuitives.</p>\n"
-"\n"
-"    <h2 class=\"text-start\">ETAT CIVIL</h2>\n"
-"    <p class=\"text-start\"><strong>Date de naissance:</strong> 14/12/2006</"
-"p>\n"
-"    <p class=\"text-start\"><strong>Nationalité :</strong> française</p>\n"
-"\n"
-"    <h2 class=\"text-start\">CONTACTS</h2>\n"
-"    <p class=\"text-start\">+66 09 49 30 70 03</p>\n"
-"    <p class=\"text-start\">clemenceperraudi@gmail.com</p>\n"
-"    <p class=\"text-start\">Rue Henri Descoins \n"
-"        47000 Agen</p>\n"
-"\n"
-"    <h2 class=\"text-start\">LOISIRS</h2>\n"
-"    <p class=\"text-start\"><strong>Lecture:</strong> Romans, Webtoons</p>\n"
-"    <p class=\"text-start\"><strong>Jeux vidéos:</strong> Genshin impact, "
-"Zelda: Breath of the wild</p>\n"
-"    "
-msgstr ""
+msgid "PROFILE"
+msgstr "PROFILE"
 
-#: .\myapp\template\myapp\cv.html:35
-msgid ""
-"\n"
-"    <h3>FORMATION / DIPLÔME</h3>\n"
-"    <h5 class=\"mb-0\">BUT INFORMATIQUE - 2EME ANNEE</h5>\n"
-"    <p class=\"mb-2\">IUT de Bayonne et du Pays Basque à Anglet\n"
-"        1 an en échange universitaire à Prince of Songkla \n"
-"        University en Thaïlande en 2025: En cours</p>\n"
-"    <h5 class=\"mb-0\">BACCALAUREAT GENERAL - MENTION BIEN</h5>\n"
-"    <p class=\"mb-3\">Lycée Bernard Palissy à Agen —  2021-2024\n"
-"        Spécialités Numérique et Sciences de l’Informatique (NSI) \n"
-"        et Mathématiques</p>\n"
-"\n"
-"    <h3>PROJETS ACADEMIQUES</h3>\n"
-"    <p><strong>Développement d'une interface web</strong></p>\n"
-"    <ul>\n"
-"        <li><p>Projet : Création d’un site web</p></li>\n"
-"        <li><p>Compétences : Maîtrise de Figma pour la conception \n"
-"            (charte graphique, zoning, wireframes, mock-ups), HTML/CSS, \n"
-"            utilisation de Bootstrap et Django pour l’implémentation, \n"
-"            travail collaboratif, respect des bonnes pratiques "
-"d’accessibilité \n"
-"            et de qualité du code.</p></li>\n"
-"    </ul>\n"
-"    <p><strong>Création d’une base de données</strong></p>\n"
-"    <ul>\n"
-"        <li><p>Mise en place d’une base de données en SQL.</p></li>\n"
-"        <li><p>Compétences : Analyse des besoins, modélisation, requêtes SQL."
-"</p></li>\n"
-"    </ul>\n"
-"    \n"
-"    <h3>COMPETENCES</h3>\n"
-"    <p><strong>Langages informatiques: </strong>Python, C++, SQl, HTML/CSS, "
-"Verilog</p>\n"
-"    <p><strong>Savoir-être :</strong></p>\n"
-"    <ul>\n"
-"        <li><p>Capacité d'adaptation</p></li>\n"
-"        <li><p>Esprit d'analyse et logique</p></li>\n"
-"        <li><p>Travail d'équipe</p></li>\n"
-"    </ul>\n"
-"\n"
-"    <h3>LANGUES</h3>\n"
-"    <p><strong>Français:</strong> langue maternelle</p>\n"
-"    <p><strong>Anglais:</strong> courant (écrit et oral) C1</p>\n"
-"    "
-msgstr ""
+#: .\myapp\template\myapp\cv.html:17
+msgid "ETAT CIVIL"
+msgstr "CIVIL STATUS"
+
+#: .\myapp\template\myapp\cv.html:18
+msgid "Date de naissance"
+msgstr "Date of birth"
+
+#: .\myapp\template\myapp\cv.html:19
+msgid "Nationalité"
+msgstr "Nationality"
+
+#: .\myapp\template\myapp\cv.html:27
+msgid "LOISIRS"
+msgstr "HOBBIES"
+
+#: .\myapp\template\myapp\cv.html:28
+msgid "Lecture"
+msgstr "Reading"
+
+#: .\myapp\template\myapp\cv.html:28
+msgid "Romans, Webtoons"
+msgstr "Novels, Books, Webtoons"
+
+#: .\myapp\template\myapp\cv.html:29
+msgid "Jeux vidéos"
+msgstr "Video games"
+
+#: .\myapp\template\myapp\cv.html:33
+msgid "FORMATION / DIPLÔME"
+msgstr "EDUCATION"
+
+#: .\myapp\template\myapp\cv.html:34
+msgid "BUT INFORMATIQUE - 2EME ANNEE"
+msgstr "BACHELOR'S DEGREE in Computer Science - 2ND YEAR"
+
+#: .\myapp\template\myapp\cv.html:38
+msgid "BACCALAUREAT GENERAL - MENTION BIEN"
+msgstr "HIGH SCHOOL DIPLOMA"
+
+#: .\myapp\template\myapp\cv.html:43
+msgid "PROJETS ACADEMIQUES"
+msgstr "ACADEMIC PROJECTS"
+
+#: .\myapp\template\myapp\cv.html:44
+msgid "Développement d'une interface web"
+msgstr "DEvelopping a web interface"
+
+#: .\myapp\template\myapp\cv.html:46
+msgid "Projet : Création d’un site web"
+msgstr "Project : Creating a website"
+
+#: .\myapp\template\myapp\cv.html:55
+msgid "Mise en place d’une base de données en SQL."
+msgstr "Setting up a database in SQL"
+
+#: .\myapp\template\myapp\cv.html:56
+msgid "Compétences : Analyse des besoins, modélisation, requêtes SQL."
+msgstr "Skills : Needs analysis, modeling, SQL quieries "
+
+#: .\myapp\template\myapp\cv.html:59
+msgid "COMPETENCES"
+msgstr "SKILLS"
+
+#: .\myapp\template\myapp\cv.html:60
+msgid "Langages informatiques"
+msgstr "Informatic languages"
+
+#: .\myapp\template\myapp\cv.html:61
+msgid "Savoir-être"
+msgstr "Soft skills"
+
+#: .\myapp\template\myapp\cv.html:63
+msgid "Capacité d'adaptation"
+msgstr "Adaptability"
+
+#: .\myapp\template\myapp\cv.html:64
+msgid "Esprit d'analyse et logique"
+msgstr "Analytical mind and logic"
+
+#: .\myapp\template\myapp\cv.html:65
+msgid "Travail d'équipe"
+msgstr "Teamwork"
+
+#: .\myapp\template\myapp\cv.html:68
+msgid "LANGUES"
+msgstr "LANGUAGES"
+
+#: .\myapp\template\myapp\cv.html:70
+#, python-format
+msgid "Anglais"
+msgstr "English"
 
 #: .\myapp\template\myapp\home.html:13
+msgid "Mon profil"
+msgstr "My profile"
+
 msgid ""
 "\n"
-"    <h4>My profile</h4>\n"
-"    <p>This is me !</p>\n"
+"        Étudiante en deuxième année de BUT informatique, \n"
+"        je réalise cette année un échange universitaire à \n"
+"        Prince of Songkla University, en Thaïlande.\n"
+"        Passionnée par le développement et toujours curieuse d’en apprendre "
+"davantage, \n"
+"        je me décris comme quelqu’un de rigoureux, créatif et motivé \n"
+"        par l’idée de construire des projets utiles et bien pensés.\n"
 "    "
 msgstr ""
+"\n"
+"        Étudiante en deuxième année de BUT informatique, \n"
+"        je réalise cette année un échange universitaire à \n"
+"        Prince of Songkla University, en Thaïlande.\n"
+"        Passionnée par le développement et toujours curieuse d’en apprendre "
+"davantage, \n"
+"        je me décris comme quelqu’un de rigoureux, créatif et motivé \n"
+"        par l’idée de construire des projets utiles et bien pensés.\n"
+"    "
 
-#: .\myapp\template\myapp\home.html:35
+#: .\myapp\template\myapp\home.html:40
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
-#: .\myapp\template\myapp\home.html:38
+#: .\myapp\template\myapp\home.html:44
 msgid "More details"
-msgstr ""
+msgstr "More details"
 
 #: .\myapp\template\myapp\projet.html:8
 msgid "PROJETS"
-msgstr ""
+msgstr "PROJECTS"
 
 #: .\myapp\template\myapp\projet.html:16
 msgid "Télécharger le document"
-msgstr ""
+msgstr "Download the document"
 
 #: .\myapp\template\myapp\projet.html:27
 msgid "Consulter le code"
-msgstr ""
+msgstr "See the code"
 
 #: .\myapp\template\myapp\projet.html:30
 msgid "Voir le résultat"
-msgstr ""
+msgstr "See the results"

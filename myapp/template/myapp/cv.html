@@ -10,66 +10,62 @@
 
 {% block aside %}
     <img src="{% static 'image/photo_profil_linkedin.jpg' %}" alt="photo Clem">
-    {% blocktrans %}
-    <h2 class="text-start">PROFILE</h2>
-    <p class="text-start">Je suis étudiante en deuxième année de BUT informatique. 
-        Curieuse, rigoureuse et créative, j’aime  développer des solutions efficaces et intuitives.</p>
+    <h2 class="text-start"> {% trans "PROFILE" %}</h2>
+    <p class="text-start"> {% trans "Je suis étudiante en deuxième année de BUT informatique. 
+        Curieuse, rigoureuse et créative, j’aime  développer des solutions efficaces et intuitives." %} </p>
 
-    <h2 class="text-start">ETAT CIVIL</h2>
-    <p class="text-start"><strong>Date de naissance:</strong> 14/12/2006</p>
-    <p class="text-start"><strong>Nationalité :</strong> française</p>
+    <h2 class="text-start"> {% trans "ETAT CIVIL" %}</h2>
+    <p class="text-start"><strong> {% trans "Date de naissance" %}:</strong> 14/12/2006</p>
+    <p class="text-start"><strong> {% trans "Nationalité" %} :</strong> française</p>
 
-    <h2 class="text-start">CONTACTS</h2>
+    <h2 class="text-start"> {% trans CONTACTS</h2>
     <p class="text-start">+66 09 49 30 70 03</p>
     <p class="text-start">clemenceperraudi@gmail.com</p>
     <p class="text-start">Rue Henri Descoins 
         47000 Agen</p>
 
-    <h2 class="text-start">LOISIRS</h2>
-    <p class="text-start"><strong>Lecture:</strong> Romans, Webtoons</p>
-    <p class="text-start"><strong>Jeux vidéos:</strong> Genshin impact, Zelda: Breath of the wild</p>
-    {% endblocktrans %}
+    <h2 class="text-start"> {% trans "LOISIRS" %}</h2>
+    <p class="text-start"><strong> {% trans "Lecture" %}:</strong>  {% trans "Romans, Webtoons" %}</p>
+    <p class="text-start"><strong> {% trans "Jeux vidéos" %}:</strong> Genshin impact, Zelda: Breath of the wild</p>
 {% endblock aside %}
 
 {% block content %}
-    {% blocktrans %}
-    <h3>FORMATION / DIPLÔME</h3>
-    <h5 class="mb-0">BUT INFORMATIQUE - 2EME ANNEE</h5>
-    <p class="mb-2">IUT de Bayonne et du Pays Basque à Anglet
+    <h3> {% trans "FORMATION / DIPLÔME" %}</h3>
+    <h5 class="mb-0">{% trans "BUT INFORMATIQUE - 2EME ANNEE" %}</h5>
+    <p class="mb-2">{% trans "IUT de Bayonne et du Pays Basque à Anglet
         1 an en échange universitaire à Prince of Songkla 
-        University en Thaïlande en 2025: En cours</p>
-    <h5 class="mb-0">BACCALAUREAT GENERAL - MENTION BIEN</h5>
-    <p class="mb-3">Lycée Bernard Palissy à Agen —  2021-2024
+        University en Thaïlande en 2025: En cours" %}</p>
+    <h5 class="mb-0">{% trans "BACCALAUREAT GENERAL - MENTION BIEN" %}</h5>
+    <p class="mb-3">{% trans "Lycée Bernard Palissy à Agen —  2021-2024
         Spécialités Numérique et Sciences de l’Informatique (NSI) 
-        et Mathématiques</p>
+        et Mathématiques" %}</p>
 
-    <h3>PROJETS ACADEMIQUES</h3>
-    <p><strong>Développement d'une interface web</strong></p>
+    <h3>{% trans "PROJETS ACADEMIQUES" %}</h3>
+    <p><strong>{% trans "Développement d'une interface web" %}</strong></p>
     <ul>
-        <li><p>Projet : Création d’un site web</p></li>
-        <li><p>Compétences : Maîtrise de Figma pour la conception 
+        <li><p>{% trans "Projet : Création d’un site web" %}</p></li>
+        <li><p>{% trans "Compétences : Maîtrise de Figma pour la conception 
             (charte graphique, zoning, wireframes, mock-ups), HTML/CSS, 
             utilisation de Bootstrap et Django pour l’implémentation, 
             travail collaboratif, respect des bonnes pratiques d’accessibilité 
-            et de qualité du code.</p></li>
+            et de qualité du code." %}</p></li>
     </ul>
-    <p><strong>Création d’une base de données</strong></p>
+    <p><strong>{% trans "Création d’une base de données</strong></p>
     <ul>
-        <li><p>Mise en place d’une base de données en SQL.</p></li>
-        <li><p>Compétences : Analyse des besoins, modélisation, requêtes SQL.</p></li>
+        <li><p>{% trans "Mise en place d’une base de données en SQL." %}</p></li>
+        <li><p>{% trans "Compétences : Analyse des besoins, modélisation, requêtes SQL." %}</p></li>
     </ul>
     
-    <h3>COMPETENCES</h3>
-    <p><strong>Langages informatiques: </strong>Python, C++, SQl, HTML/CSS, Verilog</p>
-    <p><strong>Savoir-être :</strong></p>
+    <h3>{% trans "COMPETENCES" %}</h3>
+    <p><strong>{% trans "Langages informatiques" %}: </strong>Python, C++, SQl, HTML/CSS, Verilog</p>
+    <p><strong>{% trans "Savoir-être" %} :</strong></p>
     <ul>
-        <li><p>Capacité d'adaptation</p></li>
-        <li><p>Esprit d'analyse et logique</p></li>
-        <li><p>Travail d'équipe</p></li>
+        <li><p>{% trans "Capacité d'adaptation" %}</p></li>
+        <li><p>{% trans "Esprit d'analyse et logique" %}</p></li>
+        <li><p>{% trans "Travail d'équipe" %}</p></li>
     </ul>
 
-    <h3>LANGUES</h3>
-    <p><strong>Français:</strong> langue maternelle</p>
-    <p><strong>Anglais:</strong> courant (écrit et oral) C1</p>
-    {% endblocktrans %}
+    <h3>{% trans "LANGUES" %}</h3>
+    <p><strong>{% trans "Français": %}</strong> {% trans "langue maternelle" %}</p>
+    <p><strong>{% trans "Anglais" %}:</strong> {% trans "courant (écrit et oral)" %} C1</p>
 {% endblock content %}
