@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-06 10:10+0100\n"
+"POT-Creation-Date: 2025-12-06 11:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,8 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Develop — meaning conceive, code, test et integrate — an "
-"informatic solution for a client, \n"
+"    Develop — meaning conceive, code, test et integrate — an informatic "
+"solution for a client, \n"
 "    while respecting the needs described, and applying the algorithmic "
 "principles, \n"
 "    while ensuring the code quality and its documentation, \n"
@@ -91,9 +91,8 @@ msgid ""
 "Voici un algorithme de saisie et vérification qui permet de saisir et "
 "vérifier un pourcentage saisi par l'utilisateur (entre 0 et 100)"
 msgstr ""
-"Here is an algorithm of input and verification that allows for the "
-"input andverification of a percentage entered by the user" 
-"(between 0 and 100)"
+"Here is an algorithm of input and verification that allows for the input "
+"andverification of a percentage entered by the user(between 0 and 100)"
 
 #: .\myapp\template\myapp\competence1.html:44
 msgid "Et voici cet algorithme que j'ai transformé en code"
@@ -108,14 +107,13 @@ msgid ""
 "Concevoir une solution à partir d’un problème donné, en utilisant des "
 "modèles simples (par ex. diagrammes UML)."
 msgstr ""
-"Conceive a solution from a given problem, by using simple models "
-"(for ex. UML diagrams)."
+"Conceive a solution from a given problem, by using simple models (for ex. "
+"UML diagrams)."
 
 #: .\myapp\template\myapp\competence1.html:87
 msgid ""
 "3 – Faire des essais et évaluer leurs résultats en regard des spécifications"
-msgstr ""
-"3 – Test and evaluate results in regard of their specifications"
+msgstr "3 – Test and evaluate results in regard of their specifications"
 
 #: .\myapp\template\myapp\competence1.html:93
 msgid "4 – Développer des interfaces utilisateurs"
@@ -125,11 +123,14 @@ msgstr "4 - Developping user interfaces"
 msgid ""
 "Avec ce site, je prouve que je peux développer des interfaces utilisateurs !"
 msgstr ""
-"With this website, I can prove that I am capable of developping user interfaces !"
+"With this website, I can prove that I am capable of developping user "
+"interfaces !"
 
 #: .\myapp\template\myapp\competence1.html:104
 msgid "B. Partir des exigences et aller jusqu’à une application complète"
-msgstr "B. Starting with the requirements and going all the way to a complete application"
+msgstr ""
+"B. Starting with the requirements and going all the way to a complete "
+"application"
 
 #: .\myapp\template\myapp\competence1.html:109
 msgid ""
@@ -178,7 +179,7 @@ msgstr ""
 "\n"
 "                        Découper un problème en éléments algorithmiques "
 "simples et identifier les structures de données adaptées.\n"
-"   
+"   "
 
 #: .\myapp\template\myapp\competence2.html:46
 msgid "AC2 – Comparer des algorithmes pour des problèmes classiques"
@@ -221,8 +222,7 @@ msgstr ""
 #: .\myapp\template\myapp\competence2.html:73
 msgid ""
 "B. Sélectionner les algorithmes adéquats pour répondre à un problème donné"
-msgstr ""
-"B. Select the appropriate algorithm to answer to a given problem"
+msgstr "B. Select the appropriate algorithm to answer to a given problem"
 
 #: .\myapp\template\myapp\competence2.html:78
 msgid "AC1 – Choisir des structures de données complexes adaptées au problème"
@@ -304,8 +304,7 @@ msgstr ""
 #: .\myapp\template\myapp\competences.html:43
 msgid ""
 "Compétence 3 — Administrer des systèmes informatiques communicants complexes"
-msgstr ""
-"Skill 3 — Administrate complex communicating computer systems"
+msgstr "Skill 3 — Administrate complex communicating computer systems"
 
 #: .\myapp\template\myapp\competence3.html:15
 msgid ""
@@ -324,10 +323,10 @@ msgstr ""
 "operational conditions, \n"
 "services and networks, and optimize the informatic systems of an "
 "organisation.\n"
-"All of this while securing the information system, by applying the norms "
-"and good practices \n"
-"for architecture and security, and garenteeing continuous activity "
-"and service quality.\n"
+"All of this while securing the information system, by applying the norms and "
+"good practices \n"
+"for architecture and security, and garenteeing continuous activity and "
+"service quality.\n"
 
 #: .\myapp\template\myapp\competence3.html:38
 msgid "A. Installer et configurer un poste de travail"
@@ -514,21 +513,21 @@ msgid ""
 "manipulées.\n"
 msgstr ""
 "\n"
-"Conceive, manage, administrate et exploit the data of a company to "
-"make available \n"
+"Conceive, manage, administrate et exploit the data of a company to make "
+"available \n"
 "all the necessary informations for the proper management of the company. \n"
-"This skill involves the respect of the reglementations on private life "
-"and data protection, \n"
+"This skill involves the respect of the reglementations on private life and "
+"data protection, \n"
 "taking into account the economic, societal and environmental issues related "
 "to storage, \n"
-"as well as ensuring the consistency and quality of the information handeled. \n"
+"as well as ensuring the consistency and quality of the information "
+"handeled. \n"
 
 #: .\myapp\template\myapp\competence4.html:39
 msgid ""
 "A. Concevoir et mettre en place une base de données à partir d’un cahier des "
 "charges client"
-msgstr ""
-"A. Design and implement a database based on client specifications "
+msgstr "A. Design and implement a database based on client specifications "
 
 #: .\myapp\template\myapp\competence4.html:46
 msgid "AC1 – Mettre à jour et interroger une base de données relationnelle"
@@ -549,7 +548,6 @@ msgstr ""
 "                    soit directement, soit à travers une application "
 "connectée à la base de données.\n"
 "                    "
-
 
 #: .\myapp\template\myapp\competence4.html:66
 msgid "AC2 – Visualiser des données"
@@ -687,8 +685,7 @@ msgid ""
 "Voici les différentes compétences que j'ai appris à maîtriser durant ma "
 "formation."
 msgstr ""
-"Here are the different skills that I learned to master during my "
-"formation."
+"Here are the different skills that I learned to master during my formation."
 
 #: .\myapp\template\myapp\competences.html:19
 msgid "Ces quatre compétences sont des essentielles en tant que développeur."
@@ -737,6 +734,10 @@ msgstr "Date of birth"
 #: .\myapp\template\myapp\cv.html:19
 msgid "Nationalité"
 msgstr "Nationality"
+
+#: .\myapp\template\myapp\cv.html:21
+msgid "CONTACTS"
+msgstr "CONTACTS"
 
 #: .\myapp\template\myapp\cv.html:27
 msgid "LOISIRS"
@@ -814,41 +815,31 @@ msgstr "Teamwork"
 msgid "LANGUES"
 msgstr "LANGUAGES"
 
+#: .\myapp\template\myapp\cv.html:69
+msgid "Français"
+msgstr "French"
+
+#: .\myapp\template\myapp\cv.html:69
+msgid "langue maternelle"
+msgstr "native language"
+
 #: .\myapp\template\myapp\cv.html:70
-#, python-format
 msgid "Anglais"
 msgstr "English"
+
+#: .\myapp\template\myapp\cv.html:70
+msgid "courant (écrit et oral)"
+msgstr "spoken language"
 
 #: .\myapp\template\myapp\home.html:13
 msgid "Mon profil"
 msgstr "My profile"
 
-msgid ""
-"\n"
-"        Étudiante en deuxième année de BUT informatique, \n"
-"        je réalise cette année un échange universitaire à \n"
-"        Prince of Songkla University, en Thaïlande.\n"
-"        Passionnée par le développement et toujours curieuse d’en apprendre "
-"davantage, \n"
-"        je me décris comme quelqu’un de rigoureux, créatif et motivé \n"
-"        par l’idée de construire des projets utiles et bien pensés.\n"
-"    "
-msgstr ""
-"\n"
-"        Étudiante en deuxième année de BUT informatique, \n"
-"        je réalise cette année un échange universitaire à \n"
-"        Prince of Songkla University, en Thaïlande.\n"
-"        Passionnée par le développement et toujours curieuse d’en apprendre "
-"davantage, \n"
-"        je me décris comme quelqu’un de rigoureux, créatif et motivé \n"
-"        par l’idée de construire des projets utiles et bien pensés.\n"
-"    "
-
-#: .\myapp\template\myapp\home.html:40
+#: .\myapp\template\myapp\home.html:38
 msgid "Download"
 msgstr "Download"
 
-#: .\myapp\template\myapp\home.html:44
+#: .\myapp\template\myapp\home.html:42
 msgid "More details"
 msgstr "More details"
 
@@ -867,3 +858,24 @@ msgstr "See the code"
 #: .\myapp\template\myapp\projet.html:30
 msgid "Voir le résultat"
 msgstr "See the results"
+
+#~ msgid ""
+#~ "\n"
+#~ "        Étudiante en deuxième année de BUT informatique, \n"
+#~ "        je réalise cette année un échange universitaire à \n"
+#~ "        Prince of Songkla University, en Thaïlande.\n"
+#~ "        Passionnée par le développement et toujours curieuse d’en "
+#~ "apprendre davantage, \n"
+#~ "        je me décris comme quelqu’un de rigoureux, créatif et motivé \n"
+#~ "        par l’idée de construire des projets utiles et bien pensés.\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "        Étudiante en deuxième année de BUT informatique, \n"
+#~ "        je réalise cette année un échange universitaire à \n"
+#~ "        Prince of Songkla University, en Thaïlande.\n"
+#~ "        Passionnée par le développement et toujours curieuse d’en "
+#~ "apprendre davantage, \n"
+#~ "        je me décris comme quelqu’un de rigoureux, créatif et motivé \n"
+#~ "        par l’idée de construire des projets utiles et bien pensés.\n"
+#~ "    "
