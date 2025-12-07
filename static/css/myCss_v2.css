@@ -442,7 +442,7 @@ des pages de compétence rétractables
 
 /* carte */
 .project-card {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgb(92, 239, 255);
     backdrop-filter: blur(8px);
     border-radius: 18px;
     padding: 1rem;
