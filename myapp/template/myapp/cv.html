@@ -32,23 +32,23 @@
 {% block content %}
     <h3> {% trans "FORMATION / DIPLÔME" %}</h3>
     <h5 class="mb-0">{% trans "BUT INFORMATIQUE - 2EME ANNEE" %}</h5>
-    <p class="mb-2">{% trans "IUT de Bayonne et du Pays Basque à Anglet
+    <p class="mb-2">{% transblock %} IUT de Bayonne et du Pays Basque à Anglet
         1 an en échange universitaire à Prince of Songkla 
-        University en Thaïlande en 2025: En cours" %}</p>
+        University en Thaïlande en 2025: En cours {% endtransblock %}</p>
     <h5 class="mb-0">{% trans "BACCALAUREAT GENERAL - MENTION BIEN" %}</h5>
-    <p class="mb-3">{% trans "Lycée Bernard Palissy à Agen —  2021-2024
+    <p class="mb-3">{% transblock %} Lycée Bernard Palissy à Agen —  2021-2024
         Spécialités Numérique et Sciences de l’Informatique (NSI) 
-        et Mathématiques" %}</p>
+        et Mathématiques {% endtransblock %}</p>
 
     <h3>{% trans "PROJETS ACADEMIQUES" %}</h3>
     <p><strong>{% trans "Développement d'une interface web" %}</strong></p>
     <ul>
         <li><p>{% trans "Projet : Création d’un site web" %}</p></li>
-        <li><p>{% trans "Compétences : Maîtrise de Figma pour la conception 
+        <li><p>{% transblock %} Compétences : Maîtrise de Figma pour la conception 
             (charte graphique, zoning, wireframes, mock-ups), HTML/CSS, 
             utilisation de Bootstrap et Django pour l’implémentation, 
             travail collaboratif, respect des bonnes pratiques d’accessibilité 
-            et de qualité du code." %}</p></li>
+            et de qualité du code. {% endtransblock %}</p></li>
     </ul>
     <p><strong>{% trans "Création d’une base de données</strong></p>
     <ul>
