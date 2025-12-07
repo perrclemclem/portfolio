@@ -440,7 +440,7 @@ des pages de compétence rétractables
     justify-content: center; /* Center cards horizontally */
 }
 
-.card_me {
+.card_mee {
     position: relative;
     background-color: rgb(195, 250, 255);
     border-radius: 15px;
@@ -456,13 +456,13 @@ des pages de compétence rétractables
     align-items: center;
 }
 
-.card_me:hover {
+.card_mee:hover {
     transform: translateY(-5px); /* créé effet de “flottement” */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Card content */
-.card-body {
+.card-me-body {
     position: relative;
     z-index: 1;
     padding: 20px;
@@ -470,13 +470,13 @@ des pages de compétence rétractables
 }
 
 /* Liens à l'intérieur */
-.card-body a {
+.card-me-body a {
     text-decoration: none;
     color: #ffffff;
 }
 
 /* Contenu de la carte */
-.card_me .card-body {
+.card_mee .card-me-body {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -484,14 +484,14 @@ des pages de compétence rétractables
 }
 
 /* Titre carte */
-.card_me .card-title {
+.card_mee .card-me-title {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 /* Texte carte */
-.card_me .card-text {
+.card_mee .card-me-text {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 0.5rem;
@@ -515,7 +515,7 @@ des pages de compétence rétractables
 
 
 /* Style image a l'intérieur des cartes des projets */
-.card-img-top {
+.card-me-img-top {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -524,7 +524,7 @@ des pages de compétence rétractables
 }
 
 /* Rend les textes en pragraphes plus visibles même devant l'image de fond */
-p, .card-body {
+p, .card-me-body {
     background-color: rgba(0,0,0,0.4);
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -586,7 +586,7 @@ p, .card-body {
         gap: 15px;
     }
     
-    .card_me {
+    .card_mee {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;

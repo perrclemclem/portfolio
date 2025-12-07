@@ -11,12 +11,12 @@
 {% block aside %}
     <img src="{% static 'image/photo_profil_linkedin.jpg' %}" alt="photo Clem">
     <h4> {% trans "Mon profil" %} </h4>
-    <p> {% blocktrans %} "Étudiante en deuxième année de BUT informatique, 
+    <p> {% blocktrans %} Étudiante en deuxième année de BUT informatique, 
         je réalise cette année un échange universitaire à 
         Prince of Songkla University, en Thaïlande.
         Passionnée par le développement et toujours curieuse d’en apprendre davantage, 
         je me décris comme quelqu’un de rigoureux, créatif et motivé 
-        par l’idée de construire des projets utiles et bien pensés." {% endblocktrans %} </p>
+        par l’idée de construire des projets utiles et bien pensés. {% endblocktrans %} </p>
 {% endblock aside %}
 
 {% block content %}
@@ -25,13 +25,13 @@
         {% for row in allrow %}
             <div class="row">
                 {% for c in row %}
-                    <div class="card_me">
+                    <div class="card_mee">
                         {% if c.picture %}
-                            <img src="{{ c.picture.url }}" class="card-img-top" alt="{{ c.title }}">
+                            <img src="{{ c.picture.url }}" class="card-me-img-top" alt="{{ c.title }}">
                         {% endif %}
-                        <div class="card-body">
-                            <h5 class="card-title">{{ c.title }}</h5>
-                            <p class="card-text">{{ c.time }} hours</p>
+                        <div class="card-me-body">
+                            <h5 class="card-me-title">{{ c.title }}</h5>
+                            <p class="card-me-text">{{ c.time }} hours</p>
     
                             {% if c.specfile %}
                             <p>
