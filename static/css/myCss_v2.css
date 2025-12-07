@@ -486,6 +486,7 @@ des pages de compétence rétractables
 .project-title {
     font-weight: 700;
     font-size: 1.2rem;
+    color: black;
 }
 /*
 .project-hours {
@@ -504,7 +505,7 @@ des pages de compétence rétractables
     border: 1px solid rgba(255,255,255,0.35);
     border-radius: 12px;
 
-    color: rgb(178, 181, 252);
+    color: rgb(128, 132, 255);
     text-decoration: none;
 
     transition: 0.25s ease;
