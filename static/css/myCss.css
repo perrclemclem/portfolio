@@ -138,6 +138,8 @@ nav img {
 aside{
     margin-left: 40px;
     margin-right: 20px;
+    min-width: 250px;
+    flex-shrink: 0;
 }
 
 p{
@@ -367,7 +369,8 @@ des pages de compétence rétractables
     margin-top: 5px;
     background: #faf8ff;
     border-radius: 5px;
-    transition: height 0.35s ease, padding 0.35s ease;
+    transition: max-height .4s ease;
+    max-height: 0;
 }
 
 .collapsible-section > img{
