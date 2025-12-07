@@ -1,6 +1,8 @@
 asgiref==3.9.1
+cloudinary
 distlib==0.4.0
 dj-database-url==3.0.1
+django-cloudinary-storage
 Django==5.2.5
 filelock==3.19.1
 git-filter-repo==2.47.0
