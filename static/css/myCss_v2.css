@@ -393,9 +393,6 @@ des pages de compétence rétractables
 }
 
 
-
-
-
 /* Style du Sommaire (créé automatiquement par JS) des compétences */
 
 .toc {
@@ -429,6 +426,10 @@ des pages de compétence rétractables
     text-decoration: underline;
 }
 
+
+.white-text{
+    color: white;
+}
 
 
 /*CCS pour les cartes des projets page d'acceuil*/
@@ -481,13 +482,12 @@ des pages de compétence rétractables
 .project-title {
     font-weight: 700;
     font-size: 1.2rem;
-    color: white;
 }
-
+/*
 .project-hours {
     font-size: 0.95rem;
     color: rgba(255,255,255,0.85);
-}
+}*/
 
 
 /* bouton */
@@ -496,11 +496,11 @@ des pages de compétence rétractables
     margin-top: 0.5rem;
     padding: 10px 20px;
 
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(190, 186, 255, 0.282);
     border: 1px solid rgba(255,255,255,0.35);
     border-radius: 12px;
 
-    color: white;
+    color: rgb(178, 181, 252);
     text-decoration: none;
 
     transition: 0.25s ease;
