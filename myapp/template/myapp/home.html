@@ -20,32 +20,30 @@
 {% endblock aside %}
 
 {% block content %}
-    <h2>Portfolio Clémence Perraudin</h2>
-    <div class="container-me">
-        {% for row in allrow %}
-            <div class="row-me">
-                {% for c in row %}
-                    <div class="card-me">
-                        {% if c.picture %}
-                            <img src="{{ c.picture.url }}" class="card-me-img-top" alt="{{ c.title }}">
-                        {% endif %}
-                        <div class="card-me-body">
-                            <h5 class="card-me-title">{{ c.title }}</h5>
-                            <p class="card-me-text">{{ c.time }} hours</p>
-    
-                            {% if c.specfile %}
-                            <p>
-                                specfile: <a href="{{ c.specfile.url }}">{% trans "Download" %}</a>
-                            </p>
-                            {% endif %}
-    
-                            <a href="projet/{{ c.id }}" class="btn-magical">{% trans "More details" %}</a>
-                        </div>
-                    </div>
-                {% endfor %}
+<div class="project-grid">
+    {% for row in allrow %}
+        {% for c in row %}
+            <div class="project-card">
+                {% if c.picture %}
+                    <img src="{{ c.picture.url }}" alt="{{ c.title }}" class="project-img">
+                {% endif %}
+
+                <div class="project-body">
+                    <h5 class="project-title">{{ c.title }}</h5>
+                    <p class="project-hours">{{ c.time }} hours</p>
+
+                    {% if c.specfile %}
+                        <p>
+                            specfile: <a href="{{ c.specfile.url }}">{% trans "Download" %}</a>
+                        </p>
+                    {% endif %}
+                    <a href="projet/{{ c.id }}" class="project-btn">{% trans "More details" %}</a>
+                </div>
             </div>
         {% endfor %}
-    </div>
+    {% endfor %}
+</div>
+
     <ul class="pagination mx-4">
         {% if allproject.has_previous and allproject.has_next != True %}
             <li class="page-item"><a class="page-link" 
