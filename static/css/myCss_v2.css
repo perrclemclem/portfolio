@@ -36,7 +36,7 @@ main{
 /* Layout global */
 .page-wrapper {
     display: flex;
-    min-height: calc(100vh - 70px - 60 px);
+    min-height: calc(100vh - 70px - 60px);
 }
 
 /* Layout de la nav */
