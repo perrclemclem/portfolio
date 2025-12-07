@@ -330,12 +330,13 @@ des pages de compétence rétractables
     margin-bottom: 10px;
 }
 
+/* Button */
 .collapsible-btn {
     width: 100%;
     text-align: left;
     background: #ece9ff;
     border: 1px solid #c7bfff;
-    padding: 8px 12px 8px 30px; /* ajout de padding pour placer la flèche */
+    padding: 8px 12px 8px 30px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: 600;
@@ -347,7 +348,7 @@ des pages de compétence rétractables
 .collapsible-btn::after {
     content: "▶";
     position: absolute;
-    left: 12px; /* met la flèshe dans le padding */
+    left: 12px;
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s ease;
@@ -364,19 +365,19 @@ des pages de compétence rétractables
 
 /* Contenu retractable */
 .collapsible-content {
-    height: 0;
+    height: 0;                 /* modifié par le javascript */
     overflow: hidden;
     padding: 0 15px;
     border-left: 3px solid #c7bfff;
     margin-top: 5px;
     background: #faf8ff;
     border-radius: 5px;
-    transition: max-height .4s ease;
-    max-height: 0;
+
+    transition: height 0.35s ease;  
 }
 
-.collapsible-section > img{
-    width: 50%;
+.collapsible-section > img {
+    width: 25%;
     height: auto;
 }
 
@@ -442,7 +443,7 @@ des pages de compétence rétractables
 
 /* carte */
 .project-card {
-    background: rgb(92, 239, 255);
+    background: rgb(196, 249, 255);
     backdrop-filter: blur(8px);
     border-radius: 18px;
     padding: 1rem;
