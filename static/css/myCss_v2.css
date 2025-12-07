@@ -516,6 +516,17 @@ des pages de compétence rétractables
     transform: scale(1.04);
 }
 
+.btn-site{
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #6a42d4;
+    border: #9370db;
+    border-radius: 12px;
+    color:#dcd6ff;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
 
 /* Partie Responsive (plus ou moins pour l'instant)*/
 @media (max-width: 768px) {
