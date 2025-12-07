@@ -426,21 +426,21 @@ des pages de compétence rétractables
 
 
 /*CCS pour les cartes des projets page d'acceuil*/
-.container {
+.container-me {
     display: flex;
     flex-direction: column;
     gap: 2rem; /* Space between rows */
     padding: 20px;
 }
 
-.row {
+.row-me {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Space between cards */
     justify-content: center; /* Center cards horizontally */
 }
 
-.card_mee {
+.card-me {
     position: relative;
     background-color: rgb(195, 250, 255);
     border-radius: 15px;
@@ -456,7 +456,7 @@ des pages de compétence rétractables
     align-items: center;
 }
 
-.card_mee:hover {
+.card-me:hover {
     transform: translateY(-5px); /* créé effet de “flottement” */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -476,7 +476,7 @@ des pages de compétence rétractables
 }
 
 /* Contenu de la carte */
-.card_mee .card-me-body {
+.card-me .card-me-body {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -484,14 +484,14 @@ des pages de compétence rétractables
 }
 
 /* Titre carte */
-.card_mee .card-me-title {
+.card-me .card-me-title {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 /* Texte carte */
-.card_mee .card-me-text {
+.card-me .card-me-text {
     font-size: 0.9rem;
     color: #555;
     margin-bottom: 0.5rem;
@@ -586,7 +586,7 @@ p, .card-me-body {
         gap: 15px;
     }
     
-    .card_mee {
+    .card-me {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;

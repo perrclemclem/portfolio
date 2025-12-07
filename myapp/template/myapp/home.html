@@ -21,11 +21,11 @@
 
 {% block content %}
     <h2>Portfolio Clémence Perraudin</h2>
-    <div class="container">
+    <div class="container-me">
         {% for row in allrow %}
-            <div class="row">
+            <div class="row-me">
                 {% for c in row %}
-                    <div class="card_mee">
+                    <div class="card-me">
                         {% if c.picture %}
                             <img src="{{ c.picture.url }}" class="card-me-img-top" alt="{{ c.title }}">
                         {% endif %}
