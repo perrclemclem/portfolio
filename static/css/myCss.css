@@ -203,6 +203,8 @@ aside h2{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    min-width: 250px;
+    flex-shrink: 0;
 }
 
 /* Contenu interne qui reste en place quand on scrolle et scrollable à l'intérieur */
